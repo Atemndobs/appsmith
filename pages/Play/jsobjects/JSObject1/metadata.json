@@ -9,7 +9,7 @@
     "variables": [
       {
         "name": "search_results_player",
-        "value": "{\n  'show': false,\n  'currentSong': {},\n  'search_limit': 3,\n  'search_hits': song_search_api.data.hits.length ?? 0\n}"
+        "value": "{\n  'show': false,\n  'currentSong': {},\n  'search_limit': 3,\n  'search_hits': 0\n}"
       }
     ],
     "userPermissions": []

@@ -1167,7 +1167,7 @@
               ],
               "itemBackgroundColor": "#FFFFFF",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": "{{JSObject1.search_results_player.search_hits >= 1}}",
+              "isVisible": "{{song_search_api.data.hits.length >= 1}}",
               "hasMetaWidgets": true,
               "isLoading": false,
               "mainCanvasId": "3ehd7cbnm2",
