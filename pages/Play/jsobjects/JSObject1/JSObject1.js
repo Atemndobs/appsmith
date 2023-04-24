@@ -5,7 +5,7 @@ export default {
 		'search_limit' : 3
 	},
 	selectd_song_play (currentSong = {}) {
-		
+
 		console.log(currentSong)
 		search_results_player.show = true
 		search_results_player.isVisible = true
@@ -16,6 +16,6 @@ export default {
 	async get_related_songs (currentSong = {}) {
 		let related_url = currentSong.related_songs ?? "";
 		console.log({ related_url });
-		
+
 	}
 }

@@ -29,13 +29,13 @@
             {
               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "onSubmit": "{{song_search_api.run()}}",
+              "onSubmit": "{{song_search_api.run() && (song_search_results.isVisible = false)}}",
               "topRow": 9,
               "tooltip": "Here you can search Songs eihter by Artis name or song title",
               "labelWidth": 5,
               "type": "INPUT_WIDGET_V2",
               "animateLoading": "true",
-              "resetOnSubmit": false,
+              "resetOnSubmit": "true",
               "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
@@ -76,6 +76,9 @@
                 },
                 {
                   "key": "isDisabled"
+                },
+                {
+                  "key": "resetOnSubmit"
                 }
               ],
               "displayName": "Input",
@@ -1224,6 +1227,19 @@
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Play_JSObject1.get_related_songs",
+              "name": "JSObject1.get_related_songs",
+              "collectionId": "Play_JSObject1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function (currentSong = {}) {\n  let related_url = currentSong.related_songs ?? \"\";\n  console.log({\n    related_url\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Play_song_search_api",
