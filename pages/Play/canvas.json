@@ -29,7 +29,7 @@
             {
               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "onSubmit": "",
+              "onSubmit": "{{song_search_api.run()}}",
               "topRow": 6,
               "tooltip": "Here you can search Songs eihter by Artis name or song title",
               "labelWidth": 5,
@@ -59,6 +59,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "onSubmit"
+                },
+                {
+                  "key": "defaultText"
                 }
               ],
               "displayName": "Input",
@@ -211,6 +214,11 @@
               "widgetName": "search_results",
               "borderColor": "#E0DEDE",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
               "searchTags": [
@@ -229,7 +237,11 @@
               "parentColumnSpace": 6.84375,
               "dynamicTriggerPathList": [],
               "leftColumn": 3,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "children": [
                 {
                   "mobileBottomRow": 100,
@@ -791,7 +803,7 @@
               "widgetId": "lqyi4aoqwa",
               "containerStyle": "card",
               "minWidth": 450,
-              "isVisible": false,
+              "isVisible": "{{song_search_api.data.hits.length >= 1}}",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
@@ -807,7 +819,20 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Play_song_search_api",
+              "name": "song_search_api",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "search.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Play",

@@ -1,0 +1,7 @@
+{
+	"q":{{search.text}},
+ "attributesToHighlight":["*"],
+ "highlightPreTag":"__ais-highlight__",
+ "highlightPostTag":"__/ais-highlight__",
+ "limit":21
+}
