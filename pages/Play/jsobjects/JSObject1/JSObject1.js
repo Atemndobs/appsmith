@@ -8,7 +8,6 @@ export default {
 	selectd_song_play (currentSong = {}) {
 
 		console.log(currentSong)
-		search_results_player.show = true
 		search_results_player.isVisible = true
 		song_search_results.isVisible = false
 		player_song.autoPlay
