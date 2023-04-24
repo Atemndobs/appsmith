@@ -22,6 +22,7 @@ export default {
 		if(search.text === "") {
 			return;
 		}
+		clear_search.isVisible = true
 		song_search_api.run()
 		song_search_results.isVisible = true
 	},
@@ -30,7 +31,9 @@ export default {
 		song_search_results.isVisible = false;
 		search_results_player.isVisible = false;
 		song_search_api.clear();
+		clear_search.isVisible = false
 		search.text = "";
+		
 		
 	}
 }
