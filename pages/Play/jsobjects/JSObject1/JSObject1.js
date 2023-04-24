@@ -19,6 +19,9 @@ export default {
 	},
 	
 	search_song () {
+		if(search.text === "") {
+			return;
+		}
 		song_search_api.run()
 		song_search_results.isVisible = true
 	}
