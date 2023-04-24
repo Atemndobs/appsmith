@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Play",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "search_results_player",
+        "value": "{\n  'show': false,\n  'currentSong': {}\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Play_JSObject1",
+  "deleted": false,
+  "gitSyncId": "64467d69ea2e4f6c16474cba_64469a4eea2e4f6c16474cd9"
+}
