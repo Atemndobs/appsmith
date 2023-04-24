@@ -1057,7 +1057,7 @@
               "boxShadow": "none",
               "mobileBottomRow": 11,
               "widgetName": "clear_search",
-              "onClick": "{{clearStore();\ncloseModal(''); JSObject1.search_song()}}",
+              "onClick": "{{clearStore();\ncloseModal(''); JSObject1.clear_search()}}",
               "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
               "dynamicPropertyPathList": [
                 {

@@ -28,7 +28,7 @@ export default {
 	
 	clear_search(){
 		song_search_results.isVisible = false;
-		song_search_results.isVisible = false;
+		search_results_player.isVisible = false;
 		song_search_api.clear();
 		search.text = "";
 		
