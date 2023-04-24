@@ -24,5 +24,13 @@ export default {
 		}
 		song_search_api.run()
 		song_search_results.isVisible = true
+	},
+	
+	clear_search(){
+		song_search_results.isVisible = false;
+		song_search_results.isVisible = false;
+		song_search_api.clear();
+		search.text = "";
+		
 	}
 }
