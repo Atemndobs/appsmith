@@ -46,7 +46,11 @@
   "publishedAppLayout": {
     "type": "MOBILE"
   },
-  "unpublishedCustomJSLibs": [],
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "cookie_https://cdn.jsdelivr.net/npm/cookiejs@2.1.2/dist/cookie.min.js"
+    }
+  ],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,

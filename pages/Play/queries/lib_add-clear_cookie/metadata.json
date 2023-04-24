@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "get_related_songs",
-    "fullyQualifiedName": "JSObject1.get_related_songs",
+    "name": "clear_cookie",
+    "fullyQualifiedName": "lib_add.clear_cookie",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,20 +14,16 @@
       "userPermissions": []
     },
     "pageId": "Play",
-    "collectionId": "Play_JSObject1",
+    "collectionId": "Play_lib_add",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "currentSong"
-        }
-      ],
-      "isAsync": true
+      "jsArguments": [],
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Play_JSObject1.get_related_songs",
+  "id": "Play_lib_add.clear_cookie",
   "deleted": false,
-  "gitSyncId": "64467d69ea2e4f6c16474cba_64469b6cea2e4f6c16474cdf"
+  "gitSyncId": "64467d69ea2e4f6c16474cba_6446e0e2ea2e4f6c16474d14"
 }
