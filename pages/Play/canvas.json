@@ -47,7 +47,7 @@
               "isDisabled": "false",
               "isRequired": false,
               "dynamicHeight": "FIXED",
-              "iconName": "search-text",
+              "iconName": "cross",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "showStepArrows": false,
               "isVisible": true,
