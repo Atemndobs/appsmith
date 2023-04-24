@@ -2,7 +2,8 @@ export default {
 	search_results_player: {
 		'show' : false,
 		'currentSong' : {},
-		'search_limit' : 3
+		'search_limit' : 3,
+		'search_hits' : song_search_api.data.hits.length ?? 0
 	},
 	selectd_song_play (currentSong = {}) {
 
