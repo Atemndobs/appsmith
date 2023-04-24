@@ -20,7 +20,6 @@ export default {
 	
 	search_song () {
 		song_search_api.run()
-		song_search_results.isVisible = false
-		search_results_player.isVisible = true
+		song_search_results.isVisible = true
 	}
 }
