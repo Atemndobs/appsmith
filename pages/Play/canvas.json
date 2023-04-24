@@ -35,7 +35,7 @@
               "labelWidth": 5,
               "type": "INPUT_WIDGET_V2",
               "animateLoading": true,
-              "resetOnSubmit": true,
+              "resetOnSubmit": false,
               "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
@@ -47,10 +47,12 @@
               "isDisabled": false,
               "isRequired": false,
               "dynamicHeight": "FIXED",
+              "iconName": "search",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "showStepArrows": false,
               "isVisible": true,
               "version": 2,
+              "onFocus": "{{song_search_api.clear()}}",
               "isLoading": false,
               "borderRadius": "0px",
               "originalBottomRow": 15,
@@ -62,6 +64,12 @@
                 },
                 {
                   "key": "defaultText"
+                },
+                {
+                  "key": "onFocus"
+                },
+                {
+                  "key": "onTextChanged"
                 }
               ],
               "displayName": "Input",
@@ -80,11 +88,18 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "onSubmit"
+                },
+                {
+                  "key": "onFocus"
+                },
+                {
+                  "key": "onTextChanged"
                 }
               ],
               "labelPosition": "Top",
               "key": "dojbp9ioej",
               "labelTextSize": "0.875rem",
+              "onTextChanged": "{{song_search_api.run()}}",
               "isDeprecated": false,
               "rightColumn": 60,
               "widgetId": "hown9sfc2f",
@@ -98,7 +113,7 @@
               "originalTopRow": 8,
               "mobileLeftColumn": 5,
               "maxDynamicHeight": 9000,
-              "iconAlign": "left",
+              "iconAlign": "right",
               "defaultText": "",
               "minDynamicHeight": 4
             },
@@ -955,7 +970,7 @@
                               "rightColumn": 7,
                               "objectFit": "cover",
                               "widgetId": "t6jxthirlx",
-                              "isVisible": true,
+                              "isVisible": false,
                               "version": 1,
                               "parentId": "qihcltj7jr",
                               "renderMode": "CANVAS",
