@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1110,
+          "bottomRow": 1130,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -30,11 +30,11 @@
               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "onSubmit": "{{song_search_api.run()}}",
-              "topRow": 6,
+              "topRow": 9,
               "tooltip": "Here you can search Songs eihter by Artis name or song title",
               "labelWidth": 5,
               "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
+              "animateLoading": "true",
               "resetOnSubmit": false,
               "leftColumn": 3,
               "dynamicBindingPathList": [
@@ -44,15 +44,15 @@
               ],
               "labelStyle": "",
               "inputType": "TEXT",
-              "isDisabled": false,
+              "isDisabled": "false",
               "isRequired": false,
               "dynamicHeight": "FIXED",
-              "iconName": "search",
+              "iconName": "search-text",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "showStepArrows": false,
               "isVisible": true,
               "version": 2,
-              "onFocus": "{{song_search_api.clear() && (song_search_results.isVisible = false)}}",
+              "onFocus": "{{(song_search_results.isVisible = false)}}",
               "isLoading": false,
               "borderRadius": "0px",
               "originalBottomRow": 15,
@@ -70,6 +70,12 @@
                 },
                 {
                   "key": "onTextChanged"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "isDisabled"
                 }
               ],
               "displayName": "Input",
@@ -79,7 +85,7 @@
                 "number",
                 "textarea"
               ],
-              "bottomRow": 13,
+              "bottomRow": 16,
               "parentRowSpace": 10,
               "autoFocus": true,
               "hideCard": false,
@@ -99,7 +105,7 @@
               "labelPosition": "Top",
               "key": "dojbp9ioej",
               "labelTextSize": "0.875rem",
-              "onTextChanged": "{{song_search_api.run()}}",
+              "onTextChanged": "",
               "isDeprecated": false,
               "rightColumn": 60,
               "widgetId": "hown9sfc2f",
@@ -241,8 +247,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 47,
-              "bottomRow": 111,
+              "topRow": 49,
+              "bottomRow": 113,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -829,11 +835,11 @@
               "isLoading": false,
               "mobileTopRow": 26,
               "responsiveBehavior": "fill",
-              "originalTopRow": 47,
+              "originalTopRow": 49,
               "borderRadius": "0px",
               "mobileLeftColumn": 4,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 111,
+              "originalBottomRow": 113,
               "minDynamicHeight": 10
             },
             {
@@ -841,7 +847,7 @@
               "requiresFlatWidgetChildren": true,
               "isCanvas": true,
               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-              "topRow": 14,
+              "topRow": 16,
               "pageSize": 3,
               "type": "LIST_WIDGET_V2",
               "itemSpacing": 8,
@@ -1186,7 +1192,7 @@
                 }
               ],
               "displayName": "List",
-              "bottomRow": 47,
+              "bottomRow": 49,
               "parentRowSpace": 10,
               "hideCard": false,
               "templateBottomRow": 16,
