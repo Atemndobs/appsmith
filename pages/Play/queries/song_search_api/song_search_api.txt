@@ -3,5 +3,5 @@
  "attributesToHighlight":["*"],
  "highlightPreTag":"__ais-highlight__",
  "highlightPostTag":"__/ais-highlight__",
- "limit":21
+ "limit":5
 }

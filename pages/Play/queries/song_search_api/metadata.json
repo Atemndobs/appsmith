@@ -67,7 +67,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"q\":{{search.text}},\n \"attributesToHighlight\":[\"*\"],\n \"highlightPreTag\":\"__ais-highlight__\",\n \"highlightPostTag\":\"__/ais-highlight__\",\n \"limit\":21\n}",
+      "body": "{\n\t\"q\":{{search.text}},\n \"attributesToHighlight\":[\"*\"],\n \"highlightPreTag\":\"__ais-highlight__\",\n \"highlightPostTag\":\"__/ais-highlight__\",\n \"limit\":5\n}",
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "formData": {
