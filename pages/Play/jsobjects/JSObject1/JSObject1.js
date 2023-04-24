@@ -1,7 +1,8 @@
 export default {
 	search_results_player: {
 		'show' : false,
-		'currentSong' : {}
+		'currentSong' : {},
+		'search_limit' : 3
 	},
 	selectd_song_play (currentSong = {}) {
 		
