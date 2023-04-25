@@ -13,7 +13,8 @@ export default {
 		this.get_related_songs(currentSong)
 		return currentSong
 	},
-	async get_related_songs (currentSong = {}) {
+	
+	get_related_songs (currentSong = {}) {
 		let related_url = currentSong.related_songs ?? "";
 		console.log({ related_url });
 		
@@ -38,13 +39,12 @@ export default {
 		song_search_results.isVisible = true
 	},
 	
-	clear_search(){
+	async clear_search(){
 		song_search_results.isVisible = false;
 		search_results_player.isVisible = false;
 		song_search_api.clear();
 		clear_search.isVisible = false
 		search.text = "";
-		
-		
+	
 	}
 }

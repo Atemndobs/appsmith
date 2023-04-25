@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "JSObject1",
+    "name": "play_page_functions",
     "pageId": "Play",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -14,7 +14,7 @@
     ],
     "userPermissions": []
   },
-  "id": "Play_JSObject1",
+  "id": "Play_play_page_functions",
   "deleted": false,
   "gitSyncId": "64467d69ea2e4f6c16474cba_64469a4eea2e4f6c16474cd9"
 }

@@ -3,5 +3,5 @@
  "attributesToHighlight":["*"],
  "highlightPreTag":"__ais-highlight__",
  "highlightPostTag":"__/ais-highlight__",
- "limit": {{JSObject1.search_results_player.search_limit}}
+ "limit": {{play_page_functions.search_results_player.search_limit}}
 }

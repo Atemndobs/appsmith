@@ -29,7 +29,7 @@
             {
               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "onSubmit": "{{JSObject1.search_song()}}",
+              "onSubmit": "{{play_page_functions.search_song()}}",
               "topRow": 6,
               "tooltip": "Here you can search Songs eihter by Artis name or song title",
               "labelWidth": 5,
@@ -52,7 +52,7 @@
               "showStepArrows": false,
               "isVisible": true,
               "version": 2,
-              "onFocus": "{{JSObject1.clear_search()}}",
+              "onFocus": "{{play_page_functions.clear_search()}}",
               "isLoading": false,
               "borderRadius": "0.375rem",
               "originalBottomRow": 15,
@@ -105,7 +105,7 @@
               "labelPosition": "Top",
               "key": "dojbp9ioej",
               "labelTextSize": "0.875rem",
-              "onTextChanged": "{{JSObject1.search_song()}}",
+              "onTextChanged": "{{play_page_functions.search_song()}}",
               "isDeprecated": false,
               "rightColumn": 60,
               "widgetId": "hown9sfc2f",
@@ -353,7 +353,7 @@
                       "minWidth": 450,
                       "isVisible": true,
                       "version": 1,
-                      "url": "{{JSObject1.selectd_song_play.data.path}}",
+                      "url": "{{play_page_functions.selectd_song_play.data.path}}",
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",
                       "isLoading": false,
@@ -775,7 +775,7 @@
               "borderRadius": "0px",
               "mobileLeftColumn": 4,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 99,
+              "originalBottomRow": 101,
               "minDynamicHeight": 10
             },
             {
@@ -1048,7 +1048,7 @@
               "rightColumn": 61,
               "widgetId": "twrpzd8ltq",
               "minWidth": 450,
-              "onItemClick": "{{JSObject1.selectd_song_play(currentItem)}}",
+              "onItemClick": "{{play_page_functions.selectd_song_play(currentItem)}}",
               "parentId": "0",
               "renderMode": "CANVAS",
               "mobileTopRow": 17,
@@ -1060,7 +1060,7 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-              "onClick": "{{clearStore();\ncloseModal(''); JSObject1.clear_search()}}",
+              "onClick": "{{clearStore();\ncloseModal(''); play_page_functions.clear_search()}}",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "topRow": 13,
               "type": "BUTTON_WIDGET",
@@ -1127,36 +1127,25 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Play_JSObject1.get_related_songs",
-              "name": "JSObject1.get_related_songs",
-              "collectionId": "Play_JSObject1",
+              "id": "Play_play_page_functions.clear_search",
+              "name": "play_page_functions.clear_search",
+              "collectionId": "Play_play_page_functions",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function (currentSong = {}) {\n  let related_url = currentSong.related_songs ?? \"\";\n  console.log({\n    related_url\n  });\n  return fetch(related_url, {\n    \"headers\": {\n      \"accept\": \"application/json, text/plain, */*\",\n      \"Referer\": \"http://app.curator.atemkeng.eu/\",\n      \"Referrer-Policy\": \"strict-origin-when-cross-origin\"\n    },\n    \"body\": null,\n    \"method\": \"GET\"\n  });\n}"
+                "async function () {\n  song_search_results.isVisible = false;\n  search_results_player.isVisible = false;\n  song_search_api.clear();\n  clear_search.isVisible = false;\n  search.text = \"\";\n}"
               ],
               "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Play_JSObject1.selectd_song_play",
-              "name": "JSObject1.selectd_song_play",
-              "collectionId": "Play_JSObject1",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "function (currentSong = {}) {\n  search_results_player.isVisible = true;\n  song_search_results.isVisible = false;\n  player_song.autoPlay;\n  JSObject1.get_related_songs(currentSong);\n  return currentSong;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Play_song_search_api",
               "name": "song_search_api",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "JSObject1.search_results_player.search_limit",
+                "play_page_functions.search_results_player.search_limit",
                 "search.text"
               ],
               "timeoutInMillisecond": 10000
