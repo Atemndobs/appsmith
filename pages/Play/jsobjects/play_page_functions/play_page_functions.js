@@ -3,31 +3,37 @@ export default {
 		'show' : false,
 		'currentSong' : {},
 		'search_limit' : 3,
-		'search_hits' : 0
+		'search_hits' : 0,
+		'match_limit' : 3,
+		'related_songs' : "dj_zinhle_indlovu_feat_loyisomp3"
 	},
 	
 	selectd_song_play (currentSong = {}) {
-		search_results_player.isVisible = true
-		song_search_results.isVisible = false
-		player_song.autoPlay
-		this.get_related_songs(currentSong)
+		search_results_player.isVisible = true;
+		song_search_results.isVisible = false;
+		player_song.autoPlay;
+		search_results_player.related_songs = currentSong.related_songs
+		let song_matches = get_song_matches.run()
+		
+		console.log(get_song_matches.data)
+		
 		return currentSong
 	},
 	
-	get_related_songs (currentSong = {}) {
-		let related_url = currentSong.related_songs ?? "";
-		console.log({ related_url });
-		
-		
-	return fetch( related_url, {
-  "headers": {
-    "accept": "application/json, text/plain, */*",
-    "Referer": "http://app.curator.atemkeng.eu/",
-    "Referrer-Policy": "strict-origin-when-cross-origin"
-  },
-  "body": null,
-  "method": "GET"
-		});
+	get_song_info (currentItem = {}) {
+		let happy = currentItem.happy.toFixed(1) * 100 + "%"
+		let sad = currentItem.sad.toFixed(1) * 100 + "%"
+		let mood = ""
+		if (happy > sad) {
+			mood = "happy"
+		}else {
+			mood = "sad"
+		}
+		let energy = currentItem.energy.toFixed(1) * 100 + "%"
+		return {
+			mood,
+			energy
+		}
 	},
 	
 	search_song () {

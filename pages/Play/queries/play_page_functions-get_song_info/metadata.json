@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "get_related_songs",
-    "fullyQualifiedName": "play_page_functions.get_related_songs",
+    "name": "get_song_info",
+    "fullyQualifiedName": "play_page_functions.get_song_info",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -22,10 +22,10 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
-          "name": "currentSong"
+          "name": "currentItem"
         }
       ],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Play_play_page_functions.get_related_songs",
+  "id": "Play_play_page_functions.get_song_info",
   "deleted": false,
-  "gitSyncId": "64467d69ea2e4f6c16474cba_644766d4ea2e4f6c16474d5a"
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_64479e21ea2e4f6c16474da0"
 }
