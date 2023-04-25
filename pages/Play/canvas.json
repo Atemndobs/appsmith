@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 990,
+          "bottomRow": 1010,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -52,7 +52,7 @@
               "showStepArrows": false,
               "isVisible": true,
               "version": 2,
-              "onFocus": "",
+              "onFocus": "{{JSObject1.clear_search()}}",
               "isLoading": false,
               "borderRadius": "0.375rem",
               "originalBottomRow": 15,
@@ -244,7 +244,7 @@
                 "group"
               ],
               "topRow": 44,
-              "bottomRow": 99,
+              "bottomRow": 101,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -253,7 +253,7 @@
               "animateLoading": true,
               "parentColumnSpace": 6.84375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 3,
+              "leftColumn": 0,
               "dynamicBindingPathList": [],
               "children": [
                 {
@@ -261,7 +261,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 550,
+                  "bottomRow": 570,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -438,7 +438,7 @@
                       "requiresFlatWidgetChildren": true,
                       "isCanvas": true,
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 25,
+                      "topRow": 27,
                       "pageSize": 3,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": 8,
@@ -466,7 +466,7 @@
                           "key": "boxShadow"
                         }
                       ],
-                      "leftColumn": 2,
+                      "leftColumn": 0,
                       "enhancements": true,
                       "children": [
                         {
@@ -712,7 +712,7 @@
                       "widgetName": "related_songs",
                       "listData": "[\n  {\n    \"id\": \"Remedy\",\n    \"name\": \"Aluna & KAYTRANADA ft. Rema\",\n    \"img\": \"http://s3.atemkeng.de:9000/curator/images/Rema_-_Iron_Man.jpeg\"\n  },\n  {\n    \"id\": \"My Way\",\n    \"name\": \"Jarreau Vandal - Topic\",\n    \"img\": \"http://s3.atemkeng.de:9000/curator/images/murder_w_jarreau_vandal_emmaviemp3.jpeg\"\n  },\n  {\n    \"id\": \"DJ Zinhle\",\n    \"name\": \"Indlovu (feat. Loyiso)\",\n    \"img\": \"http://s3.atemkeng.de:9000/curator/images/b_young_king_promise_rolling_stonemp3.jpeg\"\n  }\n]",
                       "displayName": "List",
-                      "bottomRow": 53,
+                      "bottomRow": 55,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "templateBottomRow": 16,
@@ -725,7 +725,7 @@
                       "key": "watm9d55fa",
                       "backgroundColor": "transparent",
                       "isDeprecated": false,
-                      "rightColumn": 60,
+                      "rightColumn": 57,
                       "widgetId": "r2aoq99lql",
                       "minWidth": 450,
                       "parentId": "qu25d50ks2",
@@ -759,7 +759,7 @@
               "key": "titjtj8cjq",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 61,
+              "rightColumn": 64,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "lqyi4aoqwa",
               "containerStyle": "card",
@@ -787,7 +787,7 @@
               "pageSize": 3,
               "type": "LIST_WIDGET_V2",
               "itemSpacing": 8,
-              "topRowBeforeCollapse": 14,
+              "topRowBeforeCollapse": 18,
               "animateLoading": true,
               "dynamicBindingPathList": [
                 {
@@ -1002,7 +1002,7 @@
               ],
               "itemBackgroundColor": "#FFFFFF",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "bottomRowBeforeCollapse": 36,
+              "bottomRowBeforeCollapse": 40,
               "isVisible": false,
               "totalRecordsCount": "{{song_search_api.data.hits.length}}",
               "hasMetaWidgets": true,
@@ -1133,12 +1133,23 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function (currentSong = {}) {\n  let related_url = currentSong.related_songs ?? \"\";\n  console.log({\n    related_url\n  });\n}"
+                "async function (currentSong = {}) {\n  let related_url = currentSong.related_songs ?? \"\";\n  console.log({\n    related_url\n  });\n  return fetch(related_url, {\n    \"headers\": {\n      \"accept\": \"application/json, text/plain, */*\",\n      \"Referer\": \"http://app.curator.atemkeng.eu/\",\n      \"Referrer-Policy\": \"strict-origin-when-cross-origin\"\n    },\n    \"body\": null,\n    \"method\": \"GET\"\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }
           ],
           [
+            {
+              "id": "Play_JSObject1.selectd_song_play",
+              "name": "JSObject1.selectd_song_play",
+              "collectionId": "Play_JSObject1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function (currentSong = {}) {\n  search_results_player.isVisible = true;\n  song_search_results.isVisible = false;\n  player_song.autoPlay;\n  JSObject1.get_related_songs(currentSong);\n  return currentSong;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Play_song_search_api",
               "name": "song_search_api",
