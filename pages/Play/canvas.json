@@ -52,7 +52,7 @@
               "showStepArrows": false,
               "isVisible": true,
               "version": 2,
-              "onFocus": "{{JSObject1.clear_search()}}",
+              "onFocus": "",
               "isLoading": false,
               "borderRadius": "0.375rem",
               "originalBottomRow": 15,
