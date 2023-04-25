@@ -44,6 +44,12 @@ export default {
 		let happy = currentItem.happy.toFixed(1) * 100 + "%"
 		let sad = currentItem.sad.toFixed(1) * 100 + "%"
 		let danceability = currentItem.danceability.toFixed(1) * 100 + "%"
+		let genre = 'not defined'
+		try{
+			genre = currentItem.genre
+     }catch(error){
+			 console.log(error)
+     }
 		let mood = ""
 		if (happy > sad) {
 			mood = "happy"
@@ -54,7 +60,8 @@ export default {
 		return {
 			mood,
 			energy,
-			danceability
+			danceability,
+			genre
 		}
 	},
 	
