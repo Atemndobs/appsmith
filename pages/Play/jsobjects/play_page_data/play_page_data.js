@@ -1,3 +1,4 @@
 export default {
-	related_songs : "dj_zinhle_indlovu_feat_loyisomp3"
+	'related_songs' : "dj_zinhle_indlovu_feat_loyisomp3",
+	'start_song' : ""
 }

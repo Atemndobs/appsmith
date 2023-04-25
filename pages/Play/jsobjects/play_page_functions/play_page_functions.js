@@ -10,6 +10,7 @@ export default {
 	
 	selectd_song_play (currentSong = {}) {
 
+		appsmith.store.start_song = currentSong;
 		search_results_player.isVisible = true;
 		song_search_results.isVisible = false;
 					
@@ -42,6 +43,7 @@ export default {
 	get_song_info (currentItem = {}) {
 		let happy = currentItem.happy.toFixed(1) * 100 + "%"
 		let sad = currentItem.sad.toFixed(1) * 100 + "%"
+		let danceability = currentItem.danceability.toFixed(1) * 100 + "%"
 		let mood = ""
 		if (happy > sad) {
 			mood = "happy"
@@ -51,7 +53,8 @@ export default {
 		let energy = currentItem.energy.toFixed(1) * 100 + "%"
 		return {
 			mood,
-			energy
+			energy,
+			danceability
 		}
 	},
 	

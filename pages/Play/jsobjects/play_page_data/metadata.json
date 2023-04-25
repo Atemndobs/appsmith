@@ -8,8 +8,12 @@
     "archivedActions": [],
     "variables": [
       {
-        "name": "related_songs",
+        "name": "'related_songs'",
         "value": "\"dj_zinhle_indlovu_feat_loyisomp3\""
+      },
+      {
+        "name": "'start_song'",
+        "value": "\"\""
       }
     ],
     "userPermissions": []
