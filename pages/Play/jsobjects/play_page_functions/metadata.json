@@ -8,8 +8,8 @@
     "archivedActions": [],
     "variables": [
       {
-        "name": "search_results_player",
-        "value": "{\n  'show': false,\n  'currentSong': {},\n  'search_limit': 3,\n  'search_hits': 0,\n  'match_limit': 3,\n  'related_songs': \"dj_zinhle_indlovu_feat_loyisomp3\"\n}"
+        "name": "play_page_init_data",
+        "value": "{\n  'show': false,\n  'currentSong': {},\n  'search_limit': 3,\n  'search_hits': 0,\n  'match_limit': 3,\n  'related_songs': 'my_waymp3'\n}"
       }
     ],
     "userPermissions": []

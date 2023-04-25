@@ -67,7 +67,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"q\":{{search.text}},\n \"attributesToHighlight\":[\"*\"],\n \"highlightPreTag\":\"__ais-highlight__\",\n \"highlightPostTag\":\"__/ais-highlight__\",\n \"limit\": {{play_page_functions.search_results_player.search_limit}}\n}",
+      "body": "{\n\t\"q\":{{search.text}},\n \"attributesToHighlight\":[\"*\"],\n \"highlightPreTag\":\"__ais-highlight__\",\n \"highlightPostTag\":\"__/ais-highlight__\",\n \"limit\": {{play_page_functions.play_page_init_data.search_limit}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -85,7 +85,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "play_page_functions.search_results_player.search_limit",
+      "play_page_functions.play_page_init_data.search_limit",
       "search.text"
     ],
     "userSetOnLoad": false,

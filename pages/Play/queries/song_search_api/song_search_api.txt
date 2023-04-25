@@ -3,5 +3,5 @@
  "attributesToHighlight":["*"],
  "highlightPreTag":"__ais-highlight__",
  "highlightPostTag":"__/ais-highlight__",
- "limit": {{play_page_functions.search_results_player.search_limit}}
+ "limit": {{play_page_functions.play_page_init_data.search_limit}}
 }

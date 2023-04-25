@@ -41,10 +41,10 @@
       "queryParameters": [
         {
           "key": "limit",
-          "value": "{{play_page_functions.search_results_player.match_limit}}"
+          "value": "{{play_page_functions.play_page_init_data.match_limit}}"
         }
       ],
-      "body": "{\n   \"slug\" : {{play_page_functions.search_results_player.related_songs}}\n}",
+      "body": "{\n   \"slug\" : {{appsmith.store.related_songs}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -70,8 +70,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "play_page_functions.search_results_player.match_limit",
-      "play_page_functions.search_results_player.related_songs"
+      "appsmith.store.related_songs",
+      "play_page_functions.play_page_init_data.match_limit"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
