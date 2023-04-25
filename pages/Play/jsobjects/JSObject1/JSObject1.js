@@ -7,15 +7,26 @@ export default {
 	},
 	
 	selectd_song_play (currentSong = {}) {
-		console.log(currentSong)
 		search_results_player.isVisible = true
 		song_search_results.isVisible = false
 		player_song.autoPlay
+		this.get_related_songs(currentSong)
 		return currentSong
 	},
 	async get_related_songs (currentSong = {}) {
 		let related_url = currentSong.related_songs ?? "";
 		console.log({ related_url });
+		
+		
+	return fetch( related_url, {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "Referer": "http://app.curator.atemkeng.eu/",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": null,
+  "method": "GET"
+		});
 	},
 	
 	search_song () {
