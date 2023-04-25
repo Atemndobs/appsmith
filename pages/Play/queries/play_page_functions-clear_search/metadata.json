@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "clear_search",
-    "fullyQualifiedName": "JSObject1.clear_search",
+    "fullyQualifiedName": "play_page_functions.clear_search",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Play",
-    "collectionId": "Play_JSObject1",
+    "collectionId": "Play_play_page_functions",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,7 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Play_JSObject1.clear_search",
+  "id": "Play_play_page_functions.clear_search",
   "deleted": false,
-  "gitSyncId": "64467d69ea2e4f6c16474cba_6446f851ea2e4f6c16474d30"
+  "gitSyncId": "64467d69ea2e4f6c16474cba_644766d4ea2e4f6c16474d59"
 }

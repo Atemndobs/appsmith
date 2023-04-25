@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "get_related_songs",
-    "fullyQualifiedName": "JSObject1.get_related_songs",
+    "name": "selectd_song_play",
+    "fullyQualifiedName": "play_page_functions.selectd_song_play",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Play",
-    "collectionId": "Play_JSObject1",
+    "collectionId": "Play_play_page_functions",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -27,7 +27,7 @@
       ],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Play_JSObject1.get_related_songs",
+  "id": "Play_play_page_functions.selectd_song_play",
   "deleted": false,
-  "gitSyncId": "64467d69ea2e4f6c16474cba_64469b6cea2e4f6c16474cdf"
+  "gitSyncId": "64467d69ea2e4f6c16474cba_644766d4ea2e4f6c16474d5b"
 }
