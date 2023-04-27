@@ -11,6 +11,7 @@ export default {
 	selectd_song_play (currentSong = {}) {
 
 		appsmith.store.start_song = currentSong;
+		appsmith.store.current_song = currentSong;
 		search_results_player.isVisible = true;
 		song_search_results.isVisible = false;
 					
@@ -20,23 +21,10 @@ export default {
 		get_song_matches.run();
 		player_song.autoPlay;
 		
-		console.log({
-			'currentSong_before_match_req' : currentSong,
-			'related_song_from_current' : currentSong.slug,
-			'related_song_url' : appsmith.store.related_songs
-		})
+		return currentSong
+	},
 	
-		
-		setTimeout(
-			() => {
-				console.log({'related_song_from_store' : appsmith.store.related_songs});
-				//get_song_matches.run();
-				console.log({'response_': get_song_matches.data()})
-			},
-			360
-		)
-
-		
+	related_song_play(currentSong) {
 		return currentSong
 	},
 	
