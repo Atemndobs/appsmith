@@ -788,7 +788,7 @@
                       "rightColumn": 60,
                       "widgetId": "r2aoq99lql",
                       "minWidth": 450,
-                      "onItemClick": "{{play_page_functions.related_song_play(currentItem)}}",
+                      "onItemClick": "{{play_page_functions.selectd_song_play(currentItem)}}",
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",
                       "mobileTopRow": 43,
@@ -832,7 +832,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Artist : {{appsmith.store.current_song.author}}\nTitle : {{song_search_results.selectedItem.author}}\nBPM : {{song_search_results.selectedItem.bpm}}\nGenre: {{song_search_results.selectedItem.genre[0]}}\nKey: {{song_search_results.selectedItem.key}} {{song_search_results.selectedItem.scale}}\nEnergy : {{play_page_functions.get_song_info(song_search_results.selectedItem).energy}}\nMood : {{play_page_functions.get_song_info(song_search_results.selectedItem).mood}} \nDanceability : {{play_page_functions.get_song_info(song_search_results.selectedItem).danceability}} ",
+                      "text": "Artist : {{song_search_results.selectedItem.author}}\nTitle : {{song_search_results.selectedItem.author}}\nBPM : {{song_search_results.selectedItem.bpm}}\nGenre: {{song_search_results.selectedItem.genre[0]}}\nKey: {{song_search_results.selectedItem.key}} {{song_search_results.selectedItem.scale}}\nEnergy : {{play_page_functions.get_song_info(song_search_results.selectedItem).energy}}\nMood : {{play_page_functions.get_song_info(song_search_results.selectedItem).mood}} \nDanceability : {{play_page_functions.get_song_info(song_search_results.selectedItem).danceability}} ",
                       "key": "qgj37atwrg",
                       "isDeprecated": false,
                       "rightColumn": 61,
@@ -1213,7 +1213,7 @@
               "borderRadius": "0px",
               "mobileLeftColumn": 4,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 141,
+              "originalBottomRow": 136,
               "minDynamicHeight": 10
             },
             {

@@ -10,6 +10,7 @@ export default {
 	
 	selectd_song_play (currentSong = {}) {
 
+		{{player_image.image= currentSong.image}} 
 		appsmith.store.start_song = currentSong;
 		appsmith.store.current_song = currentSong;
 		search_results_player.isVisible = true;
@@ -18,14 +19,19 @@ export default {
 		if(Object.keys(currentSong).length === 0 || currentSong.slug !== "undefined" ){
 				appsmith.store.related_songs = currentSong.slug
 		}
+		
+		
+		song_search_results.selectedItem.image = currentSong.image
+		console.log(playing_song_info.text)
+		
 		get_song_matches.run();
 		player_song.autoPlay;
 		
 		return currentSong
 	},
 	
-	related_song_play(currentSong) {
-		return currentSong
+	async related_song_play(currentSong) {
+		return this.selectd_song_play()
 	},
 	
 	get_song_info (currentItem = {}) {
