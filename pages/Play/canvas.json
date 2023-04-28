@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1360,
+          "bottomRow": 1380,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -246,7 +246,7 @@
                 "group"
               ],
               "topRow": 40,
-              "bottomRow": 136,
+              "bottomRow": 138,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -270,7 +270,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 960,
+                  "bottomRow": 980,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1028,7 +1028,7 @@
                         }
                       ],
                       "needsHeightForContent": true,
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "showInlineEditingOptionDropdown": true,
@@ -1066,7 +1066,7 @@
                       },
                       "borderRadius": "0px",
                       "columnUpdatedAt": 1682440283534,
-                      "originalBottomRow": 94,
+                      "originalBottomRow": 96,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -1080,7 +1080,7 @@
                       "dynamicPropertyPathList": [],
                       "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 94,
+                      "bottomRow": 96,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 119,
@@ -1155,7 +1155,7 @@
                       "key": "6zw1uh2pgl",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 60,
+                      "rightColumn": 61,
                       "textSize": "0.875rem",
                       "widgetId": "ed61h0hcms",
                       "minWidth": 450,
@@ -1213,7 +1213,7 @@
               "borderRadius": "0px",
               "mobileLeftColumn": 4,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 136,
+              "originalBottomRow": 138,
               "minDynamicHeight": 10
             },
             {
@@ -1222,7 +1222,7 @@
               "isCanvas": true,
               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
               "topRow": 18,
-              "pageSize": -1,
+              "pageSize": 3,
               "type": "LIST_WIDGET_V2",
               "itemSpacing": 8,
               "topRowBeforeCollapse": 18,
