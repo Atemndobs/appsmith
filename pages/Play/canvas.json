@@ -212,7 +212,7 @@
               "isDisabled": false,
               "key": "fdax67puay",
               "isDeprecated": false,
-              "rightColumn": 48,
+              "rightColumn": 54,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "7pve76udxu",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
