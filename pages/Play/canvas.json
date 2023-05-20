@@ -2002,7 +2002,7 @@
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "label": "BPM -  Exact vs Range",
-                      "defaultSwitchState": true,
+                      "defaultSwitchState": false,
                       "version": 1,
                       "parentId": "uusi5subws",
                       "renderMode": "CANVAS",
