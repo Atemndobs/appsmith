@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_song_matches",
+    "name": "set_match_criteria",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/songs/match",
+      "path": "/api/songs/match/criteria/set",
       "headers": [
         {
           "key": "Content-Type",
@@ -38,13 +38,8 @@
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [
-        {
-          "key": "limit",
-          "value": "{{play_page_functions.play_page_init_data.match_limit}}"
-        }
-      ],
-      "body": "{\n  \"slug\" : {{appsmith.store.related_songs}},\n  \"bpm\": {{appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value }},\n  \"bpmRange\": \"100-105\",\n  \"happy\": 70,\n  \"sad\": 40,\n  \"mood\": \"sad\",\n  \"energy\": \"80\",\n  \"key\": \"E major\",\n  \"scale\": \"major\",\n  \"danceability\" : 90\n}",
+      "queryParameters": [],
+      "body": "{\n  \"slug\" : {{appsmith.store.related_songs}},\n  \"bpm\": {{appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value }},\n  \"bpmRange\": {{appsmith.store.set_bpm_range}},\n  \"happy\": {{appsmith.store.happy}},\n  \"sad\": {{appsmith.store.sad}},\n  \"mood\": {{appsmith.store.mood}},\n  \"energy\": {{appsmith.store.energy}},\n  \"key\": \"E major\",\n  \"scale\": \"major\",\n\t\"genre\":{{appsmith.store.genre}},\n  \"danceability\" : 90,\n\t\"aggressiveness\" : 50\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -57,13 +52,10 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
-      },
-      {
-        "key": "queryParameters[0].value"
       }
     ],
     "isValid": true,
@@ -71,15 +63,20 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value ",
+      "appsmith.store.energy",
+      "appsmith.store.genre",
+      "appsmith.store.happy",
+      "appsmith.store.mood",
       "appsmith.store.related_songs",
-      "play_page_functions.play_page_init_data.match_limit"
+      "appsmith.store.sad",
+      "appsmith.store.set_bpm_range"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Play_get_song_matches",
+  "id": "Play_set_match_criteria",
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_64478a43ea2e4f6c16474d96"
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_6468ca73ea2e4f6c16474eb4"
 }
