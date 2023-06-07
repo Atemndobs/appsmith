@@ -1,0 +1,3 @@
+{
+    "url" : {{appsmith.store.sc_url}}
+}
