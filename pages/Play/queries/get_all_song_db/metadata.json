@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Query2",
+    "name": "get_all_song_db",
     "datasource": {
       "name": "Maria-DB",
       "pluginId": "mysql-plugin",
@@ -33,9 +33,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-10T21:55:45Z"
   },
-  "id": "Play_Query2",
+  "id": "Play_get_all_song_db",
   "deleted": false,
   "gitSyncId": "644620a7ea2e4f6c16474ca3_6484f160fb850e72fd5f77b0"
 }

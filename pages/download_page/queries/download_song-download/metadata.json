@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "setMatchCriteri",
-    "fullyQualifiedName": "JSObject1.setMatchCriteri",
+    "name": "download",
+    "fullyQualifiedName": "download_song.download",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,15 +13,19 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Settings",
-    "collectionId": "Settings_download_song",
+    "pageId": "download_page",
+    "collectionId": "download_page_download_song",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
-      "isAsync": false
+      "jsArguments": [
+        {
+          "name": "dl_source"
+        }
+      ],
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -37,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Settings_JSObject1.setMatchCriteri",
+  "id": "download_page_download_song.download",
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_6468c2cfea2e4f6c16474e98"
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_646e750dea2e4f6c16474ee7"
 }

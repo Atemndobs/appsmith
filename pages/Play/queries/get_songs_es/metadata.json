@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "elasticsearch-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "get_songs_es",
     "datasource": {
       "name": "Search Meilisearch",
       "pluginId": "elasticsearch-plugin",
@@ -17,9 +17,9 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "songs\n",
+      "path": "songs",
       "encodeParamsToggle": true,
-      "httpMethod": "POST",
+      "httpMethod": "GET",
       "selfReferencingDataPaths": []
     },
     "executeOnLoad": false,
@@ -31,9 +31,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-06-10T21:51:27Z"
   },
-  "id": "Play_Query1",
+  "id": "Play_get_songs_es",
   "deleted": false,
   "gitSyncId": "644620a7ea2e4f6c16474ca3_6484f05efb850e72fd5f77aa"
 }

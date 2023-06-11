@@ -1,0 +1,13 @@
+UPDATE songs SET
+		title = '{{update_form.fieldState.title.isVisible ? update_form.formData.title : update_form.sourceData.title}}',
+		author = '{{update_form.fieldState.author.isVisible ? update_form.formData.author : update_form.sourceData.author}}',
+    link = '{{update_form.fieldState.link.isVisible ? update_form.formData.link : update_form.sourceData.link}}',
+		source = '{{update_form.fieldState.source.isVisible ? update_form.formData.source : update_form.sourceData.source}}',
+		key = '{{update_form.fieldState.key.isVisible ? update_form.formData.key : update_form.sourceData.key}}',
+		scale = '{{update_form.fieldState.scale.isVisible ? update_form.formData.scale : update_form.sourceData.scale}}',
+		bpm = '{{update_form.fieldState.bpm.isVisible ? update_form.formData.bpm : update_form.sourceData.bpm}}',
+		duration = '{{update_form.fieldState.duration.isVisible ? update_form.formData.duration : update_form.sourceData.duration}}',
+		danceability = '{{update_form.fieldState.danceability.isVisible ? update_form.formData.danceability : update_form.sourceData.danceability}}',
+		happy = '{{update_form.fieldState.happy.isVisible ? update_form.formData.happy : update_form.sourceData.happy}}',
+		sad = '{{update_form.fieldState.sad.isVisible ? update_form.formData.sad : update_form.sourceData.sad}}'
+  WHERE id = {{data_table.selectedRow.id}};

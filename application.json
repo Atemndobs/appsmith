@@ -5,7 +5,15 @@
       "isDefault": true
     },
     {
-      "id": "Settings",
+      "id": "download_page",
+      "isDefault": false
+    },
+    {
+      "id": "Songs",
+      "isDefault": false
+    },
+    {
+      "id": "search_page",
       "isDefault": false
     }
   ],
@@ -13,8 +21,11 @@
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "AUTO"
+    },
     "navigationSetting": {
-      "showNavbar": true,
+      "showNavbar": false,
       "orientation": "top",
       "navStyle": "stacked",
       "position": "static",
@@ -25,17 +36,20 @@
       "showSignIn": true
     }
   },
-  "color": "#F4FFDE",
-  "icon": "bird",
+  "color": "#CCCCCC",
+  "icon": "sunflower",
   "unpublishedAppLayout": {
     "type": "MOBILE"
   },
   "publishedAppLayout": {
-    "type": "MOBILE"
+    "type": "DESKTOP"
   },
   "unpublishedCustomJSLibs": [
     {
-      "uidString": "cookie_https://cdn.jsdelivr.net/npm/cookiejs@2.1.2/dist/cookie.min.js"
+      "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
+    },
+    {
+      "uidString": "dcodeIO_https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"
     }
   ],
   "publishedCustomJSLibs": [],

@@ -1,0 +1,26 @@
+INSERT INTO songs (
+	title,
+	author,
+	link,
+	source,
+	key,
+	scale,
+	bpm,
+	duration,
+	danceability,
+	happy,
+	sad
+)
+VALUES (
+	'{{insert_form.formData.title}}',
+	'{{insert_form.formData.author}}',
+	'{{insert_form.formData.link}}',
+	'{{insert_form.formData.source}}',
+	'{{insert_form.formData.key}}',
+	'{{insert_form.formData.scale}}',
+	'{{insert_form.formData.bpm}}',
+	'{{insert_form.formData.duration}}',
+	'{{insert_form.formData.danceability}}',
+	'{{insert_form.formData.happy}}',
+	'{{insert_form.formData.sad}}'
+);
