@@ -12,7 +12,7 @@ export default {
 					download_spotify.run()
 					response =  download_spotify.data
 					get_result_button.isVisible = true
-					get_result_button.text  = download_spotify.data.data[3]
+					get_result_button.text  = download_spotify.data.data[7]
 				}
 				if(dl_source == 'sc') {
 					appsmith.store.sc_url = link.inputText
