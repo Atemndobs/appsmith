@@ -23,9 +23,8 @@ export default {
 						download_result_link.isVisible = true
 					}
 					response =  download_sc.data
-					source.isVisible = true
 				}
-			console.log({'Sore Values' : appsmith.store})
+			console.log({'Store Values' : appsmith.store})
 				
 	  return response
 	}

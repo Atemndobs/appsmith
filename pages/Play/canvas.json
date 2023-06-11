@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -2718,7 +2718,7 @@
               "borderRadius": "0px",
               "mobileLeftColumn": 11,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 191,
+              "originalBottomRow": 197,
               "minDynamicHeight": 10
             },
             {
@@ -2783,6 +2783,18 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Play_get_song_matches",
+              "name": "get_song_matches",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "play_page_functions.play_page_init_data.match_limit",
+                "appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value ",
+                "appsmith.store.related_songs"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Play_init_settings.setMatchCriterion",
               "name": "init_settings.setMatchCriterion",
               "collectionId": "Play_init_settings",
@@ -2806,18 +2818,6 @@
             }
           ],
           [
-            {
-              "id": "Play_get_song_matches",
-              "name": "get_song_matches",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "play_page_functions.play_page_init_data.match_limit",
-                "appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value ",
-                "appsmith.store.related_songs"
-              ],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "Play_song_search_api",
               "name": "song_search_api",

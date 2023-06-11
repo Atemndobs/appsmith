@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 820,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -91,12 +91,15 @@
               "labelWidth": "8",
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
-              "defaultOptionValue": "GREEN",
+              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `spotify`))(source.options, source.serverSideFiltering) }}",
               "animateLoading": false,
               "leftColumn": 5,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "defaultOptionValue"
                 }
               ],
               "options": "[\n  {\n    \"label\": \"spotify\",\n    \"value\": \"spotify\"\n  },\n  {\n    \"label\": \"soundcloud\",\n    \"value\": \"sc\"\n  }\n]",
@@ -106,7 +109,7 @@
               "isRequired": false,
               "dynamicHeight": "FIXED",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": false,
+              "isVisible": true,
               "version": 1,
               "isLoading": false,
               "borderRadius": "0px",
