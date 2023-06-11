@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1274,
+          "bottomRow": 900,
           "containerStyle": "none",
           "snapRows": 74,
           "parentRowSpace": 1,
@@ -29,331 +29,11 @@
           "children": [
             {
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-              "mobileBottomRow": 18,
-              "widgetName": "ms_container",
               "borderColor": "#E0DEDE",
-              "isCanvas": true,
-              "displayName": "Container",
-              "iconSVG": "/static/media/icon.c47c069fe28eb6d2d27f0fffdc053074.svg",
-              "searchTags": [
-                "div",
-                "parent",
-                "group"
-              ],
+              "widthInPercentage": 0.9927927927927928,
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
               "topRow": 0,
-              "bottomRow": 5,
-              "parentRowSpace": 10,
-              "type": "CONTAINER_WIDGET",
-              "hideCard": false,
-              "shouldScrollContents": true,
-              "mobileRightColumn": 64,
-              "animateLoading": true,
-              "parentColumnSpace": 17.28125,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 0,
-              "dynamicBindingPathList": [],
-              "children": [
-                {
-                  "mobileBottomRow": 100,
-                  "widgetName": "Canvas1",
-                  "displayName": "Canvas",
-                  "topRow": 0,
-                  "bottomRow": 50,
-                  "parentRowSpace": 1,
-                  "type": "CANVAS_WIDGET",
-                  "canExtend": false,
-                  "hideCard": true,
-                  "minHeight": 100,
-                  "mobileRightColumn": 64,
-                  "parentColumnSpace": 1,
-                  "leftColumn": 0,
-                  "dynamicBindingPathList": [],
-                  "children": [],
-                  "key": "if6n3riu7r",
-                  "isDeprecated": false,
-                  "rightColumn": 64,
-                  "detachFromLayout": true,
-                  "widgetId": "gbw3b42sn1",
-                  "containerStyle": "none",
-                  "minWidth": 450,
-                  "isVisible": true,
-                  "version": 1,
-                  "parentId": "ouv5zsxmac",
-                  "renderMode": "CANVAS",
-                  "isLoading": false,
-                  "mobileTopRow": 0,
-                  "responsiveBehavior": "fill",
-                  "mobileLeftColumn": 0,
-                  "flexLayers": []
-                }
-              ],
-              "borderWidth": "1",
-              "flexVerticalAlignment": "start",
-              "key": "lusr2zrpxh",
-              "backgroundColor": "#FFFFFF",
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "ouv5zsxmac",
-              "containerStyle": "card",
-              "minWidth": 450,
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "mobileTopRow": 8,
-              "responsiveBehavior": "fill",
-              "borderRadius": "0px",
-              "mobileLeftColumn": 0,
-              "maxDynamicHeight": 9000,
-              "alignment": "start",
-              "minDynamicHeight": 10
-            },
-            {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-              "borderColor": "#E0DEDE",
-              "widthInPercentage": 0.9927927927927928,
-              "isVisibleDownload": true,
-              "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
-              "topRow": 6.2,
-              "isSortable": true,
-              "type": "TABLE_WIDGET_V2",
-              "inlineEditingSaveOption": "ROW_LEVEL",
-              "animateLoading": true,
-              "dynamicBindingPathList": [
-                {
-                  "key": "tableData"
-                },
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "primaryColumns.uid.computedValue"
-                },
-                {
-                  "key": "primaryColumns.createdAt.computedValue"
-                },
-                {
-                  "key": "primaryColumns.updatedAt.computedValue"
-                },
-                {
-                  "key": "primaryColumns.primaryKey.computedValue"
-                }
-              ],
-              "needsHeightForContent": true,
-              "leftColumn": 0,
-              "delimiter": ",",
-              "defaultSelectedRowIndex": 0,
-              "showInlineEditingOptionDropdown": true,
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
-              "isVisible": true,
-              "enableClientSideSearch": true,
-              "version": 1,
-              "totalRecordsCount": 0,
-              "isLoading": false,
-              "childStylesheet": {
-                "button": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "menuButton": {
-                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "iconButton": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "editActions": {
-                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                }
-              },
-              "borderRadius": "0px",
-              "columnUpdatedAt": 1686511564709,
-              "defaultSelectedRowIndices": [
-                0
-              ],
-              "alignment": "start",
-              "mobileBottomRow": 34,
-              "widgetName": "all_indices_ms",
-              "defaultPageSize": 0,
-              "columnOrder": [
-                "uid",
-                "createdAt",
-                "updatedAt",
-                "primaryKey"
-              ],
-              "dynamicPropertyPathList": [],
-              "displayName": "Table",
-              "bottomRow": 36.2,
-              "columnWidthMap": {
-                "task": 245,
-                "step": 70,
-                "status": 85,
-                "primaryKey": 260
-              },
-              "parentRowSpace": 10,
-              "hideCard": false,
-              "mobileRightColumn": 64,
-              "dynamicTriggerPathList": [],
-              "borderWidth": "1",
-              "primaryColumns": {
-                "uid": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "uid",
-                  "id": "uid",
-                  "alias": "uid",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "uid",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{all_indices_ms.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uid\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "createdAt": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "createdAt",
-                  "id": "createdAt",
-                  "alias": "createdAt",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "createdAt",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{all_indices_ms.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"createdAt\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "updatedAt": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "updatedAt",
-                  "id": "updatedAt",
-                  "alias": "updatedAt",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "updatedAt",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{all_indices_ms.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"updatedAt\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "primaryKey": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "primaryKey",
-                  "id": "primaryKey",
-                  "alias": "primaryKey",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "primaryKey",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{all_indices_ms.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"primaryKey\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                }
-              },
-              "key": "wmw6na05rg",
-              "canFreezeColumn": true,
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "textSize": "0.875rem",
-              "widgetId": "jyprh5ljm4",
-              "minWidth": 450,
-              "tableData": "{{all_indices.data.results}}",
-              "label": "Data",
-              "searchKey": "",
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "mobileTopRow": 6,
-              "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
-              "responsiveBehavior": "fill",
-              "mobileLeftColumn": 0,
-              "isVisiblePagination": true,
-              "verticalAlignment": "CENTER"
-            },
-            {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-              "borderColor": "#E0DEDE",
-              "widthInPercentage": 0.9927927927927928,
-              "isVisibleDownload": true,
-              "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
-              "topRow": 37.400000000000006,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -494,7 +174,7 @@
               ],
               "alignment": "start",
               "mobileBottomRow": 65.2,
-              "widgetName": "Table1",
+              "widgetName": "all_congs_ms_table",
               "defaultPageSize": 0,
               "columnOrder": [
                 "status",
@@ -529,7 +209,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 127.4,
+              "bottomRow": 90,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -559,7 +239,7 @@
                   "isCellEditable": false,
                   "isDerived": false,
                   "label": "status",
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
                   "validation": {},
                   "sticky": "",
                   "labelColor": "#FFFFFF"
@@ -589,7 +269,7 @@
                   "label": "title",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -619,7 +299,7 @@
                   "label": "author",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"author\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"author\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -649,7 +329,7 @@
                   "label": "bpm",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bpm\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bpm\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -679,7 +359,7 @@
                   "label": "key",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"key\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"key\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -709,7 +389,7 @@
                   "label": "scale",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"scale\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"scale\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -739,7 +419,7 @@
                   "label": "energy",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"energy\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"energy\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -769,7 +449,7 @@
                   "label": "happy",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"happy\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"happy\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -799,7 +479,7 @@
                   "label": "sad",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sad\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sad\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -829,7 +509,7 @@
                   "label": "analyzed",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"analyzed\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"analyzed\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -859,7 +539,7 @@
                   "label": "aggressiveness",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"aggressiveness\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"aggressiveness\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -889,7 +569,7 @@
                   "label": "danceability",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"danceability\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"danceability\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -919,7 +599,7 @@
                   "label": "relaxed",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"relaxed\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"relaxed\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -949,7 +629,7 @@
                   "label": "played",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"played\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"played\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -979,7 +659,7 @@
                   "label": "path",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"path\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"path\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1009,7 +689,7 @@
                   "label": "slug",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"slug\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"slug\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1039,7 +719,7 @@
                   "label": "image",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"image\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"image\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1069,7 +749,7 @@
                   "label": "related_songs",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"related_songs\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"related_songs\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1099,7 +779,7 @@
                   "label": "id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1129,7 +809,7 @@
                   "label": "link",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"link\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"link\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1159,7 +839,7 @@
                   "label": "source",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1189,7 +869,7 @@
                   "label": "duration",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"duration\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"duration\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1219,7 +899,7 @@
                   "label": "comment",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"comment\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"comment\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1249,7 +929,7 @@
                   "label": "extension",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"extension\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"extension\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1279,7 +959,7 @@
                   "label": "genre",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"genre\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"genre\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1309,7 +989,7 @@
                   "label": "created_at",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1339,7 +1019,7 @@
                   "label": "updated_at",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"updated_at\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"updated_at\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1369,7 +1049,7 @@
                   "label": "classification_properties",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"classification_properties\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"classification_properties\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1399,7 +1079,7 @@
                   "label": "run_analysis",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"run_analysis\"]))}}",
+                  "computedValue": "{{all_congs_ms_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"run_analysis\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1431,22 +1111,6 @@
             {
               "children": [
                 {
-                  "id": "ouv5zsxmac",
-                  "align": "start"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
-                  "id": "jyprh5ljm4",
-                  "align": "start"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
                   "id": "wxz79nrmun",
                   "align": "start"
                 }
@@ -1456,14 +1120,6 @@
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "search_page_all_indices",
-              "name": "all_indices",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "search_page_get_songs",
               "name": "get_songs",
