@@ -6,6 +6,7 @@
       {
         "viewMode": false,
         "dsl": {
+          "mobileBottomRow": 760,
           "widgetName": "MainContainer",
           "backgroundColor": "none",
           "rightColumn": 1224,
@@ -21,16 +22,15 @@
           "canExtend": true,
           "version": 79,
           "minHeight": 760,
-          "useAutoLayout": true,
+          "mobileTopRow": 0,
+          "useAutoLayout": false,
           "parentColumnSpace": 1,
-          "responsiveBehavior": "fill",
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
               "borderColor": "#E0DEDE",
-              "widthInPercentage": 0.9927927927927928,
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
               "topRow": 0,
@@ -172,8 +172,6 @@
               "defaultSelectedRowIndices": [
                 0
               ],
-              "alignment": "start",
-              "mobileBottomRow": 65.2,
               "widgetName": "all_congs_ms_table",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -209,7 +207,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 90,
+              "bottomRow": 30,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -217,7 +215,6 @@
               },
               "parentRowSpace": 10,
               "hideCard": false,
-              "mobileRightColumn": 64,
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
@@ -1097,26 +1094,13 @@
               "searchKey": "",
               "parentId": "0",
               "renderMode": "CANVAS",
-              "mobileTopRow": 37.2,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
-              "responsiveBehavior": "fill",
-              "mobileLeftColumn": 0,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             }
           ],
-          "positioning": "vertical",
-          "flexLayers": [
-            {
-              "children": [
-                {
-                  "id": "wxz79nrmun",
-                  "align": "start"
-                }
-              ]
-            }
-          ]
+          "positioning": "fixed"
         },
         "layoutOnLoadActions": [
           [

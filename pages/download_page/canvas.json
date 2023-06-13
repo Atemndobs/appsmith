@@ -6,6 +6,7 @@
       {
         "viewMode": false,
         "dsl": {
+          "mobileBottomRow": 820,
           "widgetName": "MainContainer",
           "backgroundColor": "none",
           "rightColumn": 1224,
@@ -21,14 +22,13 @@
           "canExtend": true,
           "version": 79,
           "minHeight": 820,
-          "useAutoLayout": true,
+          "mobileTopRow": 0,
+          "useAutoLayout": false,
           "parentColumnSpace": 1,
-          "responsiveBehavior": "fill",
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
-              "mobileBottomRow": 8,
               "widgetName": "download_songs",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -42,7 +42,6 @@
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
-              "mobileRightColumn": 22,
               "animateLoading": true,
               "overflow": "NONE",
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
@@ -64,7 +63,6 @@
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
               "text": "Download From Link",
               "key": "13jcuz2otp",
-              "flexVerticalAlignment": "end",
               "isDeprecated": false,
               "rightColumn": 64,
               "textAlign": "LEFT",
@@ -78,25 +76,33 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 4,
-              "responsiveBehavior": "fill",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "mobileLeftColumn": 6,
               "maxDynamicHeight": 9000,
               "fontSize": "1rem",
-              "alignment": "center",
               "minDynamicHeight": 4
             },
             {
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "widgetName": "source",
+              "isFilterable": true,
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "displayName": "Select",
               "labelText": "source",
-              "topRow": 5.2,
+              "topRow": 4.8,
+              "searchTags": [
+                "dropdown"
+              ],
+              "bottomRow": 11.8,
+              "parentRowSpace": 10,
               "labelWidth": "8",
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
+              "hideCard": false,
+              "shouldScrollContents": true,
               "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `spotify`))(source.options, source.serverSideFiltering) }}",
               "animateLoading": false,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
@@ -106,57 +112,61 @@
                   "key": "defaultOptionValue"
                 }
               ],
+              "labelPosition": "Top",
               "options": "[\n  {\n    \"label\": \"spotify\",\n    \"value\": \"spotify\"\n  },\n  {\n    \"label\": \"soundcloud\",\n    \"value\": \"sc\"\n  }\n]",
               "labelStyle": "BOLD",
               "placeholderText": "Select Source ",
               "isDisabled": false,
-              "flexVerticalAlignment": "end",
-              "isRequired": false,
-              "dynamicHeight": "FIXED",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "version": 1,
-              "isLoading": false,
-              "borderRadius": "0px",
-              "alignment": "center",
-              "mobileBottomRow": 18,
-              "widgetName": "source",
-              "isFilterable": true,
-              "displayName": "Select",
-              "searchTags": [
-                "dropdown"
-              ],
-              "bottomRow": 11.7984375,
-              "parentRowSpace": 10,
-              "hideCard": false,
-              "mobileRightColumn": 28,
-              "shouldScrollContents": true,
-              "parentColumnSpace": 6.84375,
-              "dynamicTriggerPathList": [],
-              "labelPosition": "Top",
               "key": "mnbvtv99fj",
               "labelTextSize": "0.875rem",
+              "isRequired": false,
               "isDeprecated": false,
               "rightColumn": 64,
+              "dynamicHeight": "FIXED",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "widgetId": "siz6sp7wr3",
               "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
               "parentId": "0",
+              "isLoading": false,
               "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "mobileTopRow": 11,
-              "responsiveBehavior": "fill",
-              "mobileLeftColumn": 8,
+              "borderRadius": "0px",
               "maxDynamicHeight": 8,
               "minDynamicHeight": 4
             },
             {
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "widgetName": "link",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "onSubmit": "{{appsmith.store.spotify_url = link.inputText}}",
-              "topRow": 12.998437500000001,
+              "displayName": "Input",
+              "topRow": 12.600000000000001,
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "bottomRow": 19.6,
+              "parentRowSpace": 10,
               "labelWidth": 5,
+              "autoFocus": false,
               "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
               "animateLoading": true,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
               "resetOnSubmit": true,
               "leftColumn": 0,
               "dynamicBindingPathList": [
@@ -170,59 +180,29 @@
                   "key": "label"
                 }
               ],
+              "labelPosition": "Top",
               "labelStyle": "BOLD",
               "inputType": "MULTI_LINE_TEXT",
               "placeholderText": "Paste {{source.selectedOptionLabel}} link here",
               "isDisabled": false,
-              "flexVerticalAlignment": "end",
-              "isRequired": false,
-              "dynamicHeight": "FIXED",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": false,
-              "isVisible": true,
-              "version": 2,
-              "isLoading": false,
-              "borderRadius": "0px",
-              "alignment": "center",
-              "mobileBottomRow": 21,
-              "widgetName": "link",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "onSubmit"
-                }
-              ],
-              "displayName": "Input",
-              "searchTags": [
-                "form",
-                "text input",
-                "number",
-                "textarea"
-              ],
-              "bottomRow": 24.9984375,
-              "parentRowSpace": 10,
-              "autoFocus": false,
-              "hideCard": false,
-              "mobileRightColumn": 25,
-              "parentColumnSpace": 6.84375,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onSubmit"
-                }
-              ],
-              "labelPosition": "Top",
               "key": "ybq5fhw9lg",
               "labelTextSize": "0.875rem",
+              "isRequired": false,
               "isDeprecated": false,
               "rightColumn": 64,
+              "dynamicHeight": "FIXED",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "widgetId": "6feiezmsnq",
+              "showStepArrows": false,
               "minWidth": 450,
+              "isVisible": true,
               "label": "{{source.selectedOptionLabel}} link ",
+              "version": 2,
               "parentId": "0",
+              "isLoading": false,
               "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "mobileTopRow": 14,
-              "responsiveBehavior": "fill",
-              "mobileLeftColumn": 5,
+              "borderRadius": "0px",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
               "defaultText": "",
@@ -231,7 +211,6 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-              "mobileBottomRow": 38,
               "widgetName": "submit_download_button",
               "onClick": "{{download_song.download(source.selectedOptionValue)}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -246,12 +225,11 @@
                 "click",
                 "submit"
               ],
-              "topRow": 26.1984375,
-              "bottomRow": 30.196875000000002,
+              "topRow": 20.400000000000002,
+              "bottomRow": 24.400000000000002,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
-              "mobileRightColumn": 21,
               "animateLoading": true,
               "parentColumnSpace": 6.84375,
               "dynamicTriggerPathList": [
@@ -259,7 +237,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 28.515426497277673,
+              "leftColumn": 23,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -268,9 +246,8 @@
               "text": "Download",
               "isDisabled": false,
               "key": "sme7cysevj",
-              "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 35.48457350272233,
+              "rightColumn": 40,
               "isDefaultClickDisabled": true,
               "widgetId": "rpoxlqul0c",
               "minWidth": 120,
@@ -280,78 +257,66 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 34,
-              "responsiveBehavior": "hug",
               "disabledWhenInvalid": false,
               "borderRadius": "0px",
-              "mobileLeftColumn": 5,
               "buttonVariant": "PRIMARY",
-              "placement": "CENTER",
-              "alignment": "center"
+              "placement": "CENTER"
             },
             {
               "resetFormOnClick": false,
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
               "onClick": "",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "topRow": 31.396875,
-              "type": "BUTTON_WIDGET",
-              "topRowBeforeCollapse": 32,
-              "animateLoading": true,
-              "leftColumn": 28.515426497277673,
-              "dynamicBindingPathList": [],
-              "text": "get Song",
-              "isDisabled": false,
-              "flexVerticalAlignment": "end",
-              "isDefaultClickDisabled": true,
-              "iconName": "download",
-              "bottomRowBeforeCollapse": 36,
-              "isVisible": false,
-              "version": 1,
-              "isLoading": false,
-              "disabledWhenInvalid": false,
-              "borderRadius": "0px",
-              "originalBottomRow": 32,
-              "placement": "CENTER",
-              "alignment": "center",
-              "mobileBottomRow": 46,
               "widgetName": "get_result_button",
               "buttonColor": "#a855f7",
               "dynamicPropertyPathList": [],
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "displayName": "Button",
+              "topRow": 25.200000000000003,
               "searchTags": [
                 "click",
                 "submit"
               ],
-              "bottomRow": 35.39531250000001,
+              "bottomRow": 29.200000000000003,
               "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
               "hideCard": false,
-              "mobileRightColumn": 22,
+              "topRowBeforeCollapse": 32,
+              "animateLoading": true,
               "parentColumnSpace": 6.84375,
               "dynamicTriggerPathList": [
                 {
                   "key": "onClick"
                 }
               ],
+              "leftColumn": 23,
+              "dynamicBindingPathList": [],
+              "text": "get Song",
+              "isDisabled": false,
               "key": "sme7cysevj",
               "isDeprecated": false,
-              "rightColumn": 35.48457350272233,
+              "rightColumn": 40,
+              "isDefaultClickDisabled": true,
+              "iconName": "download",
               "widgetId": "ebsh5ub2kq",
+              "bottomRowBeforeCollapse": 36,
               "minWidth": 120,
+              "isVisible": false,
+              "version": 1,
               "recaptchaType": "V3",
               "parentId": "0",
+              "isLoading": false,
               "renderMode": "CANVAS",
-              "mobileTopRow": 42,
-              "responsiveBehavior": "hug",
               "originalTopRow": 32,
-              "mobileLeftColumn": 6,
+              "disabledWhenInvalid": false,
+              "borderRadius": "0px",
+              "originalBottomRow": 32,
               "buttonVariant": "PRIMARY",
-              "iconAlign": "left"
+              "iconAlign": "left",
+              "placement": "CENTER"
             },
             {
               "resetFormOnClick": false,
               "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-              "mobileBottomRow": 40,
               "widgetName": "download_result_link",
               "buttonColor": "#18181b",
               "displayName": "Button",
@@ -360,25 +325,23 @@
                 "click",
                 "submit"
               ],
-              "topRow": 36.59531250000001,
-              "bottomRow": 41.14843750000002,
+              "topRow": 30.000000000000004,
+              "bottomRow": 34,
               "tooltip": "Download Song Now",
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
-              "mobileRightColumn": 21,
               "topRowBeforeCollapse": 36,
               "animateLoading": true,
               "parentColumnSpace": 6.84375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 28.515426497277673,
+              "leftColumn": 23,
               "dynamicBindingPathList": [],
               "text": "",
               "isDisabled": false,
               "key": "ubvsq3ekgi",
-              "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 35.48457350272233,
+              "rightColumn": 40,
               "isDefaultClickDisabled": true,
               "widgetId": "8fw4jfar39",
               "bottomRowBeforeCollapse": 40,
@@ -389,23 +352,17 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 36,
-              "responsiveBehavior": "hug",
               "originalTopRow": 32,
               "disabledWhenInvalid": false,
               "borderRadius": "0.375rem",
-              "mobileLeftColumn": 5,
               "originalBottomRow": 32,
               "buttonVariant": "PRIMARY",
-              "placement": "CENTER",
-              "alignment": "center"
+              "placement": "CENTER"
             },
             {
               "mobileWidthInPercentage": 0.37265625,
               "boxShadow": "none",
-              "mobileBottomRow": 67,
               "widgetName": "Modal1",
-              "widthInPercentage": 0.37265625,
               "isCanvas": true,
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
@@ -414,13 +371,12 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 42.348437500000024,
-              "bottomRow": 53.54843750000003,
+              "topRow": 34.8,
+              "bottomRow": 50.4,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
-              "mobileRightColumn": 37,
               "animateLoading": true,
               "parentColumnSpace": 6.84375,
               "leftColumn": 20,
@@ -431,7 +387,7 @@
               ],
               "children": [
                 {
-                  "mobileBottomRow": 240,
+                  "mobileBottomRow": 156,
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -443,13 +399,12 @@
                   "shouldScrollContents": false,
                   "minHeight": 110,
                   "mobileRightColumn": 164.25,
-                  "useAutoLayout": true,
+                  "useAutoLayout": false,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "mobileBottomRow": 5,
                       "widgetName": "Text1",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -462,7 +417,6 @@
                       "bottomRow": 4,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "mobileRightColumn": 41,
                       "animateLoading": true,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
@@ -482,9 +436,8 @@
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "text": "Modal Title",
                       "key": "j2zntxcp3g",
-                      "flexVerticalAlignment": "end",
                       "isDeprecated": false,
-                      "rightColumn": 58,
+                      "rightColumn": 64,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "nx3ocu9him",
@@ -496,18 +449,13 @@
                       "parentId": "sgax2mup3v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 1,
-                      "responsiveBehavior": "fill",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "mobileLeftColumn": 1,
                       "maxDynamicHeight": 9000,
                       "fontSize": "1.25rem",
-                      "alignment": "start",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
-                      "mobileBottomRow": 4,
                       "widgetName": "IconButton1",
                       "onClick": "{{closeModal('Modal1')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -517,13 +465,12 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 0,
-                      "bottomRow": 4,
+                      "topRow": 4.8,
+                      "bottomRow": 8.8,
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
-                      "mobileRightColumn": 64,
                       "animateLoading": true,
-                      "leftColumn": 58,
+                      "leftColumn": 57,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -535,7 +482,6 @@
                       "iconSize": 24,
                       "isDisabled": false,
                       "key": "w3byijijmd",
-                      "flexVerticalAlignment": "end",
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "iconName": "cross",
@@ -546,17 +492,12 @@
                       "parentId": "sgax2mup3v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 0,
-                      "responsiveBehavior": "hug",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "mobileLeftColumn": 58,
-                      "buttonVariant": "TERTIARY",
-                      "alignment": "end"
+                      "buttonVariant": "TERTIARY"
                     },
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "mobileBottomRow": 22,
                       "widgetName": "Button1",
                       "onClick": "{{closeModal('Modal1')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -566,13 +507,12 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 5.2,
-                      "bottomRow": 9.2,
+                      "topRow": 9.600000000000001,
+                      "bottomRow": 13.600000000000001,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
-                      "mobileRightColumn": 47,
                       "animateLoading": true,
-                      "leftColumn": 29.56053811659193,
+                      "leftColumn": 27,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -584,9 +524,8 @@
                       "text": "Close",
                       "isDisabled": false,
                       "key": "nojke3uuo1",
-                      "flexVerticalAlignment": "end",
                       "isDeprecated": false,
-                      "rightColumn": 46.780269058295964,
+                      "rightColumn": 45,
                       "isDefaultClickDisabled": true,
                       "widgetId": "spmczfnxtc",
                       "buttonStyle": "PRIMARY",
@@ -597,19 +536,14 @@
                       "parentId": "sgax2mup3v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 18,
-                      "responsiveBehavior": "hug",
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "mobileLeftColumn": 31,
                       "buttonVariant": "SECONDARY",
-                      "placement": "CENTER",
-                      "alignment": "end"
+                      "placement": "CENTER"
                     },
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "mobileBottomRow": 22,
                       "widgetName": "Button2",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -618,13 +552,12 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 5.2,
-                      "bottomRow": 9.2,
+                      "topRow": 9.600000000000001,
+                      "bottomRow": 13.600000000000001,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
-                      "mobileRightColumn": 63,
                       "animateLoading": true,
-                      "leftColumn": 46.780269058295964,
+                      "leftColumn": 45,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -636,7 +569,6 @@
                       "text": "Confirm",
                       "isDisabled": false,
                       "key": "nojke3uuo1",
-                      "flexVerticalAlignment": "end",
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "isDefaultClickDisabled": true,
@@ -649,17 +581,13 @@
                       "parentId": "sgax2mup3v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "mobileTopRow": 18,
-                      "responsiveBehavior": "hug",
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "mobileLeftColumn": 47,
                       "buttonVariant": "PRIMARY",
-                      "placement": "CENTER",
-                      "alignment": "end"
+                      "placement": "CENTER"
                     }
                   ],
-                  "positioning": "vertical",
+                  "positioning": "fixed",
                   "isDisabled": false,
                   "key": "cj9f9it6rw",
                   "isDeprecated": false,
@@ -673,38 +601,11 @@
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "mobileTopRow": 0,
-                  "responsiveBehavior": "fill",
-                  "mobileLeftColumn": 0,
-                  "flexLayers": [
-                    {
-                      "children": [
-                        {
-                          "id": "nx3ocu9him",
-                          "align": "start"
-                        },
-                        {
-                          "id": "sxga7alyhc",
-                          "align": "end"
-                        }
-                      ]
-                    },
-                    {
-                      "children": [
-                        {
-                          "id": "spmczfnxtc",
-                          "align": "end"
-                        },
-                        {
-                          "id": "hgdw6ca3vm",
-                          "align": "end"
-                        }
-                      ]
-                    }
-                  ]
+                  "mobileLeftColumn": 0
                 }
               ],
               "key": "vikxrkzzhy",
-              "height": 114,
+              "height": 158,
               "isDeprecated": false,
               "rightColumn": 44,
               "detachFromLayout": true,
@@ -716,74 +617,13 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 43,
-              "responsiveBehavior": "hug",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "mobileLeftColumn": 13,
               "maxDynamicHeight": 9000,
               "width": 456,
               "minDynamicHeight": 8
             }
           ],
-          "positioning": "vertical",
-          "flexLayers": [
-            {
-              "children": [
-                {
-                  "id": "4ar8f39n1o",
-                  "align": "center"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
-                  "id": "siz6sp7wr3",
-                  "align": "center"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
-                  "id": "6feiezmsnq",
-                  "align": "center"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
-                  "id": "rpoxlqul0c",
-                  "align": "center"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
-                  "id": "ebsh5ub2kq",
-                  "align": "center"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
-                  "id": "8fw4jfar39",
-                  "align": "center"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
-                  "id": "rgkmc9ffzb",
-                  "align": "center"
-                }
-              ]
-            }
-          ]
+          "positioning": "fixed"
         },
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
