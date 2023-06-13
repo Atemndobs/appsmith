@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "download_page",
+    "pageId": "Download",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -63,7 +63,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "download_page_download_sc",
+  "id": "Download_download_sc",
   "deleted": false,
   "gitSyncId": "644620a7ea2e4f6c16474ca3_646e7422ea2e4f6c16474ee5"
 }

@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "download_song",
-    "pageId": "download_page",
+    "pageId": "Download",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "download_page_download_song",
+  "id": "Download_download_song",
   "deleted": false,
   "gitSyncId": "644620a7ea2e4f6c16474ca3_6468c278ea2e4f6c16474e90"
 }

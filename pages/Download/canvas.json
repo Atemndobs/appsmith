@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "download_page",
-    "slug": "download-page",
+    "name": "Download",
+    "slug": "download",
     "layouts": [
       {
         "viewMode": false,
@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 411.4843750000002,
+          "bottomRow": 380,
           "containerStyle": "none",
           "snapRows": 80,
           "parentRowSpace": 1,
@@ -147,14 +147,14 @@
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "onSubmit": "{{appsmith.store.spotify_url = link.inputText}}",
               "displayName": "Input",
-              "topRow": 12.600000000000001,
+              "topRow": 13,
               "searchTags": [
                 "form",
                 "text input",
                 "number",
                 "textarea"
               ],
-              "bottomRow": 19.6,
+              "bottomRow": 29,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -225,8 +225,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 20.400000000000002,
-              "bottomRow": 24.400000000000002,
+              "topRow": 29,
+              "bottomRow": 33,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -237,7 +237,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 23,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -247,7 +247,7 @@
               "isDisabled": false,
               "key": "sme7cysevj",
               "isDeprecated": false,
-              "rightColumn": 40,
+              "rightColumn": 64,
               "isDefaultClickDisabled": true,
               "widgetId": "rpoxlqul0c",
               "minWidth": 120,
@@ -271,12 +271,12 @@
               "dynamicPropertyPathList": [],
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "displayName": "Button",
-              "topRow": 25.200000000000003,
+              "topRow": 33,
               "searchTags": [
                 "click",
                 "submit"
               ],
-              "bottomRow": 29.200000000000003,
+              "bottomRow": 37,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -288,13 +288,13 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 23,
+              "leftColumn": 0,
               "dynamicBindingPathList": [],
               "text": "get Song",
               "isDisabled": false,
               "key": "sme7cysevj",
               "isDeprecated": false,
-              "rightColumn": 40,
+              "rightColumn": 64,
               "isDefaultClickDisabled": true,
               "iconName": "download",
               "widgetId": "ebsh5ub2kq",
@@ -315,51 +315,6 @@
               "placement": "CENTER"
             },
             {
-              "resetFormOnClick": false,
-              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-              "widgetName": "download_result_link",
-              "buttonColor": "#18181b",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 30.000000000000004,
-              "bottomRow": 34,
-              "tooltip": "Download Song Now",
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "topRowBeforeCollapse": 36,
-              "animateLoading": true,
-              "parentColumnSpace": 6.84375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 23,
-              "dynamicBindingPathList": [],
-              "text": "",
-              "isDisabled": false,
-              "key": "ubvsq3ekgi",
-              "isDeprecated": false,
-              "rightColumn": 40,
-              "isDefaultClickDisabled": true,
-              "widgetId": "8fw4jfar39",
-              "bottomRowBeforeCollapse": 40,
-              "minWidth": 120,
-              "isVisible": false,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "originalTopRow": 32,
-              "disabledWhenInvalid": false,
-              "borderRadius": "0.375rem",
-              "originalBottomRow": 32,
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
               "mobileWidthInPercentage": 0.37265625,
               "boxShadow": "none",
               "widgetName": "Modal1",
@@ -372,7 +327,7 @@
                 "notification"
               ],
               "topRow": 34.8,
-              "bottomRow": 50.4,
+              "bottomRow": 190.79999999998546,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -391,7 +346,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 110,
+                  "bottomRow": 150,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -605,7 +560,7 @@
                 }
               ],
               "key": "vikxrkzzhy",
-              "height": 158,
+              "height": 155.99999999998545,
               "isDeprecated": false,
               "rightColumn": 44,
               "detachFromLayout": true,
@@ -628,7 +583,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "download_page",
+        "id": "Download",
         "deleted": false,
         "policies": [],
         "userPermissions": []
