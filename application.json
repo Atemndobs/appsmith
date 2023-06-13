@@ -25,19 +25,6 @@
       "showSignIn": true
     }
   },
-  "publishedApplicationDetail": {
-    "navigationSetting": {
-      "showNavbar": true,
-      "orientation": "top",
-      "navStyle": "stacked",
-      "position": "static",
-      "itemStyle": "text",
-      "colorStyle": "theme",
-      "logoAssetId": "",
-      "logoConfiguration": "logoAndApplicationTitle",
-      "showSignIn": true
-    }
-  },
   "color": "#F4FFDE",
   "icon": "bird",
   "unpublishedAppLayout": {
