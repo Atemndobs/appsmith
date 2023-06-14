@@ -45,13 +45,16 @@ export default {
 		get_result_button.isVisible = false;
 		submit_download_button.isVisible = true;
 		submit_download_button.isDisabled = false;
+		submit_download_button.text = "Download"
 		link.inputText = "";
 		link.text = "";
 		link.text.trim();
 		link.isDisabled = true;
 		link.isVisible = false;
-		source.selectedOptionValue = this.swichValue(source.selectedOptionValue)
-		source.selectedOptionLabel = this.swichValue(source.selectedOptionLabel)
+		// source.selectedOptionValue = this.swichValue(source.selectedOptionValue)
+		// source.selectedOptionLabel = this.swichValue(source.selectedOptionLabel)
+		source.selectedOptionValue = "spotify";
+		source.selectedOptionLabel = "spotify";
 
 		let message = {
 			'link input text' : link.inputText,
@@ -65,7 +68,7 @@ export default {
 		console.log(message)
 		return message
 	},
-	
+
 	swichValue(in_val) {
 		if(in_val == "spotify"){
 			return "soundcloud"
@@ -73,5 +76,11 @@ export default {
 		if(in_val = "soundcloud") {
 			return "spotify"
 		}
+	},
+
+	activate_download() {
+		link.isDisabled = false
+		link.isVisible = true
+		submit_download_button.isDisabled = false
 	}
 }

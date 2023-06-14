@@ -111,7 +111,7 @@
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
-              "onDropdownOpen": "{{link.isDisabled = false}}/",
+              "onDropdownOpen": "{{download_song.activate_download()}}",
               "isLoading": false,
               "borderRadius": "0px",
               "originalBottomRow": 11.799999999999272,
@@ -149,7 +149,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "onDropdownClose": "{{link.isVisible = true}}",
+              "onDropdownClose": "{{download_song.activate_download()}}",
               "key": "mnbvtv99fj",
               "labelTextSize": "0.875rem",
               "isDeprecated": false,
@@ -161,7 +161,7 @@
               "renderMode": "CANVAS",
               "originalTopRow": 4.8,
               "maxDynamicHeight": 8,
-              "onOptionChange": "{{link.isDisabled = false}}/",
+              "onOptionChange": "{{download_song.activate_download()}}",
               "minDynamicHeight": 4
             },
             {
@@ -683,7 +683,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  download_songs.isVisible = true;\n  get_result_button.isDisabled = true;\n  get_result_button.isVisible = false;\n  submit_download_button.isVisible = true;\n  submit_download_button.isDisabled = false;\n  link.inputText = \"\";\n  link.text = \"\";\n  link.text.trim();\n  link.isDisabled = true;\n  link.isVisible = false;\n  source.selectedOptionValue = download_song.swichValue(source.selectedOptionValue);\n  source.selectedOptionLabel = download_song.swichValue(source.selectedOptionLabel);\n  let message = {\n    'link input text': link.inputText,\n    'link  text': link.inputText,\n    'get reult button visible': get_result_button.isVisible,\n    'get reult button Disabled': get_result_button.isDisabled,\n    'submit button': submit_download_button.isVisible,\n    'source value': source.selectedOptionValue,\n    'source label': source.selectedOptionLabel\n  };\n  console.log(message);\n  return message;\n}"
+                "async function () {\n  download_songs.isVisible = true;\n  get_result_button.isDisabled = true;\n  get_result_button.isVisible = false;\n  submit_download_button.isVisible = true;\n  submit_download_button.isDisabled = false;\n  submit_download_button.text = \"Download\";\n  link.inputText = \"\";\n  link.text = \"\";\n  link.text.trim();\n  link.isDisabled = true;\n  link.isVisible = false;\n  source.selectedOptionValue = \"spotify\";\n  source.selectedOptionLabel = \"spotify\";\n  let message = {\n    'link input text': link.inputText,\n    'link  text': link.inputText,\n    'get reult button visible': get_result_button.isVisible,\n    'get reult button Disabled': get_result_button.isDisabled,\n    'submit button': submit_download_button.isVisible,\n    'source value': source.selectedOptionValue,\n    'source label': source.selectedOptionLabel\n  };\n  console.log(message);\n  return message;\n}"
               ],
               "timeoutInMillisecond": 10000
             }
