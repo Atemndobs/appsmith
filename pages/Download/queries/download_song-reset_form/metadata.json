@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "get_downloaded_song",
-    "fullyQualifiedName": "download_song.get_downloaded_song",
+    "name": "reset_form",
+    "fullyQualifiedName": "download_song.reset_form",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -23,7 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Download_download_song.get_downloaded_song",
+  "id": "Download_download_song.reset_form",
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_646e7342ea2e4f6c16474ee1"
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_648a00eafb850e72fd5f7847"
 }

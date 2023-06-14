@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 420,
           "containerStyle": "none",
           "snapRows": 80,
           "parentRowSpace": 1,
@@ -76,33 +76,23 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "originalTopRow": 0,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 4,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
             {
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-              "widgetName": "source",
-              "isFilterable": true,
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-              "displayName": "Select",
               "labelText": "source",
-              "topRow": 4.8,
-              "searchTags": [
-                "dropdown"
-              ],
-              "bottomRow": 11.8,
-              "parentRowSpace": 10,
+              "topRow": 5,
               "labelWidth": "8",
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
-              "hideCard": false,
-              "shouldScrollContents": true,
               "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `spotify`))(source.options, source.serverSideFiltering) }}",
               "animateLoading": false,
-              "parentColumnSpace": 6.84375,
-              "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
@@ -112,61 +102,70 @@
                   "key": "defaultOptionValue"
                 }
               ],
-              "labelPosition": "Top",
               "options": "[\n  {\n    \"label\": \"spotify\",\n    \"value\": \"spotify\"\n  },\n  {\n    \"label\": \"soundcloud\",\n    \"value\": \"sc\"\n  }\n]",
               "labelStyle": "BOLD",
               "placeholderText": "Select Source ",
               "isDisabled": false,
-              "key": "mnbvtv99fj",
-              "labelTextSize": "0.875rem",
               "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 64,
               "dynamicHeight": "FIXED",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "widgetId": "siz6sp7wr3",
-              "minWidth": 450,
               "isVisible": true,
               "version": 1,
-              "parentId": "0",
               "isLoading": false,
+              "borderRadius": "0px",
+              "originalBottomRow": 11.799999999999272,
+              "widgetName": "source",
+              "isFilterable": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onOptionChange"
+                },
+                {
+                  "key": "onDropdownClose"
+                }
+              ],
+              "displayName": "Select",
+              "searchTags": [
+                "dropdown"
+              ],
+              "bottomRow": 12,
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onOptionChange"
+                },
+                {
+                  "key": "onDropdownClose"
+                }
+              ],
+              "labelPosition": "Top",
+              "onDropdownClose": "{{download_song.clear()}}",
+              "key": "mnbvtv99fj",
+              "labelTextSize": "0.875rem",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "siz6sp7wr3",
+              "minWidth": 450,
+              "parentId": "0",
               "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "borderRadius": "0px",
+              "originalTopRow": 4.8,
               "maxDynamicHeight": 8,
+              "onOptionChange": "{{download_song.clear()}",
               "minDynamicHeight": 4
             },
             {
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-              "widgetName": "link",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "onSubmit"
-                }
-              ],
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "onSubmit": "{{appsmith.store.spotify_url = link.inputText}}",
-              "displayName": "Input",
               "topRow": 13,
-              "searchTags": [
-                "form",
-                "text input",
-                "number",
-                "textarea"
-              ],
-              "bottomRow": 29,
-              "parentRowSpace": 10,
               "labelWidth": 5,
-              "autoFocus": false,
               "type": "INPUT_WIDGET_V2",
-              "hideCard": false,
+              "topRowBeforeCollapse": 13,
               "animateLoading": true,
-              "parentColumnSpace": 6.84375,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onSubmit"
-                }
-              ],
               "resetOnSubmit": true,
               "leftColumn": 0,
               "dynamicBindingPathList": [
@@ -180,36 +179,62 @@
                   "key": "label"
                 }
               ],
-              "labelPosition": "Top",
               "labelStyle": "BOLD",
               "inputType": "MULTI_LINE_TEXT",
               "placeholderText": "Paste {{source.selectedOptionLabel}} link here",
               "isDisabled": false,
-              "key": "ybq5fhw9lg",
-              "labelTextSize": "0.875rem",
               "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 64,
               "dynamicHeight": "FIXED",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "widgetId": "6feiezmsnq",
               "showStepArrows": false,
-              "minWidth": 450,
+              "bottomRowBeforeCollapse": 29,
               "isVisible": true,
-              "label": "{{source.selectedOptionLabel}} link ",
               "version": 2,
-              "parentId": "0",
               "isLoading": false,
+              "borderRadius": "0px",
+              "originalBottomRow": 29,
+              "widgetName": "link",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "displayName": "Input",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "bottomRow": 29,
+              "parentRowSpace": 10,
+              "autoFocus": false,
+              "hideCard": false,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "labelPosition": "Top",
+              "key": "ybq5fhw9lg",
+              "labelTextSize": "0.875rem",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "6feiezmsnq",
+              "minWidth": 450,
+              "label": "{{source.selectedOptionLabel}} link ",
+              "parentId": "0",
               "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "borderRadius": "0px",
+              "originalTopRow": 13,
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
               "defaultText": "",
               "minDynamicHeight": 4
             },
             {
-              "resetFormOnClick": false,
+              "resetFormOnClick": true,
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
               "widgetName": "submit_download_button",
               "onClick": "{{download_song.download(source.selectedOptionValue)}}",
@@ -227,6 +252,7 @@
               ],
               "topRow": 29,
               "bottomRow": 33,
+              "tooltip": "Download Song",
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -257,8 +283,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "originalTopRow": 29,
               "disabledWhenInvalid": false,
               "borderRadius": "0px",
+              "originalBottomRow": 33,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -280,7 +308,7 @@
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
-              "topRowBeforeCollapse": 32,
+              "topRowBeforeCollapse": 33,
               "animateLoading": true,
               "parentColumnSpace": 6.84375,
               "dynamicTriggerPathList": [
@@ -298,7 +326,7 @@
               "isDefaultClickDisabled": true,
               "iconName": "download",
               "widgetId": "ebsh5ub2kq",
-              "bottomRowBeforeCollapse": 36,
+              "bottomRowBeforeCollapse": 37,
               "minWidth": 120,
               "isVisible": false,
               "version": 1,
@@ -306,10 +334,10 @@
               "parentId": "0",
               "isLoading": false,
               "renderMode": "CANVAS",
-              "originalTopRow": 32,
+              "originalTopRow": 33,
               "disabledWhenInvalid": false,
               "borderRadius": "0px",
-              "originalBottomRow": 32,
+              "originalBottomRow": 37,
               "buttonVariant": "PRIMARY",
               "iconAlign": "left",
               "placement": "CENTER"
@@ -576,11 +604,84 @@
               "maxDynamicHeight": 9000,
               "width": 456,
               "minDynamicHeight": 8
+            },
+            {
+              "resetFormOnClick": true,
+              "boxShadow": "none",
+              "mobileBottomRow": 42,
+              "widgetName": "reset_form",
+              "onClick": "{{download_song.reset_form()}}",
+              "buttonColor": "#6b21a8",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 38,
+              "bottomRow": 42,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 40,
+              "animateLoading": true,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 24,
+              "dynamicBindingPathList": [],
+              "text": "reset",
+              "isDisabled": false,
+              "key": "9tnvwnn1y8",
+              "isDeprecated": false,
+              "rightColumn": 40,
+              "isDefaultClickDisabled": true,
+              "iconName": "reset",
+              "widgetId": "ccd90x9qcz",
+              "minWidth": 120,
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 38,
+              "responsiveBehavior": "hug",
+              "originalTopRow": 38,
+              "disabledWhenInvalid": false,
+              "borderRadius": "0px",
+              "mobileLeftColumn": 24,
+              "originalBottomRow": 42,
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left",
+              "placement": "CENTER"
             }
           ],
           "positioning": "fixed"
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Download_download_song.reset_form",
+              "name": "download_song.reset_form",
+              "collectionId": "Download_download_song",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  link.isVisible = true;\n  download_songs.isVisible = true;\n  get_result_button.isDisabled = false;\n  get_result_button.isVisible = false;\n  submit_download_button.isVisible = false;\n  link.inputText = \"\";\n  link.text = \"\";\n  link.text.trim();\n  let message = {\n    'link input text': link.inputText,\n    'link  text': link.inputText,\n    'get reult button visible': get_result_button.isVisible,\n    'get reult button Disabled': get_result_button.isDisabled,\n    'submit button': submit_download_button.isVisible\n  };\n  console.log(message);\n  return message;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Download",
