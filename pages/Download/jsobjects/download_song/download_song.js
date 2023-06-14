@@ -9,6 +9,9 @@ export default {
 
 		if(dl_source == 'spotify') {
 			submit_download_button.isDisabled = true
+			submit_download_button.text = "Download in Progress ..."
+			link.isDisabled = true;
+			link.isVisible = false;
 			appsmith.store.spotify_url = link.inputText;
 			download_spotify.run();
 			response =  download_spotify.data;
@@ -37,14 +40,18 @@ export default {
 		return true;
 	},
 	async reset_form(){
-		link.isVisible = true;
 		download_songs.isVisible = true;
-		get_result_button.isDisabled = false;
+		get_result_button.isDisabled = true;
 		get_result_button.isVisible = false;
-		submit_download_button.isVisible = false;
+		submit_download_button.isVisible = true;
+		submit_download_button.isDisabled = false;
 		link.inputText = "";
 		link.text = "";
 		link.text.trim();
+		link.isDisabled = true;
+		link.isVisible = false;
+		source.selectedOptionValue = this.swichValue(source.selectedOptionValue)
+		source.selectedOptionLabel = this.swichValue(source.selectedOptionLabel)
 
 		let message = {
 			'link input text' : link.inputText,
@@ -52,8 +59,19 @@ export default {
 			'get reult button visible' : get_result_button.isVisible,
 			'get reult button Disabled' : get_result_button.isDisabled,
 			'submit button': submit_download_button.isVisible,
+			'source value' : source.selectedOptionValue,
+			'source label' : source.selectedOptionLabel
 		}
 		console.log(message)
 		return message
+	},
+	
+	swichValue(in_val) {
+		if(in_val == "spotify"){
+			return "soundcloud"
+		}
+		if(in_val = "soundcloud") {
+			return "spotify"
+		}
 	}
 }
