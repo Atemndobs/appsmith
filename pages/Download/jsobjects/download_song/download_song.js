@@ -48,7 +48,7 @@ export default {
 		submit_download_button.text = "Download"
 		link.inputText = "";
 		link.text = "";
-		link.text.trim();
+		link.value = ""
 		link.isDisabled = true;
 		link.isVisible = false;
 		// source.selectedOptionValue = this.swichValue(source.selectedOptionValue)
@@ -59,6 +59,8 @@ export default {
 		let message = {
 			'link input text' : link.inputText,
 			'link  text' : link.inputText,
+			'link value ' : link.value,
+			'link' : link,
 			'get reult button visible' : get_result_button.isVisible,
 			'get reult button Disabled' : get_result_button.isDisabled,
 			'submit button': submit_download_button.isVisible,

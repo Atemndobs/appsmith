@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 420,
+          "bottomRow": 380,
           "containerStyle": "none",
           "snapRows": 80,
           "parentRowSpace": 1,
@@ -169,11 +169,12 @@
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "onSubmit": "{{appsmith.store.spotify_url = link.inputText}}",
               "topRow": 13,
+              "tooltip": "paste link. clich download then go grab a coffee",
               "labelWidth": 5,
               "type": "INPUT_WIDGET_V2",
               "topRowBeforeCollapse": 13,
               "animateLoading": true,
-              "resetOnSubmit": true,
+              "resetOnSubmit": false,
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
@@ -191,7 +192,7 @@
               "placeholderText": "Paste {{source.selectedOptionLabel}} link here",
               "isDisabled": false,
               "isRequired": false,
-              "dynamicHeight": "FIXED",
+              "dynamicHeight": "AUTO_HEIGHT",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "showStepArrows": false,
               "bottomRowBeforeCollapse": 29,
@@ -213,7 +214,7 @@
                 "number",
                 "textarea"
               ],
-              "bottomRow": 29,
+              "bottomRow": 23,
               "parentRowSpace": 10,
               "autoFocus": false,
               "hideCard": false,
@@ -236,6 +237,7 @@
               "renderMode": "CANVAS",
               "originalTopRow": 13,
               "maxDynamicHeight": 9000,
+              "shouldAllowAutofill": false,
               "iconAlign": "left",
               "defaultText": "",
               "minDynamicHeight": 4
@@ -257,8 +259,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 29,
-              "bottomRow": 33,
+              "topRow": 23,
+              "bottomRow": 27,
               "tooltip": "Download Song",
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
@@ -306,12 +308,12 @@
               "dynamicPropertyPathList": [],
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "displayName": "Button",
-              "topRow": 33,
+              "topRow": 27,
               "searchTags": [
                 "click",
                 "submit"
               ],
-              "bottomRow": 37,
+              "bottomRow": 31,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -630,8 +632,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 38,
-              "bottomRow": 42,
+              "topRow": 32,
+              "bottomRow": 36,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -683,7 +685,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  download_songs.isVisible = true;\n  get_result_button.isDisabled = true;\n  get_result_button.isVisible = false;\n  submit_download_button.isVisible = true;\n  submit_download_button.isDisabled = false;\n  submit_download_button.text = \"Download\";\n  link.inputText = \"\";\n  link.text = \"\";\n  link.text.trim();\n  link.isDisabled = true;\n  link.isVisible = false;\n  source.selectedOptionValue = \"spotify\";\n  source.selectedOptionLabel = \"spotify\";\n  let message = {\n    'link input text': link.inputText,\n    'link  text': link.inputText,\n    'get reult button visible': get_result_button.isVisible,\n    'get reult button Disabled': get_result_button.isDisabled,\n    'submit button': submit_download_button.isVisible,\n    'source value': source.selectedOptionValue,\n    'source label': source.selectedOptionLabel\n  };\n  console.log(message);\n  return message;\n}"
+                "async function () {\n  download_songs.isVisible = true;\n  get_result_button.isDisabled = true;\n  get_result_button.isVisible = false;\n  submit_download_button.isVisible = true;\n  submit_download_button.isDisabled = false;\n  submit_download_button.text = \"Download\";\n  link.inputText = \"\";\n  link.text = \"\";\n  link.value = \"\";\n  link.isDisabled = true;\n  link.isVisible = false;\n  source.selectedOptionValue = \"spotify\";\n  source.selectedOptionLabel = \"spotify\";\n  let message = {\n    'link input text': link.inputText,\n    'link  text': link.inputText,\n    'link value ': link.value,\n    'link': link,\n    'get reult button visible': get_result_button.isVisible,\n    'get reult button Disabled': get_result_button.isDisabled,\n    'submit button': submit_download_button.isVisible,\n    'source value': source.selectedOptionValue,\n    'source label': source.selectedOptionLabel\n  };\n  console.log(message);\n  return message;\n}"
               ],
               "timeoutInMillisecond": 10000
             }
