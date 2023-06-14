@@ -77,10 +77,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 234,
+              "originalTopRow": 233,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 249,
+              "originalBottomRow": 248,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -222,13 +222,13 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 55,
+              "leftColumn": 51,
               "dynamicBindingPathList": [],
               "text": "",
               "isDisabled": false,
               "key": "jodvlg61u7",
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 60,
               "isDefaultClickDisabled": true,
               "iconName": "settings",
               "widgetId": "70vlje1953",
@@ -1087,10 +1087,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 141,
+              "originalTopRow": 140,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 234,
+              "originalBottomRow": 233,
               "minDynamicHeight": 10
             },
             {
@@ -1840,7 +1840,7 @@
               "originalTopRow": 28,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 100,
+              "originalBottomRow": 99,
               "minDynamicHeight": 10
             },
             {
@@ -2162,10 +2162,10 @@
               "parentId": "0",
               "isLoading": false,
               "renderMode": "CANVAS",
-              "originalTopRow": 100,
+              "originalTopRow": 99,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 104,
+              "originalBottomRow": 103,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -2393,7 +2393,7 @@
               "isLoading": false,
               "mainCanvasId": "rz6tvssjuu",
               "borderRadius": "0px",
-              "originalBottomRow": 141,
+              "originalBottomRow": 140,
               "additionalStaticProps": [
                 "level",
                 "levelData",
@@ -2433,7 +2433,7 @@
               "onItemClick": "{{play_page_functions.selectd_song_play(currentItem)}}",
               "parentId": "0",
               "renderMode": "CANVAS",
-              "originalTopRow": 104,
+              "originalTopRow": 103,
               "selectedItemView": "{{{}}}"
             }
           ],
