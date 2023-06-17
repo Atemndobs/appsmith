@@ -15,6 +15,10 @@
     {
       "id": "search_page",
       "isDefault": false
+    },
+    {
+      "id": "settings",
+      "isDefault": false
     }
   ],
   "viewMode": false,

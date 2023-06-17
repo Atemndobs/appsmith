@@ -1,0 +1,795 @@
+{
+  "unpublishedPage": {
+    "name": "settings",
+    "slug": "settings",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 740,
+          "containerStyle": "none",
+          "snapRows": 68,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 700,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "settings_container",
+              "borderColor": "#E0DEDE",
+              "isCanvas": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
+              "searchTags": [
+                "div",
+                "parent",
+                "group"
+              ],
+              "topRow": 3,
+              "bottomRow": 74,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "boxShadow"
+                }
+              ],
+              "children": [
+                {
+                  "mobileBottomRow": 751.9999999999999,
+                  "widgetName": "Canvas7",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 710,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 570,
+                  "mobileRightColumn": 164.25,
+                  "useAutoLayout": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "show_bpm_range",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "displayName": "Switch",
+                      "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+                      "searchTags": [
+                        "boolean"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "SWITCH_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.84375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "isDisabled": false,
+                      "key": "v6p95pn4oh",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "onChange": "",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "zilakd68jk",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "BPM -  Exact vs Range",
+                      "defaultSwitchState": false,
+                      "version": 1,
+                      "parentId": "pjvxmre18g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "originalTopRow": 1,
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 6,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "iconSVG": "/static/media/icon.8216245f04c391d4ae315397e9194dd4.svg",
+                      "defaultStartValue": 10,
+                      "tooltipAlwaysOn": true,
+                      "labelText": "BPM range",
+                      "topRow": 4.8,
+                      "labelWidth": 8,
+                      "type": "RANGE_SLIDER_WIDGET",
+                      "topRowBeforeCollapse": 4.8,
+                      "animateLoading": true,
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "labelTooltip": "Search songs withion this range",
+                      "isDisabled": false,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "bottomRowBeforeCollapse": 12.8,
+                      "isVisible": "{{show_bpm_range.isSwitchedOn}}",
+                      "version": 1,
+                      "isLoading": false,
+                      "originalBottomRow": 12.799999999999272,
+                      "minRange": 5,
+                      "widgetName": "bpm_range",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onStartValueChange"
+                        },
+                        {
+                          "key": "onEndValueChange"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "displayName": "Range Slider",
+                      "bottomRow": 12.8,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "min": "0",
+                      "parentColumnSpace": 6.84375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onStartValueChange"
+                        },
+                        {
+                          "key": "onEndValueChange"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "shouldTruncate": false,
+                      "defaultEndValue": 100,
+                      "key": "k8afvz8fuc",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "onEndValueChange": "{{appsmith.store.bpm_range.end = bpm_range.end}}",
+                      "max": "180",
+                      "widgetId": "2jp68ucv7u",
+                      "onStartValueChange": "{{appsmith.store.bpm_range.start = bpm_range.start}}",
+                      "marks": "[\n  {\n    \"value\": 0,\n    \"label\": \"0\"\n  },\n\n  {\n    \"value\": 180,\n    \"label\": \"180\"\n  }\n]",
+                      "sliderSize": "m",
+                      "shouldScroll": false,
+                      "parentId": "pjvxmre18g",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 4.8,
+                      "step": 1,
+                      "showMarksLabel": true
+                    },
+                    {
+                      "widgetName": "bpm",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onChange"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "defaultValue": "100",
+                      "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
+                      "displayName": "Number Slider",
+                      "tooltipAlwaysOn": true,
+                      "labelText": "BPM",
+                      "topRow": 13.600000000020394,
+                      "searchTags": [
+                        "range"
+                      ],
+                      "bottomRow": 21.599999999999273,
+                      "parentRowSpace": 10,
+                      "labelWidth": 8,
+                      "type": "NUMBER_SLIDER_WIDGET",
+                      "hideCard": false,
+                      "topRowBeforeCollapse": 4,
+                      "animateLoading": true,
+                      "min": "0",
+                      "parentColumnSpace": 6.84375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "labelPosition": "Top",
+                      "labelTooltip": "set fixed bpm for matching related songs",
+                      "isDisabled": false,
+                      "key": "oxb042b1tk",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "onChange": "{{appsmith.store.bpm = bpm.value}}",
+                      "max": "200",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "widgetId": "nsgtwxynu9",
+                      "bottomRowBeforeCollapse": 9,
+                      "isVisible": "{{!show_bpm_range.isSwitchedOn}}",
+                      "marks": "[\n  {\n    \"value\": 0,\n    \"label\": \"0\"\n  },\n  {\n    \"value\": 50,\n    \"label\": \"50\"\n  },\n  {\n    \"value\": 100,\n    \"label\": \"100\"\n  },\n  {\n    \"value\": 150,\n    \"label\": \"150\"\n  },\n\t  {\n    \"value\": 200,\n    \"label\": \"200\"\n  }\n\t\n]",
+                      "sliderSize": "m",
+                      "version": 1,
+                      "shouldScroll": false,
+                      "parentId": "pjvxmre18g",
+                      "isLoading": false,
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 13.600000000018937,
+                      "originalBottomRow": 21.599999999998545,
+                      "step": 1,
+                      "showMarksLabel": true
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "genre",
+                      "isFilterable": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "displayName": "Select",
+                      "labelText": "Select Genre",
+                      "topRow": 22.400000000020395,
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "bottomRow": 29.400000000002183,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `Afrobeat`))(genre.options, genre.serverSideFiltering) }}",
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.84375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "defaultOptionValue"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "labelTooltip": "Select a Genre from the drop down list",
+                      "options": "[\n  {\n    \"label\": \"Afrobeats\",\n    \"value\": \"AFROBEATS\"\n  },\n  {\n    \"label\": \"R&B\",\n    \"value\": \"R&B\"\n  },\n  {\n    \"label\": \"Amapiano\",\n    \"value\": \"AMAPIANO\"\n  }\n]",
+                      "placeholderText": "Afrobeats",
+                      "isDisabled": false,
+                      "key": "lpcswqk6nr",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "widgetId": "an7w9ueht3",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "pjvxmre18g",
+                      "isLoading": false,
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 22.400000000018938,
+                      "borderRadius": "0px",
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 29.400000000001455,
+                      "onOptionChange": "{{appsmith.store.genre = genre.selectedOptionValue}}",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "mood",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "displayName": "Switch",
+                      "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+                      "searchTags": [
+                        "boolean"
+                      ],
+                      "topRow": 30.200000000020395,
+                      "bottomRow": 34.200000000020395,
+                      "parentRowSpace": 10,
+                      "type": "SWITCH_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 5.78271484375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "isDisabled": false,
+                      "key": "z94sxsrs86",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "onChange": "{{mood.isSwitchedOn ?  appsmith.store.mood = 'happy' :  appsmith.store.mood = 'sad'}}",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "ny9fkikvt9",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Mood  - Sad vs Happy",
+                      "defaultSwitchState": true,
+                      "version": 1,
+                      "parentId": "pjvxmre18g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "originalTopRow": 30.20000000001894,
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 34.20000000001892,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "happy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        },
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "defaultValue": 10,
+                      "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
+                      "displayName": "Number Slider",
+                      "tooltipAlwaysOn": false,
+                      "labelText": "happy %",
+                      "topRow": 35.000000000041084,
+                      "searchTags": [
+                        "range"
+                      ],
+                      "bottomRow": 43.00000000001967,
+                      "parentRowSpace": 10,
+                      "labelWidth": 8,
+                      "type": "NUMBER_SLIDER_WIDGET",
+                      "hideCard": false,
+                      "topRowBeforeCollapse": 24,
+                      "animateLoading": true,
+                      "min": 0,
+                      "parentColumnSpace": 5.78271484375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "labelPosition": "Top",
+                      "isDisabled": false,
+                      "key": "7qyqflrdan",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "onChange": "{{appsmith.store.happy = happy.value}}",
+                      "max": 100,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "widgetId": "v0da8nd0wg",
+                      "bottomRowBeforeCollapse": 32,
+                      "isVisible": "{{mood.isSwitchedOn}}",
+                      "marks": [
+                        {
+                          "value": 25,
+                          "label": "25%"
+                        },
+                        {
+                          "value": 50,
+                          "label": "50%"
+                        },
+                        {
+                          "value": 75,
+                          "label": "75%"
+                        }
+                      ],
+                      "sliderSize": "m",
+                      "version": 1,
+                      "shouldScroll": false,
+                      "parentId": "pjvxmre18g",
+                      "isLoading": false,
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 35.0000000000374,
+                      "originalBottomRow": 43.00000000001819,
+                      "step": 1,
+                      "showMarksLabel": true
+                    },
+                    {
+                      "widgetName": "sad",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        },
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "defaultValue": 10,
+                      "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
+                      "displayName": "Number Slider",
+                      "tooltipAlwaysOn": false,
+                      "labelText": "sad %",
+                      "topRow": 43.80000000004103,
+                      "searchTags": [
+                        "range"
+                      ],
+                      "bottomRow": 47.80000000004077,
+                      "parentRowSpace": 10,
+                      "labelWidth": 8,
+                      "type": "NUMBER_SLIDER_WIDGET",
+                      "hideCard": false,
+                      "topRowBeforeCollapse": 35.80000000003883,
+                      "animateLoading": true,
+                      "min": 0,
+                      "parentColumnSpace": 5.78271484375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "labelPosition": "Top",
+                      "isDisabled": false,
+                      "key": "7qyqflrdan",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "onChange": "{{appsmith.store.sad = sad.value}}",
+                      "max": 100,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "widgetId": "k58zu4r415",
+                      "bottomRowBeforeCollapse": 35.80000000004004,
+                      "isVisible": "{{!mood.isSwitchedOn}}",
+                      "marks": [
+                        {
+                          "value": 25,
+                          "label": "25%"
+                        },
+                        {
+                          "value": 50,
+                          "label": "50%"
+                        },
+                        {
+                          "value": 75,
+                          "label": "75%"
+                        }
+                      ],
+                      "sliderSize": "m",
+                      "version": 1,
+                      "shouldScroll": false,
+                      "parentId": "pjvxmre18g",
+                      "isLoading": false,
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 43.80000000003735,
+                      "originalBottomRow": 47.80000000003565,
+                      "step": 1,
+                      "showMarksLabel": true
+                    },
+                    {
+                      "widgetName": "energy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "defaultValue": 10,
+                      "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
+                      "displayName": "Number Slider",
+                      "tooltipAlwaysOn": false,
+                      "labelText": "energy %",
+                      "topRow": 48.60000000005644,
+                      "searchTags": [
+                        "range"
+                      ],
+                      "bottomRow": 56.60000000004004,
+                      "parentRowSpace": 10,
+                      "labelWidth": 8,
+                      "type": "NUMBER_SLIDER_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "min": 0,
+                      "parentColumnSpace": 5.78271484375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "labelPosition": "Top",
+                      "isDisabled": false,
+                      "key": "7qyqflrdan",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "onChange": "{{appsmith.store.energy = energy.value}}",
+                      "max": 100,
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "widgetId": "ckw81ikjem",
+                      "isVisible": true,
+                      "marks": [
+                        {
+                          "value": 25,
+                          "label": "25%"
+                        },
+                        {
+                          "value": 50,
+                          "label": "50%"
+                        },
+                        {
+                          "value": 75,
+                          "label": "75%"
+                        }
+                      ],
+                      "sliderSize": "m",
+                      "version": 1,
+                      "shouldScroll": false,
+                      "parentId": "pjvxmre18g",
+                      "isLoading": false,
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 48.600000000051985,
+                      "originalBottomRow": 56.600000000034925,
+                      "step": 1,
+                      "showMarksLabel": true
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "key_scale_container",
+                      "isFilterable": true,
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "displayName": "Select",
+                      "labelText": "Select Key",
+                      "topRow": 57.40000000005644,
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "bottomRow": 64.40000000004295,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "GREEN",
+                      "animateLoading": true,
+                      "parentColumnSpace": 5.67578125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "options": "[\n  {\n    \"label\": \"Amajor\",\n    \"value\": \"Amajor\"\n  },\n  {\n    \"label\": \"Aminor\",\n    \"value\": \"Aminor\"\n  },\n  {\n    \"label\": \"Bmajor\",\n    \"value\": \"Bminor\"\n  }\n]",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "x6zzlwmi55",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "widgetId": "7hilxkkhyk",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "pjvxmre18g",
+                      "isLoading": false,
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 57.40000000005198,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 64.40000000003783,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "onClick": "{{set_match_criteria.run() && (settings_container.isVisible = false)}}\n",
+                      "widgetName": "apply_match_settings",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "displayName": "Button",
+                      "topRow": 65.00000000000442,
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "bottomRow": 69.00000000000148,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 5.67578125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        }
+                      ],
+                      "text": "Apply Match Settings",
+                      "isDisabled": false,
+                      "key": "62lo4ddqiw",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "isDefaultClickDisabled": true,
+                      "iconName": "settings",
+                      "widgetId": "x06x7v2gi0",
+                      "minWidth": 120,
+                      "isVisible": true,
+                      "version": 1,
+                      "recaptchaType": "V3",
+                      "parentId": "pjvxmre18g",
+                      "isLoading": false,
+                      "renderMode": "CANVAS",
+                      "originalTopRow": 64.99999999999997,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "0.375rem",
+                      "originalBottomRow": 68.99999999999636,
+                      "buttonVariant": "PRIMARY",
+                      "iconAlign": "left",
+                      "placement": "CENTER"
+                    }
+                  ],
+                  "positioning": "fixed",
+                  "key": "t2ov5mx5pa",
+                  "isDeprecated": false,
+                  "rightColumn": 164.25,
+                  "detachFromLayout": true,
+                  "widgetId": "pjvxmre18g",
+                  "containerStyle": "none",
+                  "minWidth": 450,
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "697yvhpyog",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "mobileTopRow": 0,
+                  "mobileLeftColumn": 0
+                }
+              ],
+              "borderWidth": "1",
+              "key": "b5rmkdxamb",
+              "backgroundColor": "#FFFFFF",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "697yvhpyog",
+              "containerStyle": "card",
+              "minWidth": 450,
+              "isVisible": false,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 3,
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 74,
+              "minDynamicHeight": 10
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "settings",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_648d7805fb850e72fd5f787a"
+}
