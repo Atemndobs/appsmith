@@ -1,12 +1,12 @@
 export default {
 	myVar1: [],
 	myVar2: {},
-		getMatchCriterion () {
+	getMatchCriterion () {
 		//	write code here
 		//	this.myVar1 = [1,2,3]
 	},
 	async setMatchCriterion () {
-		settings_container.isVisible = true;
+		// settings_container.isVisible = true;
 		appsmith.store.bpm = !show_bpm_range.isSwitchedOn? bpm.value : 0 ; 
 		appsmith.store.bpm_range_start = show_bpm_range.isSwitchedOn? bpm_range.start : "0";
 		appsmith.store.bpm_range_end = show_bpm_range.isSwitchedOn? bpm_range.end : "200";
