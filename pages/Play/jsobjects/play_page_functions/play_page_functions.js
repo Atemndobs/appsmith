@@ -17,6 +17,7 @@ export default {
 	},
 	selectd_song_play (currentSong = {}) {
 		search.isVisible = false
+		related_songs.isVisible = true
 
 		player_image.image= currentSong.image
 		appsmith.store.start_song = currentSong;
@@ -97,6 +98,9 @@ export default {
 		search_results_player.isVisible = false;
 		song_search_api.clear();
 		clear_search.isVisible = false
+		related_songs.isVisible = false
+		get_match_criteria.clear()
+
 		//appsmith.store.related_songs = this.play_page_init_data.related_songs
 		// appsmith.store.related_songs = ""
 	}
