@@ -16,10 +16,7 @@ export default {
 		}
 	},
 	selectd_song_play (currentSong = {}) {
-
-		console.log({
-			'BEFORE  change' : playing_song_info.text
-		})
+		search.isVisible = false
 
 		player_image.image= currentSong.image
 		appsmith.store.start_song = currentSong;
@@ -91,6 +88,7 @@ export default {
 	},
 
 	clear_search(){
+		search.isVisible = true
 		search.text = "";
 		search.inputText = "";
 		search.inputText.trim();
