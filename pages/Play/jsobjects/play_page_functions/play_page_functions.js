@@ -97,7 +97,7 @@ export default {
 		search_results_player.isVisible = false;
 		song_search_api.clear();
 		clear_search.isVisible = false
-		appsmith.store.related_songs = this.play_page_init_data.related_songs
+		//appsmith.store.related_songs = this.play_page_init_data.related_songs
 		// appsmith.store.related_songs = ""
 	}
 }
