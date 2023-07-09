@@ -464,7 +464,7 @@
                       "isLoading": false,
                       "mainCanvasId": "4575t2x8hg",
                       "borderRadius": "0px",
-                      "originalBottomRow": 83,
+                      "originalBottomRow": 72,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -503,7 +503,7 @@
                       "onItemClick": "{{play_page_functions.selectd_song_play(currentItem)}}",
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 51,
+                      "originalTopRow": 40,
                       "selectedItemView": "{{{}}}"
                     },
                     {
@@ -562,10 +562,10 @@
                       "parentId": "qu25d50ks2",
                       "isLoading": false,
                       "renderMode": "CANVAS",
-                      "originalTopRow": 83,
+                      "originalTopRow": 72,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 87,
+                      "originalBottomRow": 76,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -642,7 +642,7 @@
                       },
                       "borderRadius": "0px",
                       "columnUpdatedAt": 1682440283534,
-                      "originalBottomRow": 119,
+                      "originalBottomRow": 108,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -740,7 +740,7 @@
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
-                      "originalTopRow": 87,
+                      "originalTopRow": 76,
                       "isVisiblePagination": false,
                       "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                       "verticalAlignment": "CENTER"
@@ -804,10 +804,10 @@
                       "parentId": "qu25d50ks2",
                       "isLoading": false,
                       "renderMode": "CANVAS",
-                      "originalTopRow": 47,
+                      "originalTopRow": 36,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 51,
+                      "originalBottomRow": 40,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -862,7 +862,7 @@
                       "originalTopRow": 28,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 43,
+                      "originalBottomRow": 32,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -1004,7 +1004,7 @@
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "isDefaultClickDisabled": true,
-                      "iconName": "play",
+                      "iconName": "add-to-artifact",
                       "widgetId": "c5tr7kwalb",
                       "minWidth": 120,
                       "isVisible": true,
@@ -1015,11 +1015,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 43,
+                      "originalTopRow": 32,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 43,
-                      "originalBottomRow": 47,
+                      "originalBottomRow": 36,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1059,7 +1059,7 @@
               "originalTopRow": 39,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 160,
+              "originalBottomRow": 149,
               "minDynamicHeight": 10
             },
             {
@@ -1068,7 +1068,7 @@
               "isCanvas": true,
               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
               "topRow": 14,
-              "pageSize": 3,
+              "pageSize": -1,
               "type": "LIST_WIDGET_V2",
               "itemSpacing": 8,
               "topRowBeforeCollapse": 14,
