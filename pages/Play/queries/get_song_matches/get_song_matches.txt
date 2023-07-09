@@ -1,12 +1,12 @@
 {
-  "slug" : {{appsmith.store.related_songs}},
-  "bpm": {{appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value }},
-  "bpmRange": "100-105",
-  "happy": 70,
-  "sad": 40,
-  "mood": "sad",
-  "energy": "80",
-  "key": "E major",
-  "scale": "major",
-  "danceability" : 90
+	"slug" : {{appsmith.store.related_songs }},
+	"bpm": 100,
+	"bpmRange": "100-105",
+	"happy": 70,
+	"sad": 40,
+	"mood": "sad",
+	"energy": "80",
+	"key": "E major",
+	"scale": "major",
+	"danceability" : 90
 }
