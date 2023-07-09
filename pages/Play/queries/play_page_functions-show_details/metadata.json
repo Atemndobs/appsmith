@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-07-09T12:18:48Z"
   },
   "id": "Play_play_page_functions.show_details",
   "deleted": false,

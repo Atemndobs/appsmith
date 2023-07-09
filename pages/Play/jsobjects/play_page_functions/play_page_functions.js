@@ -50,7 +50,7 @@ export default {
 		return currentSong
 	},
 
-	async related_song_play(currentSong) {
+	related_song_play(currentSong) {
 		return this.selectd_song_play()
 	},
 
