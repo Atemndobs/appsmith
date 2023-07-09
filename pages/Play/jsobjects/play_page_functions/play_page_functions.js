@@ -7,33 +7,53 @@ export default {
 		'match_limit' : 3,
 		'related_songs' : 'my_waymp3'
 	},
-	
+
+	show_details() {
+		if(playing_song_info.isVisible === false) {
+			playing_song_info.isVisible = true
+		}else{
+			playing_song_info.isVisible = false
+		}
+	},
 	selectd_song_play (currentSong = {}) {
 
-		{{player_image.image= currentSong.image}} 
+		console.log({
+			'BEFORE  change' : playing_song_info.text
+		})
+
+		player_image.image= currentSong.image
 		appsmith.store.start_song = currentSong;
 		appsmith.store.current_song = currentSong;
 		search_results_player.isVisible = true;
 		song_search_results.isVisible = false;
-					
+
 		if(Object.keys(currentSong).length === 0 || currentSong.slug !== "undefined" ){
-				appsmith.store.related_songs = currentSong.slug
+			appsmith.store.slug = currentSong.slug
 		}
-		
-		
+
+
 		song_search_results.selectedItem.image = currentSong.image
 		console.log(playing_song_info.text)
-		
+
 		get_song_matches.run();
 		player_song.autoPlay;
-		
+		now_playing_bar.text = currentSong.title + " by " + currentSong.author
+		playing_song_info.text = 
+			"Title : " + currentSong.title + "\n" +
+			"Author : " + currentSong.author + "\n" +
+			"Genre : " + currentSong.genre + "\n" +
+			"BPM : " + currentSong.bpm + "\n" +
+			"Key + Scale: " + currentSong.key + currentSong.scale + "\n" +
+			"mood : " + currentSong.classification_properties
+
+
 		return currentSong
 	},
-	
+
 	async related_song_play(currentSong) {
 		return this.selectd_song_play()
 	},
-	
+
 	get_song_info (currentItem = {}) {
 		let happy = currentItem.happy.toFixed(1) * 100 + "%"
 		let sad = currentItem.sad.toFixed(1) * 100 + "%"
@@ -41,9 +61,9 @@ export default {
 		let genre = 'not defined'
 		try{
 			genre = currentItem.genre
-     }catch(error){
-			 console.log(error)
-     }
+		}catch(error){
+			console.log(error)
+		}
 		let mood = ""
 		if (happy > sad) {
 			mood = "happy"
@@ -58,18 +78,18 @@ export default {
 			genre
 		}
 	},
-	
+
 	search_song () {
 		if(search.text === "") {
 			return;
 		}
-		
+
 		console.log(appsmith.store)
 		clear_search.isVisible = true
 		song_search_api.run()
 		song_search_results.isVisible = true
 	},
-	
+
 	clear_search(){
 		search.text = "";
 		search.inputText = "";

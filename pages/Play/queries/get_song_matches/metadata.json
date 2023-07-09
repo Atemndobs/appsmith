@@ -44,7 +44,7 @@
           "value": "{{play_page_functions.play_page_init_data.match_limit}}"
         }
       ],
-      "body": "{\n\t\"slug\" : {{appsmith.store.related_songs }},\n\t\"bpm\": 100,\n\t\"bpmRange\": \"100-105\",\n\t\"happy\": 70,\n\t\"sad\": 40,\n\t\"mood\": \"sad\",\n\t\"energy\": \"80\",\n\t\"key\": \"E major\",\n\t\"scale\": \"major\",\n\t\"danceability\" : 90\n}",
+      "body": "{\n\t\"slug\" : {{appsmith.store.slug }},\n\t\"bpm\": 100,\n\t\"bpmRange\": \"100-105\",\n\t\"happy\": 70,\n\t\"sad\": 40,\n\t\"mood\": \"sad\",\n\t\"energy\": \"80\",\n\t\"key\": \"E major\",\n\t\"scale\": \"major\",\n\t\"danceability\" : 90\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -70,7 +70,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.related_songs ",
+      "appsmith.store.slug ",
       "play_page_functions.play_page_init_data.match_limit"
     ],
     "userSetOnLoad": false,

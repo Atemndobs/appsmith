@@ -1,5 +1,5 @@
 {
-	"slug" : {{appsmith.store.related_songs }},
+	"slug" : {{appsmith.store.slug }},
 	"bpm": 100,
 	"bpmRange": "100-105",
 	"happy": 70,
