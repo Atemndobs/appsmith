@@ -39,7 +39,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"slug\" : {{appsmith.store.related_songs}},\n  \"bpm\": {{appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value }},\n  \"bpmRange\": {{appsmith.store.set_bpm_range}},\n  \"happy\": {{appsmith.store.happy}},\n  \"sad\": {{appsmith.store.sad}},\n  \"mood\": {{appsmith.store.mood}},\n  \"energy\": {{appsmith.store.energy}},\n  \"key\": \"E major\",\n  \"scale\": \"major\",\n\t\"genre\":{{appsmith.store.genre}},\n  \"danceability\" : 90,\n\t\"aggressiveness\" : 50,\n\t\n}",
+      "body": "{\n\t\"bpm\": {{appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value }},\n\t\"bpmRange\": {{appsmith.store.set_bpm_range}},\n\t\"happy\": {{appsmith.store.happy}},\n\t\"sad\": {{appsmith.store.sad}},\n\t\"mood\": {{appsmith.store.mood}},\n\t\"energy\": {{appsmith.store.energy}},\n\t\"key\": {{appsmith.store.key}},\n\t\n\t\"scale\": \"major\",\n\t\"genre\":{{appsmith.store.genre}},\n\t\"danceability\" : 90,\n\t\"aggressiveness\" : 50,\n\t\"range\" : {{appsmith.store.bpm_increment}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -63,11 +63,12 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value ",
+      "appsmith.store.bpm_increment",
       "appsmith.store.energy",
       "appsmith.store.genre",
       "appsmith.store.happy",
+      "appsmith.store.key",
       "appsmith.store.mood",
-      "appsmith.store.related_songs",
       "appsmith.store.sad",
       "appsmith.store.set_bpm_range"
     ],

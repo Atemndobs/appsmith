@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "set_criteria",
-    "fullyQualifiedName": "settings_page.set_criteria",
+    "name": "set_bpm_range",
+    "fullyQualifiedName": "settings_page.set_bpm_range",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -24,7 +24,6 @@
       "isAsync": true
     },
     "executeOnLoad": true,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,10 +35,9 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-07-27T11:01:10Z"
+    "userPermissions": []
   },
-  "id": "settings_settings_page.set_criteria",
+  "id": "settings_settings_page.set_bpm_range",
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_64c24e769aa83b29b825dca4"
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_64c26a659aa83b29b825dcac"
 }

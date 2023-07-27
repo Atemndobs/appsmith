@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "set_criteria",
-    "fullyQualifiedName": "settings_page.set_criteria",
+    "name": "setMatchCriterion",
+    "fullyQualifiedName": "settings_page.setMatchCriterion",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -23,8 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
-    "clientSideExecution": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -33,13 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-07-27T11:01:10Z"
+    "userPermissions": []
   },
-  "id": "settings_settings_page.set_criteria",
+  "id": "settings_settings_page.setMatchCriterion",
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_64c24e769aa83b29b825dca4"
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_64c26ab59aa83b29b825dcae"
 }
