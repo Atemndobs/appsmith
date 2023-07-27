@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "video",
-    "slug": "video",
+    "name": "wedding-video-2",
+    "slug": "wedding-video-2",
     "layouts": [
       {
         "viewMode": false,
@@ -35,7 +35,7 @@
                 "youtube"
               ],
               "topRow": 0,
-              "bottomRow": 36,
+              "bottomRow": 25,
               "parentRowSpace": 10,
               "type": "VIDEO_WIDGET",
               "hideCard": false,
@@ -59,7 +59,7 @@
               "widgetId": "ltgy4ighve",
               "isVisible": true,
               "version": 1,
-              "url": "http://s3.atemkeng.de:9000/laboom/export_laboom_video/Wedding_Jule-Atem%20_familyKAM_1080.mp4\n",
+              "url": "http://s3.atemkeng.de:9000/laboom/export_laboom_video/Wedding_Jule-Atem_2\n",
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
@@ -74,7 +74,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "video",
+        "id": "wedding-video-2",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -85,5 +85,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_64c2e53c9aa83b29b825dcbf"
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_64c2e84d9aa83b29b825dcc5"
 }
