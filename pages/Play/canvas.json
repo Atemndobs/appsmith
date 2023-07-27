@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 1930,
           "mobileTopRow": 0,
           "useAutoLayout": false,
@@ -652,7 +652,11 @@
                         "song",
                         "property"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
                       "bottomRow": 108,
@@ -1344,9 +1348,7 @@
                 "appsmith.store.slug ?? \"jarreau_vandal_westsidemp3\" "
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Play_song_search_api",
               "name": "song_search_api",

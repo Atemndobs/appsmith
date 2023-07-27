@@ -39,7 +39,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"slug\" : {{appsmith.store.related_songs}},\n  \"bpm\": {{appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value }},\n  \"bpmRange\": {{appsmith.store.set_bpm_range}},\n  \"happy\": {{appsmith.store.happy}},\n  \"sad\": {{appsmith.store.sad}},\n  \"mood\": {{appsmith.store.mood}},\n  \"energy\": {{appsmith.store.energy}},\n  \"key\": \"E major\",\n  \"scale\": \"major\",\n\t\"genre\":{{appsmith.store.genre}},\n  \"danceability\" : 90,\n\t\"aggressiveness\" : 50\n}",
+      "body": "{\n  \"slug\" : {{appsmith.store.related_songs}},\n  \"bpm\": {{appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value }},\n  \"bpmRange\": {{appsmith.store.set_bpm_range}},\n  \"happy\": {{appsmith.store.happy}},\n  \"sad\": {{appsmith.store.sad}},\n  \"mood\": {{appsmith.store.mood}},\n  \"energy\": {{appsmith.store.energy}},\n  \"key\": \"E major\",\n  \"scale\": \"major\",\n\t\"genre\":{{appsmith.store.genre}},\n  \"danceability\" : 90,\n\t\"aggressiveness\" : 50,\n\t\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],

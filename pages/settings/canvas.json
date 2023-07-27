@@ -186,10 +186,10 @@
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
                       "rightColumn": 64,
-                      "onEndValueChange": "{{appsmith.store.bpm_range.end = bpm_range.end}}",
+                      "onEndValueChange": "{{appsmith.store.bpm_range_end = bpm_range.end}}",
                       "max": "180",
                       "widgetId": "2jp68ucv7u",
-                      "onStartValueChange": "{{appsmith.store.bpm_range.start = bpm_range.start}}",
+                      "onStartValueChange": "{{appsmith.store.bpm_range_start = bpm_range.start}}",
                       "marks": "[\n  {\n    \"value\": 0,\n    \"label\": \"0\"\n  },\n\n  {\n    \"value\": 180,\n    \"label\": \"180\"\n  }\n]",
                       "sliderSize": "m",
                       "shouldScroll": false,
@@ -215,7 +215,7 @@
                       "displayName": "Number Slider",
                       "tooltipAlwaysOn": true,
                       "labelText": "BPM",
-                      "topRow": 13.600000000020394,
+                      "topRow": 13.60000000002185,
                       "searchTags": [
                         "range"
                       ],
@@ -264,7 +264,7 @@
                       "isLoading": false,
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 13.600000000018937,
+                      "originalTopRow": 13.600000000020394,
                       "originalBottomRow": 21.599999999998545,
                       "step": 1,
                       "showMarksLabel": true
@@ -281,11 +281,11 @@
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                       "displayName": "Select",
                       "labelText": "Select Genre",
-                      "topRow": 31,
+                      "topRow": 31.000000000001457,
                       "searchTags": [
                         "dropdown"
                       ],
-                      "bottomRow": 38,
+                      "bottomRow": 38.000000000000725,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "SELECT_WIDGET",
@@ -331,10 +331,10 @@
                       "isLoading": false,
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 22.400000000018938,
+                      "originalTopRow": 31,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 29.400000000001455,
+                      "originalBottomRow": 38,
                       "onOptionChange": "{{appsmith.store.genre = genre.selectedOptionValue}}",
                       "minDynamicHeight": 4
                     },
@@ -351,8 +351,8 @@
                       "searchTags": [
                         "boolean"
                       ],
-                      "topRow": 38,
-                      "bottomRow": 42,
+                      "topRow": 38.00000000000145,
+                      "bottomRow": 42.00000000000145,
                       "parentRowSpace": 10,
                       "type": "SWITCH_WIDGET",
                       "alignWidget": "LEFT",
@@ -387,9 +387,9 @@
                       "parentId": "pjvxmre18g",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 30.20000000001894,
+                      "originalTopRow": 38,
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 34.20000000001892,
+                      "originalBottomRow": 42,
                       "minDynamicHeight": 4
                     },
                     {
@@ -407,11 +407,11 @@
                       "displayName": "Number Slider",
                       "tooltipAlwaysOn": false,
                       "labelText": "happy %",
-                      "topRow": 42,
+                      "topRow": 42.0000000000029,
                       "searchTags": [
                         "range"
                       ],
-                      "bottomRow": 50,
+                      "bottomRow": 50.00000000000145,
                       "parentRowSpace": 10,
                       "labelWidth": 8,
                       "type": "NUMBER_SLIDER_WIDGET",
@@ -468,8 +468,8 @@
                       "isLoading": false,
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 35.0000000000374,
-                      "originalBottomRow": 43.00000000001819,
+                      "originalTopRow": 42,
+                      "originalBottomRow": 50,
                       "step": 1,
                       "showMarksLabel": true
                     },
@@ -488,16 +488,16 @@
                       "displayName": "Number Slider",
                       "tooltipAlwaysOn": false,
                       "labelText": "sad %",
-                      "topRow": 50,
+                      "topRow": 50.0000000000029,
                       "searchTags": [
                         "range"
                       ],
-                      "bottomRow": 54,
+                      "bottomRow": 54.0000000000029,
                       "parentRowSpace": 10,
                       "labelWidth": 8,
                       "type": "NUMBER_SLIDER_WIDGET",
                       "hideCard": false,
-                      "topRowBeforeCollapse": 35.80000000003883,
+                      "topRowBeforeCollapse": 42.00000000000145,
                       "animateLoading": true,
                       "min": 0,
                       "parentColumnSpace": 5.78271484375,
@@ -526,7 +526,7 @@
                       "max": 100,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "widgetId": "k58zu4r415",
-                      "bottomRowBeforeCollapse": 35.80000000004004,
+                      "bottomRowBeforeCollapse": 42.000000000000725,
                       "isVisible": "{{!mood.isSwitchedOn}}",
                       "marks": [
                         {
@@ -549,8 +549,8 @@
                       "isLoading": false,
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 43.80000000003735,
-                      "originalBottomRow": 47.80000000003565,
+                      "originalTopRow": 50,
+                      "originalBottomRow": 54,
                       "step": 1,
                       "showMarksLabel": true
                     },
@@ -566,11 +566,11 @@
                       "displayName": "Number Slider",
                       "tooltipAlwaysOn": false,
                       "labelText": "energy %",
-                      "topRow": 54,
+                      "topRow": 54.0000000000058,
                       "searchTags": [
                         "range"
                       ],
-                      "bottomRow": 62,
+                      "bottomRow": 62.0000000000029,
                       "parentRowSpace": 10,
                       "labelWidth": 8,
                       "type": "NUMBER_SLIDER_WIDGET",
@@ -622,8 +622,8 @@
                       "isLoading": false,
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 48.600000000051985,
-                      "originalBottomRow": 56.600000000034925,
+                      "originalTopRow": 54,
+                      "originalBottomRow": 62,
                       "step": 1,
                       "showMarksLabel": true
                     },
@@ -631,14 +631,19 @@
                       "boxShadow": "none",
                       "widgetName": "key_scale_container",
                       "isFilterable": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                       "displayName": "Select",
                       "labelText": "Select Key",
-                      "topRow": 62,
+                      "topRow": 62.0000000000058,
                       "searchTags": [
                         "dropdown"
                       ],
-                      "bottomRow": 69,
+                      "bottomRow": 69.0000000000029,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "SELECT_WIDGET",
@@ -647,7 +652,11 @@
                       "defaultOptionValue": "GREEN",
                       "animateLoading": true,
                       "parentColumnSpace": 5.67578125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
@@ -679,16 +688,17 @@
                       "isLoading": false,
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 57.40000000005198,
+                      "originalTopRow": 62,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 64.40000000003783,
+                      "originalBottomRow": 69,
+                      "onOptionChange": "{{appsmith.store.key = key_scale_container.selectedOptionValue}}",
                       "minDynamicHeight": 4
                     },
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "onClick": "{{set_match_criteria.run() && (settings_container.isVisible = false)}}\n",
+                      "onClick": "{{set_match_criteria.run()}}",
                       "widgetName": "apply_match_settings",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
@@ -735,63 +745,75 @@
                       "parentId": "pjvxmre18g",
                       "isLoading": false,
                       "renderMode": "CANVAS",
-                      "originalTopRow": 64.99999999999997,
+                      "originalTopRow": 69,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
-                      "originalBottomRow": 68.99999999999636,
+                      "originalBottomRow": 73,
                       "buttonVariant": "PRIMARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
                     },
                     {
-                      "mobileBottomRow": 31,
-                      "widgetName": "bpm_increment",
                       "defaultValue": "1",
-                      "displayName": "Number Slider",
                       "iconSVG": "/static/media/icon.9b32c922c2540d18f7a13976d9cb2f24.svg",
                       "tooltipAlwaysOn": false,
                       "labelText": "BPM Increment",
-                      "searchTags": [
-                        "range"
-                      ],
-                      "topRow": 23,
-                      "bottomRow": 31,
-                      "parentRowSpace": 10,
+                      "topRow": 23.000000000001457,
                       "labelWidth": 8,
                       "type": "NUMBER_SLIDER_WIDGET",
-                      "hideCard": false,
-                      "mobileRightColumn": 50,
                       "animateLoading": true,
-                      "min": 0,
-                      "parentColumnSpace": 6.42431640625,
-                      "dynamicTriggerPathList": [],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
                         }
                       ],
+                      "isDisabled": false,
+                      "onChange": "{{appsmith.store.bpm_increment = bpm_increment.value}}",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "isLoading": false,
+                      "originalBottomRow": 31,
+                      "mobileBottomRow": 31,
+                      "widgetName": "bpm_increment",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
+                      "displayName": "Number Slider",
+                      "searchTags": [
+                        "range"
+                      ],
+                      "bottomRow": 31.00000000000073,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "mobileRightColumn": 50,
+                      "min": 0,
+                      "parentColumnSpace": 6.42431640625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onChange"
+                        }
+                      ],
                       "shouldTruncate": false,
                       "labelPosition": "Top",
-                      "isDisabled": false,
                       "key": "n0qqlkv72d",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "max": "10",
                       "widgetId": "p9bqeih9w8",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
                       "marks": "[\n  {\n    \"value\": 1,\n    \"label\": \"1\"\n  },\n  {\n    \"value\": 2,\n    \"label\": \"2\"\n  },\n\t  {\n    \"value\": 3,\n    \"label\": \"3\"\n  },\n\t  {\n    \"value\": 4,\n    \"label\": \"4\"\n  },\n\t  {\n    \"value\": 5,\n    \"label\": \"5\"\n  },\n\t  {\n    \"value\": 6,\n    \"label\": \"6\"\n  },\n\t  {\n    \"value\": 7,\n    \"label\": \"7\"\n  },\n\t  {\n    \"value\": 8,\n    \"label\": \"8\"\n  },\n\t  {\n    \"value\": 9,\n    \"label\": \"9\"\n  },\n\t  {\n    \"value\": 10,\n    \"label\": \"10\"\n  }\n]",
                       "sliderSize": "m",
                       "shouldScroll": false,
-                      "version": 1,
                       "parentId": "pjvxmre18g",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
                       "mobileTopRow": 23,
                       "responsiveBehavior": "fill",
+                      "originalTopRow": 23,
                       "mobileLeftColumn": 10,
                       "step": 1,
                       "showMarksLabel": true
@@ -831,7 +853,7 @@
               "originalTopRow": 3,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 78,
+              "originalBottomRow": 79,
               "minDynamicHeight": 10
             }
           ]
