@@ -19,6 +19,10 @@
     {
       "id": "settings",
       "isDefault": false
+    },
+    {
+      "id": "video",
+      "isDefault": false
     }
   ],
   "viewMode": false,
