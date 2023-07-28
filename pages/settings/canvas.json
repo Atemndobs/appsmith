@@ -233,7 +233,7 @@
                           "key": "onChange"
                         }
                       ],
-                      "leftColumn": 1,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -249,7 +249,7 @@
                       "key": "oxb042b1tk",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 63,
                       "onChange": "{{appsmith.store.bpm = bpm.value}}",
                       "max": "200",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -566,11 +566,11 @@
                       "displayName": "Number Slider",
                       "tooltipAlwaysOn": false,
                       "labelText": "energy %",
-                      "topRow": 54.0000000000087,
+                      "topRow": 55,
                       "searchTags": [
                         "range"
                       ],
-                      "bottomRow": 62.00000000000509,
+                      "bottomRow": 62,
                       "parentRowSpace": 10,
                       "labelWidth": 8,
                       "type": "NUMBER_SLIDER_WIDGET",

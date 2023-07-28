@@ -16,6 +16,7 @@ export default {
 		}
 	},
 	selectd_song_play (currentSong = {}) {
+		appsmith.store.song_id = currentSong.id
 		search.isVisible = false
 		related_songs.isVisible = true
 
@@ -33,6 +34,8 @@ export default {
 		song_search_results.selectedItem.image = currentSong.image
 		console.log(playing_song_info.text)
 
+		// save the song as played song
+		
 		get_song_matches.run();
 		player_song.autoPlay;
 		now_playing_bar.text = currentSong.title + " by " + currentSong.author
@@ -101,7 +104,7 @@ export default {
 		clear_search.isVisible = false
 		related_songs.isVisible = false
 		get_match_criteria.clear()
-
+		clear_match_criteria.run()
 		//appsmith.store.related_songs = this.play_page_init_data.related_songs
 		// appsmith.store.related_songs = ""
 	}

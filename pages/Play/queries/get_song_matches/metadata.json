@@ -44,7 +44,7 @@
           "value": "{{play_page_functions.play_page_init_data.match_limit}}"
         }
       ],
-      "body": "{\n\t\"slug\" : {{appsmith.store.slug ?? \"jarreau_vandal_westsidemp3\" }} ,\n\t\"bpm\": 100,\n\t\"bpmRange\": \"100-105\",\n\t\"happy\": 70,\n\t\"sad\": 40,\n\t\"mood\": \"sad\",\n\t\"energy\": \"80\",\n\t\"key\": \"E major\",\n\t\"scale\": \"major\",\n\t\"danceability\" : 90\n}",
+      "body": "{\n\t\"slug\" : {{appsmith.store.slug ?? \"jarreau_vandal_westsidemp3\" }} ,\n\t\"id\" : {{appsmith.store.start_song ? appsmith.store.start_song.id : null}},\n\t\"bpm\": 100,\n\t\"bpmRange\": \"100-105\",\n\t\"happy\": 70,\n\t\"sad\": 40,\n\t\"mood\": \"sad\",\n\t\"energy\": \"80\",\n\t\"key\": \"E major\",\n\t\"scale\": \"major\",\n\t\"danceability\" : 90\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -71,6 +71,7 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.slug ?? \"jarreau_vandal_westsidemp3\" ",
+      "appsmith.store.start_song ? appsmith.store.start_song.id : null",
       "play_page_functions.play_page_init_data.match_limit"
     ],
     "userSetOnLoad": false,

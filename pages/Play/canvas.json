@@ -1345,6 +1345,7 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "play_page_functions.play_page_init_data.match_limit",
+                "appsmith.store.start_song ? appsmith.store.start_song.id : null",
                 "appsmith.store.slug ?? \"jarreau_vandal_westsidemp3\" "
               ],
               "timeoutInMillisecond": 10000
