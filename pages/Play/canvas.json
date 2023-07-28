@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -1079,7 +1079,11 @@
                         "song",
                         "property"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
                       "bottomRow": 99,
@@ -1215,7 +1219,7 @@
               "borderRadius": "0px",
               "mobileLeftColumn": 4,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 109,
+              "originalBottomRow": 123,
               "minDynamicHeight": 10
             },
             {
@@ -1507,7 +1511,7 @@
               "isLoading": false,
               "mainCanvasId": "3ehd7cbnm2",
               "borderRadius": "0.375rem",
-              "originalBottomRow": 22,
+              "originalBottomRow": 149,
               "additionalStaticProps": [
                 "level",
                 "levelData",
@@ -1551,7 +1555,7 @@
               "renderMode": "CANVAS",
               "mobileTopRow": 17,
               "responsiveBehavior": "fill",
-              "originalTopRow": 22,
+              "originalTopRow": 127,
               "mobileLeftColumn": 24,
               "selectedItemView": "{{{}}}"
             },
@@ -2048,17 +2052,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Play_get_song_matches",
-              "name": "get_song_matches",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "play_page_functions.play_page_init_data.match_limit",
-                "appsmith.store.related_songs"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Play_play_page_functions.clear_search",
               "name": "play_page_functions.clear_search",
               "collectionId": "Play_play_page_functions",
@@ -2071,6 +2064,17 @@
             }
           ],
           [
+            {
+              "id": "Play_get_song_matches",
+              "name": "get_song_matches",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "play_page_functions.play_page_init_data.match_limit",
+                "appsmith.store.related_songs"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Play_song_search_api",
               "name": "song_search_api",
