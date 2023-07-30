@@ -464,7 +464,7 @@
                       "isLoading": false,
                       "mainCanvasId": "4575t2x8hg",
                       "borderRadius": "0px",
-                      "originalBottomRow": 83,
+                      "originalBottomRow": 82,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -503,7 +503,7 @@
                       "onItemClick": "{{play_page_functions.selectd_song_play(currentItem)}}",
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 51,
+                      "originalTopRow": 50,
                       "selectedItemView": "{{{}}}"
                     },
                     {
@@ -562,10 +562,10 @@
                       "parentId": "qu25d50ks2",
                       "isLoading": false,
                       "renderMode": "CANVAS",
-                      "originalTopRow": 83,
+                      "originalTopRow": 91,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 87,
+                      "originalBottomRow": 95,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -642,7 +642,7 @@
                       },
                       "borderRadius": "0px",
                       "columnUpdatedAt": 1682440283534,
-                      "originalBottomRow": 124,
+                      "originalBottomRow": 127,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -744,7 +744,7 @@
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
-                      "originalTopRow": 92,
+                      "originalTopRow": 95,
                       "isVisiblePagination": false,
                       "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                       "verticalAlignment": "CENTER"
@@ -808,10 +808,10 @@
                       "parentId": "qu25d50ks2",
                       "isLoading": false,
                       "renderMode": "CANVAS",
-                      "originalTopRow": 47,
+                      "originalTopRow": 46,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 51,
+                      "originalBottomRow": 50,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -863,10 +863,10 @@
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 28,
+                      "originalTopRow": 27,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 43,
+                      "originalBottomRow": 42,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -1019,11 +1019,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 43,
+                      "originalTopRow": 42,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 43,
-                      "originalBottomRow": 47,
+                      "originalBottomRow": 46,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1075,11 +1075,11 @@
                       "isLoading": false,
                       "mobileTopRow": 47,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 47,
+                      "originalTopRow": 46,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 24,
-                      "originalBottomRow": 51,
+                      "originalBottomRow": 50,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1114,7 +1114,7 @@
                           "key": "text"
                         }
                       ],
-                      "text": "{{get_song_matches.data.hits_count}}",
+                      "text": "{{get_song_matches.data.excluded_count}}",
                       "isDisabled": false,
                       "key": "yteovju7dd",
                       "isDeprecated": false,
@@ -1131,11 +1131,11 @@
                       "isLoading": false,
                       "mobileTopRow": 47,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 47,
+                      "originalTopRow": 46,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 41,
-                      "originalBottomRow": 51,
+                      "originalBottomRow": 50,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1162,7 +1162,7 @@
                           "key": "labelTextColor"
                         }
                       ],
-                      "options": "[\n  {\n    \"label\": \"Genr\",\n    \"value\": \"genre\"\n  },\n  {\n    \"label\": \"Key\",\n    \"value\": \"key\"\n  },\n  {\n    \"label\": \"Ener\",\n    \"value\": \"energy\"\n  },\n  {\n    \"label\": \"Dance\",\n    \"value\": \"danceability\"\n  }\n]",
+                      "options": "[\n  {\n    \"label\": \"Genr\",\n    \"value\": \"genre\"\n  },\n  {\n    \"label\": \"Key\",\n    \"value\": \"key\"\n  },\n  {\n    \"label\": \"Ener\",\n    \"value\": \"energy\"\n  },\n  {\n    \"label\": \"Dance\",\n    \"value\": \"danceability\"\n  },\n  {\n    \"label\": \"mood\",\n    \"value\": \"mood\"\n  }\n]",
                       "placeholderText": "Select option(s)",
                       "isDisabled": false,
                       "isRequired": false,
@@ -1250,9 +1250,11 @@
                       "isLoading": false,
                       "mobileTopRow": 82,
                       "responsiveBehavior": "hug",
+                      "originalTopRow": 82,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 23,
+                      "originalBottomRow": 86,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
