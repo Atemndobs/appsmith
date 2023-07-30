@@ -1338,7 +1338,7 @@
                       "rightColumn": 64,
                       "widgetId": "0qw0g6ij2m",
                       "minWidth": 450,
-                      "isVisible": true,
+                      "isVisible": false,
                       "version": 1,
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",

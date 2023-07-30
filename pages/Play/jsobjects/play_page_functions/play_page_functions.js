@@ -14,7 +14,7 @@ export default {
 			mood_button.isVisible = true
 		}else{
 			playing_song_info.isVisible = false
-			mood_button.isVisible = fa
+			mood_button.isVisible = false
 		}
 	},
 	show_start_song(){
@@ -24,7 +24,7 @@ export default {
 			song_detail_table.isVisible = false
 		}
 	},
- show_refine(){
+	show_refine(){
 		if(refine.isVisible === false) {
 			refine.isVisible = true
 		}else{
@@ -51,7 +51,7 @@ export default {
 		console.log(playing_song_info.text)
 
 		// save the song as played song
-		
+
 		get_song_matches.run();
 		player_song.autoPlay;
 		now_playing_bar.text = currentSong.title + " by " + currentSong.author
