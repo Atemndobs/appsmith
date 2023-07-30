@@ -11,8 +11,10 @@ export default {
 	show_details() {
 		if(playing_song_info.isVisible === false) {
 			playing_song_info.isVisible = true
+			mood_button.isVisible = true
 		}else{
 			playing_song_info.isVisible = false
+			mood_button.isVisible = fa
 		}
 	},
 	show_start_song(){
