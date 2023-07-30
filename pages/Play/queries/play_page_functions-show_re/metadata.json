@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "selectd_song_play",
-    "fullyQualifiedName": "play_page_functions.selectd_song_play",
+    "name": "show_re",
+    "fullyQualifiedName": "play_page_functions.show_re",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -16,18 +16,14 @@
     "pageId": "Play",
     "collectionId": "Play_play_page_functions",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "currentSong"
-        }
-      ],
-      "isAsync": true
+      "jsArguments": [],
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -39,10 +35,9 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-07-28T07:57:33Z"
+    "userPermissions": []
   },
-  "id": "Play_play_page_functions.selectd_song_play",
+  "id": "Play_play_page_functions.show_re",
   "deleted": false,
-  "gitSyncId": "64467d69ea2e4f6c16474cba_644766d4ea2e4f6c16474d5b"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64c67d029aa83b29b825de48"
 }

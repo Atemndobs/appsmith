@@ -15,6 +15,20 @@ export default {
 			playing_song_info.isVisible = false
 		}
 	},
+	show_start_song(){
+		if(song_detail_table.isVisible === false) {
+			song_detail_table.isVisible = true
+		}else{
+			song_detail_table.isVisible = false
+		}
+	},
+ show_refine(){
+		if(refine.isVisible === false) {
+			refine.isVisible = true
+		}else{
+			refine.isVisible = false
+		}
+	},
 	selectd_song_play (currentSong = {}) {
 		appsmith.store.song_id = currentSong.id
 		search.isVisible = false
