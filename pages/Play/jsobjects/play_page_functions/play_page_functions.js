@@ -25,10 +25,10 @@ export default {
 		}
 	},
 	show_refine(){
-		if(refine.isVisible === false) {
-			refine.isVisible = true
+		if(refine_options.isVisible === false) {
+			refine_options.isVisible = true
 		}else{
-			refine.isVisible = false
+			refine_options.isVisible = false
 		}
 	},
 	selectd_song_play (currentSong = {}) {
