@@ -1,5 +1,5 @@
 {
-	"slug" : {{appsmith.store.slug ?? "jarreau_vandal_westsidemp3" }} ,
+	"slug" : {{appsmith.store.slug ?? "" }} ,
 	"id" : {{appsmith.store.start_song ? appsmith.store.start_song.id : null}},
 	"bpm": 100,
 	"bpmRange": "100-105",
