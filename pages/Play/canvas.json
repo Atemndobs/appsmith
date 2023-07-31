@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1580,
+          "bottomRow": 1560,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -198,7 +198,7 @@
                 "group"
               ],
               "topRow": 41,
-              "bottomRow": 158,
+              "bottomRow": 156,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -221,7 +221,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1170,
+                  "bottomRow": 1150,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -238,7 +238,7 @@
                       "requiresFlatWidgetChildren": true,
                       "isCanvas": true,
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 39,
+                      "topRow": 37,
                       "pageSize": 3,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": "0",
@@ -464,7 +464,7 @@
                       "isLoading": false,
                       "mainCanvasId": "4575t2x8hg",
                       "borderRadius": "0px",
-                      "originalBottomRow": 75,
+                      "originalBottomRow": 71,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -481,7 +481,7 @@
                         }
                       ],
                       "displayName": "List",
-                      "bottomRow": 71,
+                      "bottomRow": 69,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "templateBottomRow": 16,
@@ -503,7 +503,7 @@
                       "onItemClick": "{{play_page_functions.selectd_song_play(currentItem)}}",
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 43,
+                      "originalTopRow": 39,
                       "selectedItemView": "{{{}}}"
                     },
                     {
@@ -511,7 +511,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 83,
+                      "topRow": 81,
                       "isSortable": false,
                       "type": "TABLE_WIDGET_V2",
                       "topRowBeforeCollapse": 75,
@@ -579,7 +579,7 @@
                       },
                       "borderRadius": "0px",
                       "columnUpdatedAt": 1682440283534,
-                      "originalBottomRow": 119,
+                      "originalBottomRow": 115,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -596,7 +596,7 @@
                       ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 115,
+                      "bottomRow": 113,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 119,
@@ -681,7 +681,7 @@
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
-                      "originalTopRow": 87,
+                      "originalTopRow": 83,
                       "isVisiblePagination": false,
                       "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                       "verticalAlignment": "CENTER"
@@ -691,13 +691,13 @@
                       "widgetName": "related_songs_title",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "displayName": "Text",
-                      "topRow": 35,
+                      "topRow": 33,
                       "searchTags": [
                         "typography",
                         "paragraph",
                         "label"
                       ],
-                      "bottomRow": 39,
+                      "bottomRow": 37,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -745,10 +745,10 @@
                       "parentId": "qu25d50ks2",
                       "isLoading": false,
                       "renderMode": "CANVAS",
-                      "originalTopRow": 39,
+                      "originalTopRow": 35,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 43,
+                      "originalBottomRow": 39,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -762,7 +762,7 @@
                         "label"
                       ],
                       "topRow": 21,
-                      "bottomRow": 27,
+                      "bottomRow": 25,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -778,14 +778,11 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "text"
                         }
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Artist : {{song_search_results.selectedItem.author}}\nTitle : {{song_search_results.selectedItem.author}}\nGenre: {{song_search_results.selectedItem.genre[0]}}",
+                      "text": "",
                       "key": "qgj37atwrg",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -803,7 +800,7 @@
                       "originalTopRow": 21,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 31,
+                      "originalBottomRow": 27,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -828,11 +825,7 @@
                       "parentColumnSpace": 19.25,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 1,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "url"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
                       "key": "tmezwc8146",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -841,7 +834,7 @@
                       "minWidth": 450,
                       "isVisible": true,
                       "version": 1,
-                      "url": "{{play_page_functions.selectd_song_play.data.path}}",
+                      "url": "",
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",
                       "isLoading": false,
@@ -873,14 +866,10 @@
                       ],
                       "imageShape": "RECTANGLE",
                       "leftColumn": 1,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "image"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
                       "defaultImage": "http://s3.atemkeng.de:9000/curator/images/amber_mark_thong_song_sisqo_cover_covered_19_seriesmp3.jpeg",
                       "key": "xcodzartgx",
-                      "image": "{{song_search_results.selectedItem ?? song_search_results.selectedItem.image}}",
+                      "image": "",
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "objectFit": "cover",
@@ -916,8 +905,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 31,
-                      "bottomRow": 35,
+                      "topRow": 29,
+                      "bottomRow": 33,
                       "tooltip": "Click so show/hide Song details",
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
@@ -934,12 +923,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
-                        },
-                        {
-                          "key": "text"
                         }
                       ],
-                      "text": "{{song_search_results.selectedItem.title}}\nby\n{{song_search_results.selectedItem.author}}",
+                      "text": "",
                       "isDisabled": false,
                       "key": "ub7hx2rwlm",
                       "isDeprecated": false,
@@ -956,11 +942,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 35,
+                      "originalTopRow": 31,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 43,
-                      "originalBottomRow": 39,
+                      "originalBottomRow": 35,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -977,8 +963,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 35,
-                      "bottomRow": 39,
+                      "topRow": 33,
+                      "bottomRow": 37,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1012,11 +998,11 @@
                       "isLoading": false,
                       "mobileTopRow": 47,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 39,
+                      "originalTopRow": 35,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 24,
-                      "originalBottomRow": 43,
+                      "originalBottomRow": 39,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1033,8 +1019,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 35,
-                      "bottomRow": 39,
+                      "topRow": 33,
+                      "bottomRow": 37,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1068,11 +1054,11 @@
                       "isLoading": false,
                       "mobileTopRow": 47,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 39,
+                      "originalTopRow": 35,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 41,
-                      "originalBottomRow": 43,
+                      "originalBottomRow": 39,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1081,7 +1067,7 @@
                       "boxShadow": "none",
                       "iconSVG": "/static/media/icon.16c864f46228416bf937ce5e688bf1eb.svg",
                       "labelText": "",
-                      "topRow": 75,
+                      "topRow": 73,
                       "labelWidth": 5,
                       "type": "MULTI_SELECT_WIDGET_V2",
                       "serverSideFiltering": false,
@@ -1106,7 +1092,7 @@
                       "version": 1,
                       "isLoading": false,
                       "borderRadius": "0px",
-                      "originalBottomRow": 83,
+                      "originalBottomRow": 79,
                       "mobileBottomRow": 90,
                       "widgetName": "refine_options",
                       "isFilterable": false,
@@ -1123,7 +1109,7 @@
                         "dropdown",
                         "tags"
                       ],
-                      "bottomRow": 79,
+                      "bottomRow": 77,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "mobileRightColumn": 21,
@@ -1151,7 +1137,7 @@
                       "renderMode": "CANVAS",
                       "mobileTopRow": 83,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 79,
+                      "originalTopRow": 75,
                       "mobileLeftColumn": 1,
                       "maxDynamicHeight": 9000,
                       "onOptionChange": "{{play_page_functions.set_option()}}",
@@ -1175,8 +1161,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 71,
-                      "bottomRow": 75,
+                      "topRow": 69,
+                      "bottomRow": 73,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1211,11 +1197,11 @@
                       "isLoading": false,
                       "mobileTopRow": 82,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 75,
+                      "originalTopRow": 71,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 23,
-                      "originalBottomRow": 79,
+                      "originalBottomRow": 75,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1238,8 +1224,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 79,
-                      "bottomRow": 83,
+                      "topRow": 77,
+                      "bottomRow": 81,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1274,11 +1260,11 @@
                       "isLoading": false,
                       "mobileTopRow": 95,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 83,
+                      "originalTopRow": 79,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 17,
-                      "originalBottomRow": 87,
+                      "originalBottomRow": 83,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1303,8 +1289,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 27,
-                      "bottomRow": 31,
+                      "topRow": 25,
+                      "bottomRow": 29,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1341,11 +1327,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 31,
+                      "originalTopRow": 27,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 1,
-                      "originalBottomRow": 35,
+                      "originalBottomRow": 31,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1362,8 +1348,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 27,
-                      "bottomRow": 31,
+                      "topRow": 25,
+                      "bottomRow": 29,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1397,11 +1383,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 31,
+                      "originalTopRow": 27,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 18,
-                      "originalBottomRow": 35,
+                      "originalBottomRow": 31,
                       "buttonVariant": "PRIMARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1418,8 +1404,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 27,
-                      "bottomRow": 31,
+                      "topRow": 25,
+                      "bottomRow": 29,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1453,11 +1439,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 31,
+                      "originalTopRow": 27,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 18,
-                      "originalBottomRow": 35,
+                      "originalBottomRow": 31,
                       "buttonVariant": "PRIMARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1474,8 +1460,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 27,
-                      "bottomRow": 31,
+                      "topRow": 25,
+                      "bottomRow": 29,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1509,11 +1495,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 31,
+                      "originalTopRow": 27,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 18,
-                      "originalBottomRow": 35,
+                      "originalBottomRow": 31,
                       "buttonVariant": "PRIMARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1553,7 +1539,7 @@
               "originalTopRow": 41,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 168,
+              "originalBottomRow": 158,
               "minDynamicHeight": 10
             },
             {
@@ -1829,15 +1815,28 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Play_play_page_functions.clear_search",
+              "name": "play_page_functions.clear_search",
+              "collectionId": "Play_play_page_functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  search.isVisible = true;\n  search.text = \"\";\n  search.inputText = \"\";\n  search.inputText.trim();\n  search.text.trim();\n  song_search_results.isVisible = false;\n  search_results_player.isVisible = false;\n  song_search_api.clear();\n  clear_search.isVisible = false;\n  related_songs.isVisible = false;\n  get_match_criteria.clear();\n  clear_match_criteria.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Play_get_song_matches",
               "name": "get_song_matches",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.options ? appsmith.store.options : []",
+                "appsmith.store.slug ?? null ",
                 "play_page_functions.play_page_init_data.match_limit",
-                "appsmith.store.start_song ? appsmith.store.start_song.id : null",
-                "appsmith.store.slug ?? \"\" "
+                "appsmith.store.start_song ? appsmith.store.start_song.id : null"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -1849,19 +1848,6 @@
               "jsonPathKeys": [
                 "play_page_functions.play_page_init_data.search_limit",
                 "search.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Play_play_page_functions.selectd_song_play",
-              "name": "play_page_functions.selectd_song_play",
-              "collectionId": "Play_play_page_functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "function (currentSong = {}) {\n  appsmith.store.song_id = currentSong.id;\n  search.isVisible = false;\n  related_songs.isVisible = true;\n  player_image.image = currentSong.image ?? \"\";\n  appsmith.store.start_song = currentSong;\n  appsmith.store.current_song = currentSong;\n  search_results_player.isVisible = true;\n  song_search_results.isVisible = false;\n  if (Object.keys(currentSong).length === 0 || currentSong.slug !== \"undefined\") {\n    appsmith.store.slug = currentSong.slug;\n  }\n  console.log(mood_button);\n  song_search_results.selectedItem.image = currentSong.image;\n  get_song_matches.run();\n  player_song.autoPlay;\n  now_playing_bar.text = currentSong.title + \" by \" + currentSong.author;\n  playing_song_info.text = \"Title : \" + currentSong.title + \"\\n\" + \"Author : \" + currentSong.author + \"\\n\" + \"Genre : \" + currentSong.genre + \"\\n\" + \"BPM : \" + currentSong.bpm + \"\\n\" + \"Key : \" + currentSong.key + currentSong.scale + \"\\n\";\n  return currentSong;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

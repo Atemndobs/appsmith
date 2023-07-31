@@ -67,20 +67,21 @@ export default {
 			appsmith.store.slug = currentSong.slug
 		}
 
-
-		console.log(mood_button)
-
 		song_search_results.selectedItem.image = currentSong.image
 
+		mood_button.text = this.getMood()
+		energy_button.text = currentSong.energy
+		bpm_button.text = currentSong.bpm
+		key_button.text = currentSong.key + currentSong.scale
 		get_song_matches.run();
 		player_song.autoPlay;
 		now_playing_bar.text = currentSong.title + " by " + currentSong.author
 		playing_song_info.text = 
 			"Title : " + currentSong.title + "\n" +
 			"Author : " + currentSong.author + "\n" +
-			"Genre : " + currentSong.genre + "\n" +
-			"BPM : " + currentSong.bpm + "\n" +
-			"Key : " + currentSong.key + currentSong.scale + "\n" ;
+			"Genre : " + currentSong.genre + "\n" 
+		//	"BPM : " + currentSong.bpm + "\n" +
+		//	"Key : " + currentSong.key + currentSong.scale + "\n" ;
 
 		return currentSong
 	},
@@ -90,8 +91,6 @@ export default {
 	},
 
 	get_song_info (currentItem = {}) {
-		let happy = currentItem.happy.toFixed(1) * 100 + "%"
-		let sad = currentItem.sad.toFixed(1) * 100 + "%"
 		let danceability = currentItem.danceability.toFixed(1) * 100 + "%"
 		let genre = 'not defined'
 		let bpm = currentItem.bpm
@@ -101,12 +100,9 @@ export default {
 		}catch(error){
 			console.log(error)
 		}
-		let mood = ""
-		if (happy > sad) {
-			mood = "happy"
-		}else {
-			mood = "sad"
-		}
+
+		let mood = this.getMood()
+
 		let energy = currentItem.energy.toFixed(1) * 100 + "%"
 		return {
 			mood,
@@ -118,6 +114,18 @@ export default {
 		}
 	},
 
+	getMood(currentItem) {
+		let happy = currentItem.happy.toFixed(1) * 100 + "%"
+		let sad = currentItem.sad.toFixed(1) * 100 + "%"
+		let mood = ""
+		if (happy > sad) {
+			mood = "happy"
+		}else {
+			mood = "sad"
+		}
+		return mood;
+	},
+
 	search_song () {
 		if(search.text === "") {
 			return;
@@ -125,7 +133,7 @@ export default {
 
 		console.log(appsmith.store)
 		clear_search.isVisible = true
-		song_search_api.run()
+		//song_search_api.run()
 		song_search_results.isVisible = true
 	},
 
