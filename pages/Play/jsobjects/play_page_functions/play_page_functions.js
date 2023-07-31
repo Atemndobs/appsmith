@@ -68,20 +68,19 @@ export default {
 		}
 
 		song_search_results.selectedItem.image = currentSong.image
-
-		mood_button.text = this.getMood()
+		mood_button.text = this.getMood(currentSong)
 		energy_button.text = currentSong.energy
 		bpm_button.text = currentSong.bpm
 		key_button.text = currentSong.key + currentSong.scale
+		
+		
 		get_song_matches.run();
 		player_song.autoPlay;
 		now_playing_bar.text = currentSong.title + " by " + currentSong.author
 		playing_song_info.text = 
 			"Title : " + currentSong.title + "\n" +
 			"Author : " + currentSong.author + "\n" +
-			"Genre : " + currentSong.genre + "\n" 
-		//	"BPM : " + currentSong.bpm + "\n" +
-		//	"Key : " + currentSong.key + currentSong.scale + "\n" ;
+			"Genre : " + currentSong.genre + "\n" ;
 
 		return currentSong
 	},
@@ -97,11 +96,14 @@ export default {
 		let key = currentItem.key + currentItem.scale
 		try{
 			genre = currentItem.genre
+			if(genre == 'undefined') {
+				genre = 'Genre is missing'
+			}
 		}catch(error){
 			console.log(error)
 		}
 
-		let mood = this.getMood()
+		let mood = this.getMood(currentItem)
 
 		let energy = currentItem.energy.toFixed(1) * 100 + "%"
 		return {
