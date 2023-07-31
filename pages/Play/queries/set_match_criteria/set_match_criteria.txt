@@ -1,5 +1,5 @@
 {
-	"slug" : {{appsmith.store.related_songs}},
+	"slug" : {{appsmith.store.related_songs ?? ''}},
 	"id" : {{appsmith.store.start_song ? appsmith.store.start_song.id : appsmith.store.song_id}},
 	"bpm": {{appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value }},
 	"bpmRange": {{appsmith.store.set_bpm_range}},

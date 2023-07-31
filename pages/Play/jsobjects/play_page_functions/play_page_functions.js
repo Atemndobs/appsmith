@@ -130,7 +130,6 @@ export default {
 	},
 
 	clear_search(){
-		//appsmith.store.slug = "jarreau_vandal_westsidemp3"
 		search.isVisible = true
 		search.text = "";
 		search.inputText = "";
