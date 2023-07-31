@@ -976,12 +976,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
-                        },
-                        {
-                          "key": "text"
                         }
                       ],
-                      "text": "{{get_song_matches.data.hits_count}}",
+                      "text": "",
                       "isDisabled": false,
                       "key": "yteovju7dd",
                       "isDeprecated": false,
@@ -1032,12 +1029,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
-                        },
-                        {
-                          "key": "text"
                         }
                       ],
-                      "text": "{{get_song_matches.data.excluded_count}}",
+                      "text": "",
                       "isDisabled": false,
                       "key": "yteovju7dd",
                       "isDeprecated": false,
@@ -1306,7 +1300,7 @@
                       "iconName": "heart",
                       "widgetId": "5xgqz5j7ec",
                       "minWidth": 120,
-                      "isVisible": true,
+                      "isVisible": false,
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "qu25d50ks2",
@@ -1359,7 +1353,7 @@
                       "iconName": "pulse",
                       "widgetId": "1fj8v1ps6z",
                       "minWidth": 120,
-                      "isVisible": true,
+                      "isVisible": false,
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "qu25d50ks2",
@@ -1412,7 +1406,7 @@
                       "iconName": "music",
                       "widgetId": "kfpozr8zn6",
                       "minWidth": 120,
-                      "isVisible": true,
+                      "isVisible": false,
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "qu25d50ks2",
@@ -1465,7 +1459,7 @@
                       "iconName": "stopwatch",
                       "widgetId": "2ky06w2i7j",
                       "minWidth": 120,
-                      "isVisible": true,
+                      "isVisible": false,
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "qu25d50ks2",
@@ -1517,7 +1511,7 @@
               "originalTopRow": 41,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 158,
+              "originalBottomRow": 156,
               "minDynamicHeight": 10
             },
             {
@@ -1642,13 +1636,13 @@
                               "fontFamily": "Open Sans",
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "text"
-                                },
-                                {
                                   "key": "truncateButtonColor"
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
                                 }
                               ],
                               "leftColumn": 0,
