@@ -67,13 +67,17 @@ export default {
 			appsmith.store.slug = currentSong.slug
 		}
 
+
+		let energy = currentSong.energy.toFixed(1) * 100 + "%"
+
 		song_search_results.selectedItem.image = currentSong.image
 		mood_button.text = this.getMood(currentSong)
-		energy_button.text = currentSong.energy
-		bpm_button.text = currentSong.bpm
-		key_button.text = currentSong.key + currentSong.scale
-		
-		
+		energy_button.text = energy
+		bpm_button.text = currentSong.bpm + 'bpm'
+		key_button.text = currentSong.key 
+		//+ currentSong.scale
+
+
 		get_song_matches.run();
 		player_song.autoPlay;
 		now_playing_bar.text = currentSong.title + " by " + currentSong.author
