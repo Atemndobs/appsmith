@@ -25,7 +25,7 @@
           "name": "currentSong"
         }
       ],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

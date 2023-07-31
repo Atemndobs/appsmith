@@ -62,6 +62,8 @@ export default {
 		}
 
 
+		console.log(mood_button)
+
 		song_search_results.selectedItem.image = currentSong.image
 
 		get_song_matches.run();
@@ -86,6 +88,7 @@ export default {
 		let sad = currentItem.sad.toFixed(1) * 100 + "%"
 		let danceability = currentItem.danceability.toFixed(1) * 100 + "%"
 		let genre = 'not defined'
+		let bpm = currentItem.bpm
 		try{
 			genre = currentItem.genre
 		}catch(error){
@@ -102,7 +105,8 @@ export default {
 			mood,
 			energy,
 			danceability,
-			genre
+			genre,
+			bpm
 		}
 	},
 
