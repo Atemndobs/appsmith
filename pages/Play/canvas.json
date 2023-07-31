@@ -1274,15 +1274,8 @@
                       "boxShadow": "none",
                       "mobileBottomRow": 35,
                       "widgetName": "mood_button",
-                      "buttonColor": "{{play_page_functions.get_song_info(song_search_results.selectedItem).mood = 'happy' ? appsmith.theme.colors.primaryColor : appsmith.theme.colors.secondaryColor}}",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "iconName"
-                        }
-                      ],
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
                       "searchTags": [
@@ -1302,21 +1295,15 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
-                        },
-                        {
-                          "key": "text"
-                        },
-                        {
-                          "key": "iconName"
                         }
                       ],
-                      "text": "{{play_page_functions.get_song_info(song_search_results.selectedItem).mood}} ",
+                      "text": "",
                       "isDisabled": false,
                       "key": "ac6o9994y6",
                       "isDeprecated": false,
                       "rightColumn": 16,
                       "isDefaultClickDisabled": true,
-                      "iconName": "{{play_page_functions.get_song_info(song_search_results.selectedItem).mood = 'happy' ? 'heart' : 'heart-broken'}}",
+                      "iconName": "heart",
                       "widgetId": "5xgqz5j7ec",
                       "minWidth": 120,
                       "isVisible": true,
@@ -1332,7 +1319,7 @@
                       "borderRadius": "0px",
                       "mobileLeftColumn": 1,
                       "originalBottomRow": 31,
-                      "buttonVariant": "SECONDARY",
+                      "buttonVariant": "PRIMARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
                     },
@@ -1361,12 +1348,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
-                        },
-                        {
-                          "key": "text"
                         }
                       ],
-                      "text": "{{play_page_functions.get_song_info(song_search_results.selectedItem).energy}}",
+                      "text": "",
                       "isDisabled": false,
                       "key": "ac6o9994y6",
                       "isDeprecated": false,
@@ -1417,12 +1401,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
-                        },
-                        {
-                          "key": "text"
                         }
                       ],
-                      "text": "{{play_page_functions.get_song_info(song_search_results.selectedItem).key}}",
+                      "text": "",
                       "isDisabled": false,
                       "key": "ac6o9994y6",
                       "isDeprecated": false,
@@ -1473,12 +1454,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
-                        },
-                        {
-                          "key": "text"
                         }
                       ],
-                      "text": "{{play_page_functions.get_song_info(song_search_results.selectedItem).bpm}}",
+                      "text": "",
                       "isDisabled": false,
                       "key": "ac6o9994y6",
                       "isDeprecated": false,
