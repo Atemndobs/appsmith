@@ -34,7 +34,7 @@ export default {
 	selectd_song_play (currentSong = {}) {
 		appsmith.store.options = refine_options.selectedOptionValues
 		console.log(refine_options.selectedOptionValues)
-		
+
 		appsmith.store.song_id = currentSong.id
 		search.isVisible = false
 		related_songs.isVisible = true
@@ -122,7 +122,5 @@ export default {
 		related_songs.isVisible = false
 		get_match_criteria.clear()
 		clear_match_criteria.run()
-		//appsmith.store.related_songs = this.play_page_init_data.related_songs
-		// appsmith.store.related_songs = ""
 	}
 }
