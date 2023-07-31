@@ -31,10 +31,22 @@ export default {
 			refine_options.isVisible = false
 		}
 	},
-	selectd_song_play (currentSong = {}) {
+	set_option(){
 		appsmith.store.options = refine_options.selectedOptionValues
-		console.log(refine_options.selectedOptionValues)
+		if(appsmith.store.options.length == 0) {
+			console.log({
+				"last_song" :  appsmith.store.last_song,
+				"current_song" : appsmith.store.current_song.id
+			})
+		}
+	},
 
+	start_song_play(currentSong) {
+		appsmith.store.first_song = currentSong
+		this.selectd_song_play(currentSong)
+	},
+
+	selectd_song_play (currentSong = {}) {
 		appsmith.store.song_id = currentSong.id
 		search.isVisible = false
 		related_songs.isVisible = true
@@ -45,15 +57,7 @@ export default {
 		search_results_player.isVisible = true;
 		song_search_results.isVisible = false;
 
-		if(Object.keys(currentSong).length === 0 || currentSong.slug !== "undefined" ){
-			appsmith.store.slug = currentSong.slug
-		}
-
-
 		song_search_results.selectedItem.image = currentSong.image
-		console.log(playing_song_info.text)
-
-		// save the song as played song
 
 		get_song_matches.run();
 		player_song.autoPlay;
