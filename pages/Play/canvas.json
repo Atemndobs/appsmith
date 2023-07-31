@@ -1108,10 +1108,10 @@
                       "isFilterable": false,
                       "dynamicPropertyPathList": [
                         {
-                          "key": "onDropdownClose"
+                          "key": "onOptionChange"
                         },
                         {
-                          "key": "onOptionChange"
+                          "key": "onDropdownClose"
                         }
                       ],
                       "displayName": "MultiSelect",
@@ -1134,7 +1134,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "onDropdownClose": "{{play_page_functions.selectd_song_play()}}",
+                      "onDropdownClose": "{{play_page_functions.selectd_song_play(appsmith.store.current_song)}}",
                       "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
                       "key": "d1pcj0en5u",
                       "labelTextSize": "0.875rem",
