@@ -35,9 +35,9 @@ export default {
 		appsmith.store.options = refine_options.selectedOptionValues
 		if(appsmith.store.options.length == 0) {
 			console.log({
-				"last_song" :  appsmith.store.last_song,
-				"current_song" : appsmith.store.current_song.id
+				"First_song" :  appsmith.store.first_song,
 			})
+			this.selectd_song_play(appsmith.store.first_song)
 		}
 	},
 
@@ -51,11 +51,16 @@ export default {
 		search.isVisible = false
 		related_songs.isVisible = true
 
-		player_image.image= currentSong.image
+		player_image.image= currentSong.image ?? ""
 		appsmith.store.start_song = currentSong;
 		appsmith.store.current_song = currentSong;
 		search_results_player.isVisible = true;
 		song_search_results.isVisible = false;
+
+		if(Object.keys(currentSong).length === 0 || currentSong.slug !== "undefined" ){
+			appsmith.store.slug = currentSong.slug
+		}
+
 
 		song_search_results.selectedItem.image = currentSong.image
 
