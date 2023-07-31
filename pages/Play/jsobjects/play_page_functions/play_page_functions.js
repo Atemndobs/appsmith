@@ -12,9 +12,15 @@ export default {
 		if(playing_song_info.isVisible === false) {
 			playing_song_info.isVisible = true
 			mood_button.isVisible = true
+			energy_button.isVisible = true
+			bpm_button.isVisible = true
+			key_button.isVisible = true
 		}else{
 			playing_song_info.isVisible = false
 			mood_button.isVisible = false
+			energy_button.isVisible = false
+			bpm_button.isVisible = false
+			key_button.isVisible = false
 		}
 	},
 	show_start_song(){
@@ -89,6 +95,7 @@ export default {
 		let danceability = currentItem.danceability.toFixed(1) * 100 + "%"
 		let genre = 'not defined'
 		let bpm = currentItem.bpm
+		let key = currentItem.key + currentItem.scale
 		try{
 			genre = currentItem.genre
 		}catch(error){
@@ -106,7 +113,8 @@ export default {
 			energy,
 			danceability,
 			genre,
-			bpm
+			bpm,
+			key
 		}
 	},
 

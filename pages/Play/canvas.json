@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1730,
+          "bottomRow": 1620,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -198,7 +198,7 @@
                 "group"
               ],
               "topRow": 41,
-              "bottomRow": 173,
+              "bottomRow": 162,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -221,7 +221,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1320,
+                  "bottomRow": 1210,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -238,7 +238,7 @@
                       "requiresFlatWidgetChildren": true,
                       "isCanvas": true,
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 54,
+                      "topRow": 43,
                       "pageSize": 3,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": "0",
@@ -264,7 +264,7 @@
                           "key": "listData"
                         }
                       ],
-                      "leftColumn": 1,
+                      "leftColumn": 0,
                       "serverSidePagination": false,
                       "enhancements": true,
                       "children": [
@@ -464,7 +464,7 @@
                       "isLoading": false,
                       "mainCanvasId": "4575t2x8hg",
                       "borderRadius": "0px",
-                      "originalBottomRow": 75,
+                      "originalBottomRow": 81,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -481,7 +481,7 @@
                         }
                       ],
                       "displayName": "List",
-                      "bottomRow": 86,
+                      "bottomRow": 75,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "templateBottomRow": 16,
@@ -497,13 +497,13 @@
                       "key": "watm9d55fa",
                       "backgroundColor": "transparent",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 63,
                       "widgetId": "q8cucw627b",
                       "minWidth": 450,
                       "onItemClick": "{{play_page_functions.selectd_song_play(currentItem)}}",
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 43,
+                      "originalTopRow": 49,
                       "selectedItemView": "{{{}}}"
                     },
                     {
@@ -511,7 +511,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 98,
+                      "topRow": 87,
                       "isSortable": false,
                       "type": "TABLE_WIDGET_V2",
                       "topRowBeforeCollapse": 75,
@@ -541,7 +541,7 @@
                         }
                       ],
                       "needsHeightForContent": true,
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "showInlineEditingOptionDropdown": true,
@@ -579,7 +579,7 @@
                       },
                       "borderRadius": "0px",
                       "columnUpdatedAt": 1682440283534,
-                      "originalBottomRow": 119,
+                      "originalBottomRow": 125,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -596,7 +596,7 @@
                       ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 130,
+                      "bottomRow": 119,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 119,
@@ -670,7 +670,7 @@
                       "key": "6zw1uh2pgl",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 63,
                       "textSize": "0.875rem",
                       "widgetId": "ed61h0hcms",
                       "minWidth": 450,
@@ -681,7 +681,7 @@
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
-                      "originalTopRow": 87,
+                      "originalTopRow": 93,
                       "isVisiblePagination": false,
                       "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                       "verticalAlignment": "CENTER"
@@ -691,13 +691,13 @@
                       "widgetName": "related_songs_title",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "displayName": "Text",
-                      "topRow": 50,
+                      "topRow": 39,
                       "searchTags": [
                         "typography",
                         "paragraph",
                         "label"
                       ],
-                      "bottomRow": 54,
+                      "bottomRow": 43,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -707,7 +707,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.84375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -731,7 +731,7 @@
                       "text": "Related Songs",
                       "key": "13jcuz2otp",
                       "isDeprecated": false,
-                      "rightColumn": 24,
+                      "rightColumn": 23,
                       "backgroundColor": "transparent",
                       "disableLink": false,
                       "textAlign": "CENTER",
@@ -745,10 +745,10 @@
                       "parentId": "qu25d50ks2",
                       "isLoading": false,
                       "renderMode": "CANVAS",
-                      "originalTopRow": 39,
+                      "originalTopRow": 45,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 43,
+                      "originalBottomRow": 49,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -762,7 +762,7 @@
                         "label"
                       ],
                       "topRow": 21,
-                      "bottomRow": 36,
+                      "bottomRow": 31,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -785,7 +785,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Artist : {{song_search_results.selectedItem.author}}\nTitle : {{song_search_results.selectedItem.author}}\nBPM : {{song_search_results.selectedItem.bpm}}\nGenre: {{song_search_results.selectedItem.genre[0]}}\nKey: {{song_search_results.selectedItem.key}} {{song_search_results.selectedItem.scale}}\nEnergy : {{play_page_functions.get_song_info(song_search_results.selectedItem).energy}}\nMood : {{play_page_functions.get_song_info(song_search_results.selectedItem).mood}} \nDanceability : {{play_page_functions.get_song_info(song_search_results.selectedItem).danceability}} ",
+                      "text": "Artist : {{song_search_results.selectedItem.author}}\nTitle : {{song_search_results.selectedItem.author}}\nGenre: {{song_search_results.selectedItem.genre[0]}}\nKey: {{song_search_results.selectedItem.key}} {{song_search_results.selectedItem.scale}} \nDanceability : {{play_page_functions.get_song_info(song_search_results.selectedItem).danceability}} ",
                       "key": "qgj37atwrg",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -803,7 +803,7 @@
                       "originalTopRow": 21,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 25,
+                      "originalBottomRow": 31,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -916,8 +916,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 40,
-                      "bottomRow": 44,
+                      "topRow": 35,
+                      "bottomRow": 39,
                       "tooltip": "Click so show/hide Song details",
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
@@ -943,7 +943,7 @@
                       "isDisabled": false,
                       "key": "ub7hx2rwlm",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "isDefaultClickDisabled": true,
                       "iconName": "add-to-artifact",
                       "widgetId": "c5tr7kwalb",
@@ -956,11 +956,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 29,
+                      "originalTopRow": 40,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 43,
-                      "originalBottomRow": 33,
+                      "originalBottomRow": 44,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -977,8 +977,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 50,
-                      "bottomRow": 54,
+                      "topRow": 39,
+                      "bottomRow": 43,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -986,7 +986,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 5.99658203125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 27,
+                      "leftColumn": 28,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -999,7 +999,7 @@
                       "isDisabled": false,
                       "key": "yteovju7dd",
                       "isDeprecated": false,
-                      "rightColumn": 45,
+                      "rightColumn": 46,
                       "isDefaultClickDisabled": true,
                       "iconName": "sort-numerical",
                       "widgetId": "8nb8y55x7o",
@@ -1012,11 +1012,11 @@
                       "isLoading": false,
                       "mobileTopRow": 47,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 39,
+                      "originalTopRow": 45,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 24,
-                      "originalBottomRow": 43,
+                      "originalBottomRow": 49,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1033,8 +1033,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 50,
-                      "bottomRow": 54,
+                      "topRow": 39,
+                      "bottomRow": 43,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1042,7 +1042,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 5.99658203125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 45,
+                      "leftColumn": 46,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1055,7 +1055,7 @@
                       "isDisabled": false,
                       "key": "yteovju7dd",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "isDefaultClickDisabled": true,
                       "iconName": "delete",
                       "widgetId": "0bolanv19y",
@@ -1068,11 +1068,11 @@
                       "isLoading": false,
                       "mobileTopRow": 47,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 39,
+                      "originalTopRow": 45,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 41,
-                      "originalBottomRow": 43,
+                      "originalBottomRow": 49,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1081,13 +1081,13 @@
                       "boxShadow": "none",
                       "iconSVG": "/static/media/icon.16c864f46228416bf937ce5e688bf1eb.svg",
                       "labelText": "",
-                      "topRow": 90,
+                      "topRow": 79,
                       "labelWidth": 5,
                       "type": "MULTI_SELECT_WIDGET_V2",
                       "serverSideFiltering": false,
                       "defaultOptionValue": "",
                       "animateLoading": true,
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1106,7 +1106,7 @@
                       "version": 1,
                       "isLoading": false,
                       "borderRadius": "0px",
-                      "originalBottomRow": 83,
+                      "originalBottomRow": 89,
                       "mobileBottomRow": 90,
                       "widgetName": "refine_options",
                       "isFilterable": false,
@@ -1123,7 +1123,7 @@
                         "dropdown",
                         "tags"
                       ],
-                      "bottomRow": 94,
+                      "bottomRow": 83,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "mobileRightColumn": 21,
@@ -1143,7 +1143,7 @@
                       "key": "d1pcj0en5u",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 62,
                       "widgetId": "yc1r5j76px",
                       "minWidth": 450,
                       "parentId": "qu25d50ks2",
@@ -1151,7 +1151,7 @@
                       "renderMode": "CANVAS",
                       "mobileTopRow": 83,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 79,
+                      "originalTopRow": 85,
                       "mobileLeftColumn": 1,
                       "maxDynamicHeight": 9000,
                       "onOptionChange": "{{play_page_functions.set_option()}}",
@@ -1175,8 +1175,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 86,
-                      "bottomRow": 90,
+                      "topRow": 75,
+                      "bottomRow": 79,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1188,7 +1188,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1198,7 +1198,7 @@
                       "isDisabled": false,
                       "key": "yteovju7dd",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 62,
                       "isDefaultClickDisabled": true,
                       "iconName": "star-empty",
                       "widgetId": "tcq5235ilo",
@@ -1211,11 +1211,11 @@
                       "isLoading": false,
                       "mobileTopRow": 82,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 75,
+                      "originalTopRow": 81,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 23,
-                      "originalBottomRow": 79,
+                      "originalBottomRow": 85,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1238,8 +1238,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 94,
-                      "bottomRow": 98,
+                      "topRow": 83,
+                      "bottomRow": 87,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1251,7 +1251,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1261,7 +1261,7 @@
                       "isDisabled": false,
                       "key": "nzdrne3ch7",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 62,
                       "isDefaultClickDisabled": true,
                       "iconName": "info-sign",
                       "widgetId": "ruchy9p340",
@@ -1274,11 +1274,11 @@
                       "isLoading": false,
                       "mobileTopRow": 95,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 83,
+                      "originalTopRow": 89,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 17,
-                      "originalBottomRow": 87,
+                      "originalBottomRow": 93,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1303,8 +1303,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 36,
-                      "bottomRow": 40,
+                      "topRow": 31,
+                      "bottomRow": 35,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1328,7 +1328,7 @@
                       "isDisabled": false,
                       "key": "ac6o9994y6",
                       "isDeprecated": false,
-                      "rightColumn": 21,
+                      "rightColumn": 16,
                       "isDefaultClickDisabled": true,
                       "iconName": "{{play_page_functions.get_song_info(song_search_results.selectedItem).mood = 'happy' ? 'heart' : 'heart-broken'}}",
                       "widgetId": "5xgqz5j7ec",
@@ -1341,11 +1341,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 25,
+                      "originalTopRow": 31,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 1,
-                      "originalBottomRow": 29,
+                      "originalBottomRow": 35,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1362,8 +1362,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 36,
-                      "bottomRow": 40,
+                      "topRow": 31,
+                      "bottomRow": 35,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1371,7 +1371,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 5.99658203125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 21,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1384,7 +1384,7 @@
                       "isDisabled": false,
                       "key": "ac6o9994y6",
                       "isDeprecated": false,
-                      "rightColumn": 41,
+                      "rightColumn": 48,
                       "isDefaultClickDisabled": true,
                       "iconName": "pulse",
                       "widgetId": "1fj8v1ps6z",
@@ -1397,11 +1397,67 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 25,
+                      "originalTopRow": 31,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 18,
-                      "originalBottomRow": 29,
+                      "originalBottomRow": 35,
+                      "buttonVariant": "PRIMARY",
+                      "iconAlign": "left",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "mobileBottomRow": 35,
+                      "widgetName": "key_button",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 31,
+                      "bottomRow": 35,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "mobileRightColumn": 34,
+                      "animateLoading": true,
+                      "parentColumnSpace": 5.99658203125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "text": "{{play_page_functions.get_song_info(song_search_results.selectedItem).key}}",
+                      "isDisabled": false,
+                      "key": "ac6o9994y6",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "isDefaultClickDisabled": true,
+                      "iconName": "music",
+                      "widgetId": "kfpozr8zn6",
+                      "minWidth": 120,
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "qu25d50ks2",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "mobileTopRow": 31,
+                      "responsiveBehavior": "hug",
+                      "originalTopRow": 31,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "0px",
+                      "mobileLeftColumn": 18,
+                      "originalBottomRow": 35,
                       "buttonVariant": "PRIMARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1418,8 +1474,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 36,
-                      "bottomRow": 40,
+                      "topRow": 31,
+                      "bottomRow": 35,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1427,7 +1483,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 5.99658203125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 41,
+                      "leftColumn": 16,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1440,9 +1496,9 @@
                       "isDisabled": false,
                       "key": "ac6o9994y6",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 32,
                       "isDefaultClickDisabled": true,
-                      "iconName": "music",
+                      "iconName": "stopwatch",
                       "widgetId": "2ky06w2i7j",
                       "minWidth": 120,
                       "isVisible": true,
@@ -1453,11 +1509,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 25,
+                      "originalTopRow": 31,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 18,
-                      "originalBottomRow": 29,
+                      "originalBottomRow": 35,
                       "buttonVariant": "PRIMARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1497,7 +1553,7 @@
               "originalTopRow": 41,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 162,
+              "originalBottomRow": 168,
               "minDynamicHeight": 10
             },
             {
@@ -1793,6 +1849,19 @@
               "jsonPathKeys": [
                 "play_page_functions.play_page_init_data.search_limit",
                 "search.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Play_play_page_functions.selectd_song_play",
+              "name": "play_page_functions.selectd_song_play",
+              "collectionId": "Play_play_page_functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function (currentSong = {}) {\n  appsmith.store.song_id = currentSong.id;\n  search.isVisible = false;\n  related_songs.isVisible = true;\n  player_image.image = currentSong.image ?? \"\";\n  appsmith.store.start_song = currentSong;\n  appsmith.store.current_song = currentSong;\n  search_results_player.isVisible = true;\n  song_search_results.isVisible = false;\n  if (Object.keys(currentSong).length === 0 || currentSong.slug !== \"undefined\") {\n    appsmith.store.slug = currentSong.slug;\n  }\n  console.log(mood_button);\n  song_search_results.selectedItem.image = currentSong.image;\n  get_song_matches.run();\n  player_song.autoPlay;\n  now_playing_bar.text = currentSong.title + \" by \" + currentSong.author;\n  playing_song_info.text = \"Title : \" + currentSong.title + \"\\n\" + \"Author : \" + currentSong.author + \"\\n\" + \"Genre : \" + currentSong.genre + \"\\n\" + \"BPM : \" + currentSong.bpm + \"\\n\" + \"Key : \" + currentSong.key + currentSong.scale + \"\\n\";\n  return currentSong;\n}"
               ],
               "timeoutInMillisecond": 10000
             }
