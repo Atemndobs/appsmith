@@ -464,7 +464,7 @@
                       "isLoading": false,
                       "mainCanvasId": "4575t2x8hg",
                       "borderRadius": "0px",
-                      "originalBottomRow": 82,
+                      "originalBottomRow": 81,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -503,7 +503,7 @@
                       "onItemClick": "{{play_page_functions.selectd_song_play(currentItem)}}",
                       "parentId": "qu25d50ks2",
                       "renderMode": "CANVAS",
-                      "originalTopRow": 50,
+                      "originalTopRow": 49,
                       "selectedItemView": "{{{}}}"
                     },
                     {
@@ -579,7 +579,7 @@
                       },
                       "borderRadius": "0px",
                       "columnUpdatedAt": 1682440283534,
-                      "originalBottomRow": 126,
+                      "originalBottomRow": 125,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -681,7 +681,7 @@
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
-                      "originalTopRow": 94,
+                      "originalTopRow": 93,
                       "isVisiblePagination": false,
                       "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                       "verticalAlignment": "CENTER"
@@ -745,10 +745,10 @@
                       "parentId": "qu25d50ks2",
                       "isLoading": false,
                       "renderMode": "CANVAS",
-                      "originalTopRow": 46,
+                      "originalTopRow": 45,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 50,
+                      "originalBottomRow": 49,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -803,7 +803,7 @@
                       "originalTopRow": 27,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 38,
+                      "originalBottomRow": 37,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -956,11 +956,11 @@
                       "isLoading": false,
                       "mobileTopRow": 31,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 42,
+                      "originalTopRow": 41,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 43,
-                      "originalBottomRow": 46,
+                      "originalBottomRow": 45,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1012,11 +1012,11 @@
                       "isLoading": false,
                       "mobileTopRow": 47,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 46,
+                      "originalTopRow": 45,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 24,
-                      "originalBottomRow": 50,
+                      "originalBottomRow": 49,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1068,11 +1068,11 @@
                       "isLoading": false,
                       "mobileTopRow": 47,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 46,
+                      "originalTopRow": 45,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 41,
-                      "originalBottomRow": 50,
+                      "originalBottomRow": 49,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1090,7 +1090,7 @@
                         "RED"
                       ],
                       "animateLoading": true,
-                      "leftColumn": 0,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1099,7 +1099,7 @@
                           "key": "labelTextColor"
                         }
                       ],
-                      "options": "[\n  {\n    \"label\": \"Genr\",\n    \"value\": \"genre\"\n  },\n  {\n    \"label\": \"Key\",\n    \"value\": \"key\"\n  },\n  {\n    \"label\": \"Ener\",\n    \"value\": \"energy\"\n  },\n  {\n    \"label\": \"Dance\",\n    \"value\": \"danceability\"\n  },\n  {\n    \"label\": \"mood\",\n    \"value\": \"mood\"\n  }\n]",
+                      "options": "[\n  {\n    \"label\": \"Genre\",\n    \"value\": \"genre\"\n  },\n  {\n    \"label\": \"Key\",\n    \"value\": \"key\"\n  },\n  {\n    \"label\": \"Energy\",\n    \"value\": \"energy\"\n  },\n  {\n    \"label\": \"Dance\",\n    \"value\": \"danceability\"\n  },\n  {\n    \"label\": \"mood\",\n    \"value\": \"mood\"\n  }\n]",
                       "placeholderText": "Select option(s)",
                       "isDisabled": false,
                       "isRequired": false,
@@ -1108,11 +1108,19 @@
                       "isVisible": false,
                       "version": 1,
                       "isLoading": false,
-                      "borderRadius": "0.375rem",
-                      "originalBottomRow": 90,
+                      "borderRadius": "0px",
+                      "originalBottomRow": 89,
                       "mobileBottomRow": 90,
-                      "widgetName": "refine",
+                      "widgetName": "refine_options",
                       "isFilterable": false,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onDropdownClose"
+                        },
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "displayName": "MultiSelect",
                       "searchTags": [
                         "dropdown",
@@ -1124,13 +1132,21 @@
                       "mobileRightColumn": 21,
                       "shouldScrollContents": true,
                       "parentColumnSpace": 5.99658203125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onDropdownClose"
+                        },
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "labelPosition": "Top",
+                      "onDropdownClose": "{{play_page_functions.selectd_song_play()}}",
                       "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
                       "key": "d1pcj0en5u",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 63,
                       "widgetId": "yc1r5j76px",
                       "minWidth": 450,
                       "parentId": "qu25d50ks2",
@@ -1138,9 +1154,10 @@
                       "renderMode": "CANVAS",
                       "mobileTopRow": 83,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 86,
+                      "originalTopRow": 85,
                       "mobileLeftColumn": 1,
                       "maxDynamicHeight": 9000,
+                      "onOptionChange": "{{console.log(refine_options.selectedOptionValues)}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1197,11 +1214,11 @@
                       "isLoading": false,
                       "mobileTopRow": 82,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 82,
+                      "originalTopRow": 81,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 23,
-                      "originalBottomRow": 86,
+                      "originalBottomRow": 85,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1260,11 +1277,11 @@
                       "isLoading": false,
                       "mobileTopRow": 95,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 90,
+                      "originalTopRow": 89,
                       "disabledWhenInvalid": false,
                       "borderRadius": "0px",
                       "mobileLeftColumn": 17,
-                      "originalBottomRow": 94,
+                      "originalBottomRow": 93,
                       "buttonVariant": "SECONDARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
@@ -1352,10 +1369,10 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
                         }
                       },
-                      "originalTopRow": 38,
+                      "originalTopRow": 37,
                       "borderRadius": "0.375rem",
                       "mobileLeftColumn": 1,
-                      "originalBottomRow": 42,
+                      "originalBottomRow": 41,
                       "buttonVariant": "PRIMARY"
                     }
                   ],
@@ -1393,7 +1410,7 @@
               "originalTopRow": 39,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 167,
+              "originalBottomRow": 166,
               "minDynamicHeight": 10
             },
             {
@@ -1677,6 +1694,17 @@
                 "play_page_functions.play_page_init_data.match_limit",
                 "appsmith.store.start_song ? appsmith.store.start_song.id : null",
                 "appsmith.store.slug ?? \"jarreau_vandal_westsidemp3\" "
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Play_play_page_functions.selectd_song_play",
+              "name": "play_page_functions.selectd_song_play",
+              "collectionId": "Play_play_page_functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function (currentSong = {}) {\n  appsmith.store.options = refine_options.selectedOptionValues;\n  console.log(refine_options.selectedOptionValues);\n  appsmith.store.song_id = currentSong.id;\n  search.isVisible = false;\n  related_songs.isVisible = true;\n  player_image.image = currentSong.image;\n  appsmith.store.start_song = currentSong;\n  appsmith.store.current_song = currentSong;\n  search_results_player.isVisible = true;\n  song_search_results.isVisible = false;\n  if (Object.keys(currentSong).length === 0 || currentSong.slug !== \"undefined\") {\n    appsmith.store.slug = currentSong.slug;\n  }\n  song_search_results.selectedItem.image = currentSong.image;\n  console.log(playing_song_info.text);\n  get_song_matches.run();\n  player_song.autoPlay;\n  now_playing_bar.text = currentSong.title + \" by \" + currentSong.author;\n  playing_song_info.text = \"Title : \" + currentSong.title + \"\\n\" + \"Author : \" + currentSong.author + \"\\n\" + \"Genre : \" + currentSong.genre + \"\\n\" + \"BPM : \" + currentSong.bpm + \"\\n\" + \"Key : \" + currentSong.key + currentSong.scale + \"\\n\";\n  return currentSong;\n}"
               ],
               "timeoutInMillisecond": 10000
             },

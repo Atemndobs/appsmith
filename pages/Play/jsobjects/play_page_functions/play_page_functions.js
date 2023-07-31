@@ -32,6 +32,9 @@ export default {
 		}
 	},
 	selectd_song_play (currentSong = {}) {
+		appsmith.store.options = refine_options.selectedOptionValues
+		console.log(refine_options.selectedOptionValues)
+		
 		appsmith.store.song_id = currentSong.id
 		search.isVisible = false
 		related_songs.isVisible = true
@@ -60,9 +63,7 @@ export default {
 			"Author : " + currentSong.author + "\n" +
 			"Genre : " + currentSong.genre + "\n" +
 			"BPM : " + currentSong.bpm + "\n" +
-			"Key + Scale: " + currentSong.key + currentSong.scale + "\n" +
-			"mood : " + currentSong.classification_properties
-
+			"Key : " + currentSong.key + currentSong.scale + "\n" ;
 
 		return currentSong
 	},
