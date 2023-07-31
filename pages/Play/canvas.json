@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1660,
+          "bottomRow": 1670,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -198,7 +198,7 @@
                 "group"
               ],
               "topRow": 39,
-              "bottomRow": 166,
+              "bottomRow": 167,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -221,7 +221,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1270,
+                  "bottomRow": 1280,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -238,7 +238,7 @@
                       "requiresFlatWidgetChildren": true,
                       "isCanvas": true,
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 49,
+                      "topRow": 50,
                       "pageSize": 3,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": "0",
@@ -481,7 +481,7 @@
                         }
                       ],
                       "displayName": "List",
-                      "bottomRow": 81,
+                      "bottomRow": 82,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "templateBottomRow": 16,
@@ -511,7 +511,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 93,
+                      "topRow": 94,
                       "isSortable": false,
                       "type": "TABLE_WIDGET_V2",
                       "topRowBeforeCollapse": 75,
@@ -596,7 +596,7 @@
                       ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 125,
+                      "bottomRow": 126,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 119,
@@ -691,13 +691,13 @@
                       "widgetName": "related_songs_title",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "displayName": "Text",
-                      "topRow": 45,
+                      "topRow": 46,
                       "searchTags": [
                         "typography",
                         "paragraph",
                         "label"
                       ],
-                      "bottomRow": 49,
+                      "bottomRow": 50,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -762,7 +762,7 @@
                         "label"
                       ],
                       "topRow": 27,
-                      "bottomRow": 37,
+                      "bottomRow": 38,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -785,7 +785,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Artist : {{song_search_results.selectedItem.author}}\nTitle : {{song_search_results.selectedItem.author}}\nBPM : {{song_search_results.selectedItem.bpm}}\nGenre: {{song_search_results.selectedItem.genre[0]}}\nKey: {{song_search_results.selectedItem.key}} {{song_search_results.selectedItem.scale}}\nDanceability : {{play_page_functions.get_song_info(song_search_results.selectedItem).danceability}} ",
+                      "text": "Artist : {{song_search_results.selectedItem ?? song_search_results.selectedItem.author}}\nTitle : {{song_search_results.selectedItem ?? song_search_results.selectedItem.author}}\nBPM : {{song_search_results.selectedItem ??                   song_search_results.selectedItem.bpm}}\nGenre: {{song_search_results.selectedItem ?? song_search_results.selectedItem.genre[0]}}\nKey: {{song_search_results.selectedItem ?? song_search_results.selectedItem.key}} {{song_search_results.selectedItem ?? song_search_results.selectedItem.scale}}\nDanceability : {{song_search_results.selectedItem ?? play_page_functions.get_song_info(song_search_results.selectedItem).danceability}} ",
                       "key": "qgj37atwrg",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -880,7 +880,7 @@
                       ],
                       "defaultImage": "http://s3.atemkeng.de:9000/curator/images/amber_mark_thong_song_sisqo_cover_covered_19_seriesmp3.jpeg",
                       "key": "xcodzartgx",
-                      "image": "{{song_search_results.selectedItem.image}}",
+                      "image": "{{song_search_results.selectedItem ?? song_search_results.selectedItem.image}}",
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "objectFit": "cover",
@@ -916,8 +916,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 41,
-                      "bottomRow": 45,
+                      "topRow": 42,
+                      "bottomRow": 46,
                       "tooltip": "Click so show/hide Song details",
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
@@ -977,8 +977,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 45,
-                      "bottomRow": 49,
+                      "topRow": 46,
+                      "bottomRow": 50,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1033,8 +1033,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 45,
-                      "bottomRow": 49,
+                      "topRow": 46,
+                      "bottomRow": 50,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1081,7 +1081,7 @@
                       "boxShadow": "none",
                       "iconSVG": "/static/media/icon.16c864f46228416bf937ce5e688bf1eb.svg",
                       "labelText": "",
-                      "topRow": 85,
+                      "topRow": 86,
                       "labelWidth": 5,
                       "type": "MULTI_SELECT_WIDGET_V2",
                       "serverSideFiltering": false,
@@ -1123,7 +1123,7 @@
                         "dropdown",
                         "tags"
                       ],
-                      "bottomRow": 89,
+                      "bottomRow": 90,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "mobileRightColumn": 21,
@@ -1175,8 +1175,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 81,
-                      "bottomRow": 85,
+                      "topRow": 82,
+                      "bottomRow": 86,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1238,8 +1238,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 89,
-                      "bottomRow": 93,
+                      "topRow": 90,
+                      "bottomRow": 94,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1294,8 +1294,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 37,
-                      "bottomRow": 41,
+                      "topRow": 38,
+                      "bottomRow": 42,
                       "parentRowSpace": 10,
                       "groupButtons": {
                         "groupButton1": {
@@ -1692,17 +1692,6 @@
                 "play_page_functions.play_page_init_data.match_limit",
                 "appsmith.store.start_song ? appsmith.store.start_song.id : null",
                 "appsmith.store.slug ?? \"\" "
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Play_play_page_functions.selectd_song_play",
-              "name": "play_page_functions.selectd_song_play",
-              "collectionId": "Play_play_page_functions",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "function (currentSong = {}) {\n  appsmith.store.song_id = currentSong.id;\n  search.isVisible = false;\n  related_songs.isVisible = true;\n  player_image.image = currentSong.image ?? \"\";\n  appsmith.store.start_song = currentSong;\n  appsmith.store.current_song = currentSong;\n  search_results_player.isVisible = true;\n  song_search_results.isVisible = false;\n  if (Object.keys(currentSong).length === 0 || currentSong.slug !== \"undefined\") {\n    appsmith.store.slug = currentSong.slug;\n  }\n  song_search_results.selectedItem.image = currentSong.image;\n  get_song_matches.run();\n  player_song.autoPlay;\n  now_playing_bar.text = currentSong.title + \" by \" + currentSong.author;\n  playing_song_info.text = \"Title : \" + currentSong.title + \"\\n\" + \"Author : \" + currentSong.author + \"\\n\" + \"Genre : \" + currentSong.genre + \"\\n\" + \"BPM : \" + currentSong.bpm + \"\\n\" + \"Key : \" + currentSong.key + currentSong.scale + \"\\n\";\n  return currentSong;\n}"
               ],
               "timeoutInMillisecond": 10000
             },
