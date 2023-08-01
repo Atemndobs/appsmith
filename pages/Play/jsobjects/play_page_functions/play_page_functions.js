@@ -144,12 +144,15 @@ export default {
 	search_song () {
 		search.text = ""
 		clear_search.isVisible = true
+		search_button.isVisible = false
 		song_search_api.run()
 		song_search_results.isVisible = true
 	},
 
 	clear_search(){
-		search.isVisible = true
+		appsmith.store.options = []
+		search.isVisible = true;
+		search_button.isVisible = true;
 		search.text = "";
 		search.inputText = "";
 		search.inputText.trim();
