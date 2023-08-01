@@ -63,6 +63,7 @@ export default {
 	selectd_song_play (currentSong = {}) {
 		appsmith.store.song_id = currentSong.id
 		search.isVisible = false
+		search_button.isVisible = false
 		related_songs.isVisible = true
 
 		player_image.image= currentSong.image ?? ""
@@ -154,6 +155,7 @@ export default {
 		search.inputText.trim();
 		search.text.trim();
 		song_search_results.isVisible = false;
+		search_button.isVisible = false
 		search_results_player.isVisible = false;
 		song_search_api.clear();
 		clear_search.isVisible = false

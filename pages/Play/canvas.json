@@ -1882,7 +1882,7 @@
               "resetFormOnClick": true,
               "boxShadow": "none",
               "mobileBottomRow": 8,
-              "widgetName": "Button1",
+              "widgetName": "search_button",
               "onClick": "{{play_page_functions.search_song()}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "dynamicPropertyPathList": [
