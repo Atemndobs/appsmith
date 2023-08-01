@@ -145,7 +145,7 @@ export default {
 		search.text = ""
 		clear_search.isVisible = true
 		search_button.isVisible = false
-		song_search_api.run()
+		//song_search_api.run()
 		song_search_results.isVisible = true
 	},
 
