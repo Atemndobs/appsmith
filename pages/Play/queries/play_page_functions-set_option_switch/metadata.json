@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "show_refine",
-    "fullyQualifiedName": "play_page_functions.show_refine",
+    "name": "set_option_switch",
+    "fullyQualifiedName": "play_page_functions.set_option_switch",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Play_play_page_functions.show_refine",
+  "id": "Play_play_page_functions.set_option_switch",
   "deleted": false,
-  "gitSyncId": "64c374ed9aa83b29b825dcf4_64c91a799aa83b29b825df0e"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64c91be49aa83b29b825df12"
 }

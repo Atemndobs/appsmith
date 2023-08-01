@@ -32,19 +32,27 @@ export default {
 	},
 	show_refine(){
 		if(refine_options.isVisible === false) {
-			refine_options.isVisible = true
+			//refine_options.isVisible = true
 		}else{
-			refine_options.isVisible = false
+			//refine_options.isVisible = false
+		}
+
+		if(options_switch_group.isVisible === false) {
+			options_switch_group.isVisible = true
+		}else{
+			options_switch_group.isVisible = false
 		}
 	},
 	set_option(){
 		appsmith.store.options = refine_options.selectedOptionValues
-		if(appsmith.store.options.length == 0) {
-			console.log({
-				"First_song" :  appsmith.store.first_song,
-			})
-			this.selectd_song_play(appsmith.store.first_song)
-		}
+		this.selectd_song_play(appsmith.store.first_song)
+	},
+	set_option_switch(){
+		appsmith.store.options = options_switch_group.selectedValues
+		console.log({
+			'selected_OPTIONS' : appsmith.store.options 
+		})
+		this.selectd_song_play(appsmith.store.first_song)
 	},
 
 	start_song_play(currentSong) {
