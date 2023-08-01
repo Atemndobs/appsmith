@@ -143,6 +143,7 @@ export default {
 
 	search_song () {
 		search.text = ""
+		search.inputText = ""
 		clear_search.isVisible = true
 		search_button.isVisible = false
 		//song_search_api.run()
