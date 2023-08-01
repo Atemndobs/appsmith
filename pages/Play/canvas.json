@@ -40,7 +40,7 @@
               "topRowBeforeCollapse": 2,
               "animateLoading": "true",
               "resetOnSubmit": true,
-              "leftColumn": 2,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -114,7 +114,7 @@
               "labelTextSize": "0.875rem",
               "onTextChanged": "{{song_search_api.run()}}",
               "isDeprecated": false,
-              "rightColumn": 53,
+              "rightColumn": 48,
               "widgetId": "hown9sfc2f",
               "minWidth": 450,
               "label": "Search Song",
@@ -1909,7 +1909,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 53,
+              "leftColumn": 48,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
