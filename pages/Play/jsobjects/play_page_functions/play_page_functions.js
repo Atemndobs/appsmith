@@ -155,7 +155,6 @@ export default {
 		search.inputText.trim();
 		search.text.trim();
 		song_search_results.isVisible = false;
-		search_button.isVisible = false
 		search_results_player.isVisible = false;
 		song_search_api.clear();
 		clear_search.isVisible = false
