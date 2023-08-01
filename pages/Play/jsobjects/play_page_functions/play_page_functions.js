@@ -141,13 +141,9 @@ export default {
 	},
 
 	search_song () {
-		if(search.text === "") {
-			return;
-		}
-
-		console.log(appsmith.store)
+		search.text = ""
 		clear_search.isVisible = true
-		//song_search_api.run()
+		song_search_api.run()
 		song_search_results.isVisible = true
 	},
 
