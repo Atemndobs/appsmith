@@ -16,7 +16,7 @@
     "pageId": "Play",
     "collectionId": "Play_play_page_functions",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -43,5 +43,5 @@
   },
   "id": "Play_play_page_functions.getMood",
   "deleted": false,
-  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d026b3fb18f506368e33be"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d0298cfb18f506368e33df"
 }

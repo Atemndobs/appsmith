@@ -60,10 +60,10 @@
     "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
-        "key": "queryParameters[0].value"
+        "key": "body"
       },
       {
-        "key": "body"
+        "key": "queryParameters[0].value"
       }
     ],
     "isValid": true,

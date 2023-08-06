@@ -16,7 +16,7 @@
     "pageId": "Play",
     "collectionId": "Play_play_page_functions",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -40,9 +40,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-08-06T23:03:15Z"
+    "createdAt": "2023-08-06T23:15:24Z"
   },
   "id": "Play_play_page_functions.selectd_song_play",
   "deleted": false,
-  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d026b3fb18f506368e33c2"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d0298cfb18f506368e33d2"
 }
