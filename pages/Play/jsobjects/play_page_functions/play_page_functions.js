@@ -9,38 +9,38 @@ export default {
 	},
 
 	show_details() {
-		if(playing_song_info.isVisible === false) {
-			playing_song_info.isVisible = true
-			mood_button.isVisible = true
-			energy_button.isVisible = true
-			bpm_button.isVisible = true
-			key_button.isVisible = true
+		if(playing_song_info.setVisibility(false)) {
+			playing_song_info.setVisibility(true)
+			mood_button.setVisibility(true)
+			energy_button.setVisibility(true)
+			bpm_button.setVisibility(true)
+			key_button.setVisibility(true)
 		}else{
-			playing_song_info.isVisible = false
-			mood_button.isVisible = false
-			energy_button.isVisible = false
-			bpm_button.isVisible = false
-			key_button.isVisible = false
+			playing_song_info.setVisibility(false)
+			mood_button.setVisibility(false)
+			energy_button.setVisibility(false)
+			bpm_button.setVisibility(false)
+			key_button.setVisibility(false)
 		}
 	},
 	show_start_song(){
-		if(song_detail_table.isVisible === false) {
-			song_detail_table.isVisible = true
+		if(song_detail_table.setVisibility(false)) {
+			song_detail_table.setVisibility(true)
 		}else{
-			song_detail_table.isVisible = false
+			song_detail_table.setVisibility(false)
 		}
 	},
 	show_refine(){
-		if(refine_options.isVisible === false) {
-			//refine_options.isVisible = true
+		if(refine_options.setVisibility(false)) {
+			//refine_options.setVisibility(true)
 		}else{
-			//refine_options.isVisible = false
+			//refine_options.setVisibility(false)
 		}
 
-		if(options_switch_group.isVisible === false) {
-			options_switch_group.isVisible = true
+		if(options_switch_group.setVisibility(false)) {
+			options_switch_group.setVisibility(true)
 		}else{
-			options_switch_group.isVisible = false
+			options_switch_group.setVisibility(false)
 		}
 	},
 	set_option(){
@@ -62,15 +62,15 @@ export default {
 
 	selectd_song_play (currentSong = {}) {
 		appsmith.store.song_id = currentSong.id
-		search.isVisible = false
-		search_button.isVisible = false
-		related_songs.isVisible = true
+		search.setVisibility(false)
+		search_button.setVisibility(false)
+		related_songs.setVisibility(true)
 
-		player_image.image= currentSong.image ?? ""
+		player_image.setImage(currentSong.image ?? "")
 		appsmith.store.start_song = currentSong;
 		appsmith.store.current_song = currentSong;
-		search_results_player.isVisible = true;
-		song_search_results.isVisible = false;
+		search_results_player.setVisibility(true);
+		song_search_results.setVisibility(false);
 
 		if(Object.keys(currentSong).length === 0 || currentSong.slug !== "undefined" ){
 			appsmith.store.slug = currentSong.slug
@@ -80,20 +80,21 @@ export default {
 		let energy = currentSong.energy.toFixed(1) * 100 + "%"
 
 		song_search_results.selectedItem.image = currentSong.image
-		mood_button.text = this.getMood(currentSong)
-		energy_button.text = energy
-		bpm_button.text = currentSong.bpm + 'bpm'
-		key_button.text = currentSong.key 
+		mood_button.setLabel(this.getMood(currentSong)) 
+		energy_button.setLabel(energy)
+		bpm_button.setLabel(currentSong.bpm + 'bpm')
+		key_button.setLabel(currentSong.key )
 		//+ currentSong.scale
 
 
 		get_song_matches.run();
 		player_song.autoPlay;
-		now_playing_bar.text = currentSong.title + " by " + currentSong.author
-		playing_song_info.text = 
-			"Title : " + currentSong.title + "\n" +
-			"Author : " + currentSong.author + "\n" +
-			"Genre : " + currentSong.genre + "\n" ;
+		now_playing_bar.setLabel(currentSong.title + " by " + currentSong.author)
+		let info = "Title : " + currentSong.title + "\n" +
+				"Author : " + currentSong.author + "\n" +
+				"Genre : " + currentSong.genre + "\n" ;
+		playing_song_info.setText(info)
+
 
 		return currentSong
 	},
@@ -142,27 +143,25 @@ export default {
 	},
 
 	search_song () {
-		search.text = ""
-		search.inputText = ""
-		clear_search.isVisible = true
-		search_button.isVisible = false
+		search.setValue("")
+		clear_search.setVisibility(true)
+		search_button.setVisibility(false)
 		//song_search_api.run()
-		song_search_results.isVisible = true
+		song_search_results.setVisibility(true)
 	},
 
 	clear_search(){
 		appsmith.store.options = []
-		search.isVisible = true;
-		search_button.isVisible = true;
-		search.text = "";
-		search.inputText = "";
+		search.setVisibility(true);
+		search_button.setVisibility(true);
+		search.setValue("");
 		search.inputText.trim();
 		search.text.trim();
-		song_search_results.isVisible = false;
-		search_results_player.isVisible = false;
+		song_search_results.setVisibility(false);
+		search_results_player.setVisibility(false);
 		song_search_api.clear();
-		clear_search.isVisible = false
-		related_songs.isVisible = false
+		clear_search.setVisibility(false)
+		related_songs.setVisibility(false)
 		get_match_criteria.clear()
 		clear_match_criteria.run()
 	}

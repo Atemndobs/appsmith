@@ -21,7 +21,7 @@
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -39,5 +39,5 @@
   },
   "id": "Play_play_page_functions.search_song",
   "deleted": false,
-  "gitSyncId": "64467d69ea2e4f6c16474cba_644766d4ea2e4f6c16474d5c"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d026b3fb18f506368e33c4"
 }

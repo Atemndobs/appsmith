@@ -25,9 +25,9 @@
           "name": "currentSong"
         }
       ],
-      "isAsync": false
+      "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -40,9 +40,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-07-28T07:57:33Z"
+    "createdAt": "2023-08-06T23:03:15Z"
   },
   "id": "Play_play_page_functions.selectd_song_play",
   "deleted": false,
-  "gitSyncId": "64467d69ea2e4f6c16474cba_644766d4ea2e4f6c16474d5b"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d026b3fb18f506368e33c2"
 }
