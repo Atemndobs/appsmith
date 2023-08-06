@@ -39,8 +39,11 @@ export default {
 		link.setValue("")
 		return true;
 	},
+
 	async reset_form(){
 
+		search_spotify.setVisibility(true)
+		search_spotify_button.setVisibility(true)
 		download_songs.setVisibility(true)
 		get_result_button.setDisabled(true);
 		get_result_button.setVisibility(false)
@@ -57,19 +60,6 @@ export default {
 		source.setSelectedOption("spotify")
 		// source.selectedOptionLabel = "spotify";
 
-		let message = {
-			'link input text' : link.inputText,
-			'link  text' : link.inputText,
-			'link value ' : link.value,
-			'link' : link,
-			'get reult button visible' : get_result_button.isVisible,
-			'get reult button Disabled' : get_result_button.isDisabled,
-			'submit button': submit_download_button.isVisible,
-			'source value' : source.selectedOptionValue,
-			'source label' : source.selectedOptionLabel
-		}
-		console.log(message)
-		return message
 	},
 
 	swichValue(in_val) {
@@ -92,6 +82,12 @@ export default {
 	search() {
 		spotify_search_song.run()
 		let searchResult = spotify_search_song.data
+		var resultText = 'Add Download Link :' + searchResult.title + ' by ' + searchResult.artist
+		spotify_song_info.setVisibility(true)
+		spotify_song_info.setLabel(resultText)
+		search_spotify_image.setVisibility(true)
+		spotify_song_info.setVisibility(true)
+
 
 		console.log({
 			'SERACH RESULT' : searchResult
