@@ -1,0 +1,59 @@
+{
+    "widgetName": "energy",
+    "dynamicPropertyPathList": [{"key": "onChange"}],
+    "defaultValue": 10,
+    "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
+    "displayName": "Number Slider",
+    "tooltipAlwaysOn": false,
+    "labelText": "energy %",
+    "topRow": 55,
+    "searchTags": ["range"],
+    "bottomRow": 62,
+    "parentRowSpace": 10,
+    "labelWidth": 8,
+    "type": "NUMBER_SLIDER_WIDGET",
+    "hideCard": false,
+    "animateLoading": true,
+    "min": 0,
+    "parentColumnSpace": 5.78271484375,
+    "dynamicTriggerPathList": [{"key": "onChange"}],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "shouldTruncate": false,
+    "labelPosition": "Top",
+    "isDisabled": false,
+    "key": "7qyqflrdan",
+    "labelTextSize": "0.875rem",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "onChange": "{{appsmith.store.energy = energy.value}}",
+    "max": 100,
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "widgetId": "ckw81ikjem",
+    "isVisible": true,
+    "marks": [
+        {
+            "label": "25%",
+            "value": 25
+        },
+        {
+            "label": "50%",
+            "value": 50
+        },
+        {
+            "label": "75%",
+            "value": 75
+        }
+    ],
+    "sliderSize": "m",
+    "version": 1,
+    "shouldScroll": false,
+    "parentId": "pjvxmre18g",
+    "isLoading": false,
+    "labelAlignment": "left",
+    "renderMode": "CANVAS",
+    "originalTopRow": 54.0000000000058,
+    "originalBottomRow": 62.00000000000364,
+    "step": 1,
+    "showMarksLabel": true
+}

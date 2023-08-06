@@ -1,0 +1,73 @@
+{
+  "unpublishedPage": {
+    "name": "Download",
+    "slug": "download",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "mobileBottomRow": 820,
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 720,
+          "containerStyle": "none",
+          "snapRows": 80,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 83,
+          "minHeight": 820,
+          "mobileTopRow": 0,
+          "useAutoLayout": false,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "fixed"
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Download_download_song.reset_form",
+              "name": "download_song.reset_form",
+              "collectionId": "Download_download_song",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  download_songs.setVisibility(true);\n  get_result_button.setDisabled(true);\n  get_result_button.setVisibility(false);\n  submit_download_button.setVisibility(true);\n  submit_download_button.setDisabled(false);\n  submit_download_button.setLabel(\"Download\");\n  link.setValue(\"\");\n  link.setDisabled(true);\n  link.setVisibility(false);\n  source.setSelectedOption(\"spotify\");\n  let message = {\n    'link input text': link.inputText,\n    'link  text': link.inputText,\n    'link value ': link.value,\n    'link': link,\n    'get reult button visible': get_result_button.isVisible,\n    'get reult button Disabled': get_result_button.isDisabled,\n    'submit button': submit_download_button.isVisible,\n    'source value': source.selectedOptionValue,\n    'source label': source.selectedOptionLabel\n  };\n  console.log(message);\n  return message;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Download_spotify_search_song",
+              "name": "spotify_search_song",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "search_spotify.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Download",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_64463fb9ea2e4f6c16474caf"
+}

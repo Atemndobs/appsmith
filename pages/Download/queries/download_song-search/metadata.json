@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "activate_download",
-    "fullyQualifiedName": "download_song.activate_download",
+    "name": "search",
+    "fullyQualifiedName": "download_song.search",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Download_download_song.activate_download",
+  "id": "Download_download_song.search",
   "deleted": false,
-  "gitSyncId": "64c374ed9aa83b29b825dcf4_64c3b8129aa83b29b825dd3a"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64cfae4efb18f506368e3387"
 }

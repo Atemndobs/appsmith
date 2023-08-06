@@ -8,10 +8,10 @@ export default {
 		let response = null
 
 		if(dl_source == 'spotify') {
-			submit_download_button.isDisabled = true
-			submit_download_button.text = "Download in Progress ..."
-			link.isDisabled = true;
-			link.isVisible = false;
+			submit_download_button.setDisabled(true);
+			submit_download_button.setLabel("Download in Progress ...")
+			link.setDisabled(true);
+			link.setVisibility(false)
 			appsmith.store.spotify_url = link.inputText;
 			download_spotify.run();
 			response =  download_spotify.data;
@@ -23,8 +23,8 @@ export default {
 			appsmith.store.sc_url = link.inputText
 			download_sc.run()
 			if(download_sc.data){
-				get_result_button.isVisible = true
-				get_result_button.text = download_sc.data.data[3]
+				get_result_button.setVisibility(true)
+				get_result_button.setLabel(download_sc.data.data[3])
 			}
 			response =  download_sc.data
 		}
@@ -32,29 +32,30 @@ export default {
 		return response
 	},
 	async clear() {
-		link.isVisible = true
-		download_songs.isVisible = true;
-		get_result_button.isDisabled = true;
-		get_result_button.isVisible = false;
-		link.inputText = "";
+		link.setVisibility(true)
+		download_songs.setVisibility(true)
+		get_result_button.setDisabled(true);
+		get_result_button.setVisibility(false)
+		link.setValue("")
 		return true;
 	},
 	async reset_form(){
-		download_songs.isVisible = true;
-		get_result_button.isDisabled = true;
-		get_result_button.isVisible = false;
-		submit_download_button.isVisible = true;
-		submit_download_button.isDisabled = false;
-		submit_download_button.text = "Download"
-		link.inputText = "";
-		link.text = "";
-		link.value = ""
-		link.isDisabled = true;
-		link.isVisible = false;
+
+		download_songs.setVisibility(true)
+		get_result_button.setDisabled(true);
+		get_result_button.setVisibility(false)
+		submit_download_button.setVisibility(true)
+		submit_download_button.setDisabled(false);
+
+		submit_download_button.setLabel("Download")
+		link.setValue("")
+		link.setDisabled(true);
+		link.setVisibility(false);
 		// source.selectedOptionValue = this.swichValue(source.selectedOptionValue)
 		// source.selectedOptionLabel = this.swichValue(source.selectedOptionLabel)
-		source.selectedOptionValue = "spotify";
-		source.selectedOptionLabel = "spotify";
+		// source.selectedOptionValue = "spotify";
+		source.setSelectedOption("spotify")
+		// source.selectedOptionLabel = "spotify";
 
 		let message = {
 			'link input text' : link.inputText,
@@ -81,8 +82,19 @@ export default {
 	},
 
 	activate_download() {
-		link.isDisabled = false
-		link.isVisible = true
-		submit_download_button.isDisabled = false
+		link.setDisabled(false)
+		link.setVisibility(true)
+		submit_download_button.setDisabled(false)
+	},
+	set_spotify_link(){
+		// link.text = spotify_search_song.data.share_url
+	},
+	search() {
+		spotify_search_song.run()
+		let searchResult = spotify_search_song.data
+
+		console.log({
+			'SERACH RESULT' : searchResult
+		})
 	}
 }

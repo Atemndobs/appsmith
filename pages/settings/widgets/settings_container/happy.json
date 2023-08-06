@@ -1,0 +1,67 @@
+{
+    "widgetName": "happy",
+    "dynamicPropertyPathList": [
+        {"key": "isVisible"},
+        {"key": "onChange"}
+    ],
+    "defaultValue": 10,
+    "iconSVG": "/static/media/icon.f122000eb591fcd1410a4775a54f9f0d.svg",
+    "displayName": "Number Slider",
+    "tooltipAlwaysOn": false,
+    "labelText": "happy %",
+    "topRow": 42.0000000000058,
+    "searchTags": ["range"],
+    "bottomRow": 50.00000000000145,
+    "parentRowSpace": 10,
+    "labelWidth": 8,
+    "type": "NUMBER_SLIDER_WIDGET",
+    "hideCard": false,
+    "topRowBeforeCollapse": 24,
+    "animateLoading": true,
+    "min": 0,
+    "parentColumnSpace": 5.78271484375,
+    "dynamicTriggerPathList": [{"key": "onChange"}],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "isVisible"}
+    ],
+    "shouldTruncate": false,
+    "labelPosition": "Top",
+    "isDisabled": false,
+    "key": "7qyqflrdan",
+    "labelTextSize": "0.875rem",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "onChange": "{{appsmith.store.happy = happy.value}}",
+    "max": 100,
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "widgetId": "v0da8nd0wg",
+    "bottomRowBeforeCollapse": 32,
+    "isVisible": "{{mood.isSwitchedOn}}",
+    "marks": [
+        {
+            "label": "25%",
+            "value": 25
+        },
+        {
+            "label": "50%",
+            "value": 50
+        },
+        {
+            "label": "75%",
+            "value": 75
+        }
+    ],
+    "sliderSize": "m",
+    "version": 1,
+    "shouldScroll": false,
+    "parentId": "pjvxmre18g",
+    "isLoading": false,
+    "labelAlignment": "left",
+    "renderMode": "CANVAS",
+    "originalTopRow": 42.0000000000029,
+    "originalBottomRow": 50,
+    "step": 1,
+    "showMarksLabel": true
+}
