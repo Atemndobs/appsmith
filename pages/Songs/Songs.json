@@ -27,7 +27,7 @@
           "widgetId": "0",
           "containerStyle": "none",
           "snapRows": 125,
-          "version": 80,
+          "version": 83,
           "mobileTopRow": 0
         },
         "layoutOnLoadActions": [

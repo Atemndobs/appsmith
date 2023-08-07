@@ -1,14 +1,15 @@
 export default {
-	async set_criteria () {
-		this.set_bpm_range()
-		this.init_criteria()
-		return set_match_criteria.run()
-	},
-	async init_criteria() {
+	init_criteria() {
 		console.log(appsmith.store)
 		return appsmith.store
 	},
-	async set_bpm_range () {
+	set_criteria () {
+		this.set_bpm_range()
+		this.init_criteria()
+		set_match_criteria.run()
+		navigateTo('Play')
+	},
+	set_bpm_range () {
 		appsmith.store.set_bpm_range = show_bpm_range.isSwitchedOn? appsmith.store.bpm_range_start + '-' + appsmith.store.bpm_range_end : "0-200";
 		appsmith.store.mood = mood.isSwitchedOn ?  appsmith.store.mood = 'happy' :  appsmith.store.mood = 'sad';
 		appsmith.store.happy = mood.isSwitchedOn ? happy.value : 0;
@@ -16,7 +17,7 @@ export default {
 		return appsmith.store.set_bpm_range
 	},
 
-	async setMatchCriterion () {
+	setMatchCriterion () {
 		// settings_container.isVisible = true;
 		//	appsmith.store.bpm = !show_bpm_range.isSwitchedOn? bpm.value : 0 ; 
 		//	appsmith.store.bpm_range_start = show_bpm_range.isSwitchedOn? bpm_range.start : "0";

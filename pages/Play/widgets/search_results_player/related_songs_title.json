@@ -3,13 +3,13 @@
     "widgetName": "related_songs_title",
     "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
     "displayName": "Text",
-    "topRow": 33,
+    "topRow": 35,
     "searchTags": [
         "typography",
         "paragraph",
         "label"
     ],
-    "bottomRow": 37,
+    "bottomRow": 39,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -47,10 +47,10 @@
     "parentId": "qu25d50ks2",
     "isLoading": false,
     "renderMode": "CANVAS",
-    "originalTopRow": 35,
+    "originalTopRow": 33,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 39,
+    "originalBottomRow": 37,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }

@@ -44,7 +44,9 @@
         {"key": "primaryColumns.created_at.computedValue"},
         {"key": "primaryColumns.updated_at.computedValue"},
         {"key": "primaryColumns.classification_properties.computedValue"},
-        {"key": "primaryColumns.run_analysis.computedValue"}
+        {"key": "primaryColumns.run_analysis.computedValue"},
+        {"key": "primaryColumns.song_id.computedValue"},
+        {"key": "primaryColumns.song_url.computedValue"}
     ],
     "leftColumn": 0,
     "delimiter": ",",
@@ -112,6 +114,8 @@
         "updated_at",
         "classification_properties",
         "run_analysis",
+        "song_id",
+        "song_url",
         "customColumn1"
     ],
     "dynamicPropertyPathList": [{"key": "primaryColumns.customColumn1.borderRadius"}],
@@ -318,6 +322,25 @@
             "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
+        "song_url": {
+            "isCellVisible": true,
+            "isDerived": false,
+            "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.song_url))}}",
+            "textSize": "0.875rem",
+            "index": 30,
+            "isVisible": true,
+            "label": "song_url",
+            "textColor": "",
+            "columnType": "text",
+            "horizontalAlignment": "LEFT",
+            "width": 150,
+            "enableFilter": true,
+            "enableSort": true,
+            "id": "song_url",
+            "isDisabled": false,
+            "cellBackground": "",
+            "verticalAlignment": "CENTER"
+        },
         "duration": {
             "isCellVisible": true,
             "isDerived": false,
@@ -371,6 +394,25 @@
             "enableFilter": true,
             "enableSort": true,
             "id": "path",
+            "isDisabled": false,
+            "cellBackground": "",
+            "verticalAlignment": "CENTER"
+        },
+        "song_id": {
+            "isCellVisible": true,
+            "isDerived": false,
+            "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.song_id))}}",
+            "textSize": "0.875rem",
+            "index": 29,
+            "isVisible": true,
+            "label": "song_id",
+            "textColor": "",
+            "columnType": "text",
+            "horizontalAlignment": "LEFT",
+            "width": 150,
+            "enableFilter": true,
+            "enableSort": true,
+            "id": "song_id",
             "isDisabled": false,
             "cellBackground": "",
             "verticalAlignment": "CENTER"

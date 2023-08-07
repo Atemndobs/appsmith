@@ -3,7 +3,7 @@
     "requiresFlatWidgetChildren": true,
     "isCanvas": true,
     "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-    "topRow": 37,
+    "topRow": 39,
     "pageSize": 3,
     "type": "LIST_WIDGET_V2",
     "itemSpacing": "0",
@@ -63,7 +63,7 @@
     "isLoading": false,
     "mainCanvasId": "4575t2x8hg",
     "borderRadius": "0px",
-    "originalBottomRow": 71,
+    "originalBottomRow": 69,
     "additionalStaticProps": [
         "level",
         "levelData",
@@ -76,7 +76,7 @@
     "listData": "{{get_song_matches.data.hits}}",
     "dynamicPropertyPathList": [{"key": "onItemClick"}],
     "displayName": "List",
-    "bottomRow": 69,
+    "bottomRow": 71,
     "parentRowSpace": 10,
     "hideCard": false,
     "templateBottomRow": 16,
@@ -94,6 +94,6 @@
     "onItemClick": "{{play_page_functions.selectd_song_play(related_songs.selectedItem)}}",
     "parentId": "qu25d50ks2",
     "renderMode": "CANVAS",
-    "originalTopRow": 39,
+    "originalTopRow": 37,
     "selectedItemView": "{{{}}}"
 }

@@ -22,12 +22,12 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "options"}
+        {"key": "sourceData"}
     ],
     "labelPosition": "Top",
-    "options": "{{get_song_keys.data}}",
     "placeholderText": "Select option",
     "isDisabled": false,
+    "sourceData": "{{get_song_keys.data}}",
     "key": "x6zzlwmi55",
     "labelTextSize": "0.875rem",
     "isRequired": false,
@@ -36,6 +36,7 @@
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "widgetId": "7hilxkkhyk",
+    "optionValue": "value",
     "minWidth": 450,
     "isVisible": true,
     "version": 1,
@@ -43,6 +44,7 @@
     "isLoading": false,
     "labelAlignment": "left",
     "renderMode": "CANVAS",
+    "optionLabel": "label",
     "originalTopRow": 62.0000000000058,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,

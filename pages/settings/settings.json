@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 80,
+          "version": 83,
           "minHeight": 700,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -41,31 +41,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "settings_settings_page.set_bpm_range",
-              "name": "settings_page.set_bpm_range",
-              "collectionId": "settings_settings_page",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  appsmith.store.set_bpm_range = show_bpm_range.isSwitchedOn ? appsmith.store.bpm_range_start + '-' + appsmith.store.bpm_range_end : \"0-200\";\n  appsmith.store.mood = mood.isSwitchedOn ? appsmith.store.mood = 'happy' : appsmith.store.mood = 'sad';\n  appsmith.store.happy = mood.isSwitchedOn ? happy.value : 0;\n  appsmith.store.sad = mood.isSwitchedOn ? sad.value : 0;\n  return appsmith.store.set_bpm_range;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "settings_settings_page.set_criteria",
-              "name": "settings_page.set_criteria",
-              "collectionId": "settings_settings_page",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  settings_page.set_bpm_range();\n  settings_page.init_criteria();\n  return set_match_criteria.run();\n}"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]

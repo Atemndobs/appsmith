@@ -23,8 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
-    "clientSideExecution": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -33,13 +32,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-07-27T11:01:10Z"
+    "createdAt": "2023-08-07T08:03:30Z"
   },
   "id": "settings_settings_page.set_criteria",
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_64c24e769aa83b29b825dca4"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d0a552fb18f506368e3400"
 }

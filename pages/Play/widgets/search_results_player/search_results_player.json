@@ -12,7 +12,7 @@
         "group"
     ],
     "topRow": 41,
-    "bottomRow": 163,
+    "bottomRow": 165,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -30,7 +30,7 @@
         "widgetName": "Canvas3",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 1220,
+        "bottomRow": 1240,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -74,6 +74,6 @@
     "originalTopRow": 41,
     "borderRadius": "0px",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 165,
+    "originalBottomRow": 163,
     "minDynamicHeight": 10
 }
