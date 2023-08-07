@@ -86,6 +86,7 @@ export default {
 		const resultText = 'Get Download Link :' + spotify_search_song.data.title + ' by ' + spotify_search_song.data.artist
 		link.setValue(spotify_search_song.data.url)
 		link.setVisibility(true)
+		source.setSelectedOption('Spotify')
 		spotify_song_info.setVisibility(true)
 		spotify_song_info.setLabel(resultText)
 		search_spotify_image.setVisibility(true)
