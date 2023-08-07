@@ -29,20 +29,7 @@
           "leftColumn": 0,
           "positioning": "fixed"
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Download_spotify_search_song",
-              "name": "spotify_search_song",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "search_spotify.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Download",

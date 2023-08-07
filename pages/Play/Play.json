@@ -30,34 +30,7 @@
           "version": 83,
           "mobileTopRow": 0
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Play_get_song_matches",
-              "name": "get_song_matches",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.options ? appsmith.store.options : []",
-                "appsmith.store.slug ?? null ",
-                "play_page_functions.play_page_init_data.match_limit",
-                "appsmith.store.start_song ? appsmith.store.start_song.id : null"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Play_song_search_api",
-              "name": "song_search_api",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "play_page_functions.play_page_init_data.search_limit",
-                "search.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Play",

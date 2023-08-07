@@ -57,7 +57,7 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -75,7 +75,7 @@
       "appsmith.store.start_song ? appsmith.store.start_song.id : null",
       "play_page_functions.play_page_init_data.match_limit"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],

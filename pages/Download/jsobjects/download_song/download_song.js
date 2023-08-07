@@ -83,7 +83,9 @@ export default {
 	search() {
 		spotify_search_song.run()
 		let searchResult = spotify_search_song.data
-		var resultText = 'Add Download Link :' + searchResult.title + ' by ' + searchResult.artist
+		const resultText = 'Get Download Link :' + spotify_search_song.data.title + ' by ' + spotify_search_song.data.artist
+		link.setValue(spotify_search_song.data.url)
+		link.setVisibility(true)
 		spotify_song_info.setVisibility(true)
 		spotify_song_info.setLabel(resultText)
 		search_spotify_image.setVisibility(true)
