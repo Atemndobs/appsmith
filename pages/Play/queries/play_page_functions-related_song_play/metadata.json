@@ -16,15 +16,11 @@
     "pageId": "Play",
     "collectionId": "Play_play_page_functions",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "currentSong"
-        }
-      ],
+      "jsArguments": [],
       "isAsync": true
     },
     "executeOnLoad": false,

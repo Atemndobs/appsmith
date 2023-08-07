@@ -77,7 +77,7 @@ export default {
 		}
 
 
-		let energy = currentSong.energy.toFixed(1) * 100 + "%"
+		let energy = currentSong.energy  ? currentSong.energy.toFixed(1) * 100 + "%" : 0 + "%"
 
 		song_search_results.selectedItem.image = currentSong.image
 		mood_button.setLabel(this.getMood(currentSong)) 
@@ -99,15 +99,15 @@ export default {
 		return currentSong
 	},
 
-	related_song_play(currentSong) {
+	related_song_play() {
 		return this.selectd_song_play()
 	},
 
 	get_song_info (currentItem = {}) {
-		let danceability = currentItem.danceability.toFixed(1) * 100 + "%"
+		let danceability = currentItem.danceability ? currentItem.danceability.toFixed(1) * 100 + "%" : 0
 		let genre = 'not defined'
-		let bpm = currentItem.bpm
-		let key = currentItem.key + currentItem.scale
+		let bpm = currentItem.bpm ?? 0
+		let key = currentItem.key + currentItem.scale ?? ""
 		try{
 			genre = currentItem.genre
 			if(genre == 'undefined') {
@@ -119,7 +119,7 @@ export default {
 
 		let mood = this.getMood(currentItem)
 
-		let energy = currentItem.energy.toFixed(1) * 100 + "%"
+		let energy = currentItem.energy ? currentItem.energy.toFixed(1) * 100 + "%" : 0
 		return {
 			mood,
 			energy,
@@ -131,8 +131,8 @@ export default {
 	},
 
 	getMood(currentItem) {
-		let happy = currentItem.happy.toFixed(1) * 100 + "%"
-		let sad = currentItem.sad.toFixed(1) * 100 + "%"
+		let happy = currentItem.happy ? currentItem.happy.toFixed(1) * 100 + "%" : 0
+		let sad = currentItem.sad ?  currentItem.sad.toFixed(1) * 100 + "%" : 0
 		let mood = ""
 		if (happy > sad) {
 			mood = "happy"

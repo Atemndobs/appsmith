@@ -8,12 +8,12 @@
     "dynamicPropertyPathList": [{"key": "onClick"}],
     "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
     "displayName": "Button",
-    "topRow": 86,
+    "topRow": 84,
     "searchTags": [
         "click",
         "submit"
     ],
-    "bottomRow": 90,
+    "bottomRow": 88,
     "parentRowSpace": 10,
     "type": "BUTTON_WIDGET",
     "hideCard": false,
