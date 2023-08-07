@@ -63,7 +63,7 @@
     "isLoading": false,
     "mainCanvasId": "4575t2x8hg",
     "borderRadius": "0px",
-    "originalBottomRow": 69,
+    "originalBottomRow": 71,
     "additionalStaticProps": [
         "level",
         "levelData",
@@ -94,6 +94,6 @@
     "onItemClick": "{{play_page_functions.selectd_song_play(related_songs.selectedItem)}}",
     "parentId": "qu25d50ks2",
     "renderMode": "CANVAS",
-    "originalTopRow": 37,
+    "originalTopRow": 39,
     "selectedItemView": "{{{}}}"
 }

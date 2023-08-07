@@ -47,10 +47,10 @@
     "parentId": "qu25d50ks2",
     "isLoading": false,
     "renderMode": "CANVAS",
-    "originalTopRow": 33,
+    "originalTopRow": 35,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 37,
+    "originalBottomRow": 39,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }

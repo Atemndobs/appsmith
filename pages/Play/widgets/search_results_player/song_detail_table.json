@@ -57,7 +57,7 @@
     },
     "borderRadius": "0px",
     "columnUpdatedAt": 1682440283534,
-    "originalBottomRow": 120,
+    "originalBottomRow": 122,
     "defaultSelectedRowIndices": [0],
     "widgetName": "song_detail_table",
     "defaultPageSize": 0,
@@ -153,7 +153,7 @@
     "renderMode": "CANVAS",
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": false,
-    "originalTopRow": 88,
+    "originalTopRow": 90,
     "isVisiblePagination": false,
     "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
     "verticalAlignment": "CENTER"
