@@ -42,6 +42,7 @@ export default {
 
 	async reset_form(){
 
+		search_spotify_container.setVisibility(true)
 		search_spotify.setVisibility(true)
 		search_spotify_button.setVisibility(true)
 		download_songs.setVisibility(true)

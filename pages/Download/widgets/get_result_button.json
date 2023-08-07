@@ -38,10 +38,10 @@
     "parentId": "0",
     "isLoading": false,
     "renderMode": "CANVAS",
-    "originalTopRow": 34,
+    "originalTopRow": 27,
     "disabledWhenInvalid": false,
     "borderRadius": "0px",
-    "originalBottomRow": 38,
+    "originalBottomRow": 31,
     "buttonVariant": "PRIMARY",
     "iconAlign": "left",
     "placement": "CENTER"
