@@ -9,7 +9,7 @@
     "variables": [
       {
         "name": "play_page_init_data",
-        "value": "{\n  'show': false,\n  'currentSong': {},\n  'search_limit': 3,\n  'search_hits': 0,\n  'match_limit': 3,\n  'related_songs': 'my_waymp3'\n}"
+        "value": "{\n  'show': false,\n  'currentSong': {},\n  'search_limit': 3,\n  'search_hits': 0,\n  'match_limit': 3,\n  'related_songs': ''\n}"
       }
     ],
     "userPermissions": []

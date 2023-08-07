@@ -1,14 +1,14 @@
 {
-	"slug" : {{appsmith.store.related_songs ?? ''}},
+	"slug" : {{appsmith.store.slug ?? ''}},
 	"id" : {{appsmith.store.start_song ? appsmith.store.start_song.id : appsmith.store.song_id}},
 	"bpm": {{appsmith.store.bpm.value = 'undefined'? 100 : appsmith.store.bpm.value }},
-	"bpmRange": {{appsmith.store.set_bpm_range}},
+	"bpmRange": {{appsmith.store.set_bpm_range ?? 1}},
 	"happy": {{appsmith.store.happy}},
 	"sad": {{appsmith.store.sad}},
 	"mood": {{appsmith.store.mood}},
 	"energy": {{appsmith.store.energy}},
-	"key": "E major",
-	"scale": "major",
+	"key": {{appsmith.store.current_song ? appsmith.store.current_song.key : ''}},
+	"scale": {{appsmith.store.current_song ? appsmith.store.current_song.scale :''}},
 	"genre":{{appsmith.store.genre}},
 	"danceability" : 90,
 	"aggressiveness" : 50

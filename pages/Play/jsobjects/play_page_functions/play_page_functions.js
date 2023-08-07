@@ -5,11 +5,11 @@ export default {
 		'search_limit' : 3,
 		'search_hits' : 0,
 		'match_limit' : 3,
-		'related_songs' : 'my_waymp3'
+		'related_songs' : ''
 	},
 
 	show_details() {
-		if(playing_song_info.setVisibility(false)) {
+		if(!playing_song_info.isVisible) {
 			playing_song_info.setVisibility(true)
 			mood_button.setVisibility(true)
 			energy_button.setVisibility(true)
@@ -24,7 +24,7 @@ export default {
 		}
 	},
 	show_start_song(){
-		if(song_detail_table.setVisibility(false)) {
+		if(!song_detail_table.isVisible) {
 			song_detail_table.setVisibility(true)
 		}else{
 			song_detail_table.setVisibility(false)
@@ -37,7 +37,7 @@ export default {
 			//refine_options.setVisibility(false)
 		}
 
-		if(options_switch_group.setVisibility(false)) {
+		if(!options_switch_group.isVisible) {
 			options_switch_group.setVisibility(true)
 		}else{
 			options_switch_group.setVisibility(false)
