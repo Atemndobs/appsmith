@@ -1,12 +1,11 @@
 {
   "unpublishedPage": {
-    "name": "search_page",
-    "slug": "search-page",
+    "name": "Settings",
+    "slug": "settings",
     "layouts": [
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 760,
           "widgetName": "MainContainer",
           "backgroundColor": "none",
           "rightColumn": 1224,
@@ -14,26 +13,31 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 770,
+          "bottomRow": 780,
           "containerStyle": "none",
-          "snapRows": 74,
+          "snapRows": 68,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 83,
-          "minHeight": 760,
-          "mobileTopRow": 0,
-          "useAutoLayout": false,
+          "minHeight": 700,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed"
+          "leftColumn": 0
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "search_page_get_songs",
-              "name": "get_songs",
+              "id": "Settings_get_song_genres",
+              "name": "get_song_genres",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Settings_get_song_keys",
+              "name": "get_song_keys",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
@@ -43,7 +47,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "search_page",
+        "id": "Settings",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -54,5 +58,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_64861c7afb850e72fd5f77f0"
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_648d7805fb850e72fd5f787a"
 }

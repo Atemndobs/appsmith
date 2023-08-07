@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "init_criteria",
-    "fullyQualifiedName": "settings_page.init_criteria",
+    "name": "set_criteria",
+    "fullyQualifiedName": "settings_page.set_criteria",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "settings",
-    "collectionId": "settings_settings_page",
+    "pageId": "Settings",
+    "collectionId": "Settings_settings_page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,9 +35,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-08-07T08:03:30Z"
   },
-  "id": "settings_settings_page.init_criteria",
+  "id": "Settings_settings_page.set_criteria",
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_64c268159aa83b29b825dcaa"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d0a552fb18f506368e3400"
 }

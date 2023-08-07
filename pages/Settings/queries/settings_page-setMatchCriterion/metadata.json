@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "set_criteria",
-    "fullyQualifiedName": "settings_page.set_criteria",
+    "name": "setMatchCriterion",
+    "fullyQualifiedName": "settings_page.setMatchCriterion",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,15 +13,15 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "settings",
-    "collectionId": "settings_settings_page",
+    "pageId": "Settings",
+    "collectionId": "Settings_settings_page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -35,10 +35,9 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-08-07T08:03:30Z"
+    "userPermissions": []
   },
-  "id": "settings_settings_page.set_criteria",
+  "id": "Settings_settings_page.setMatchCriterion",
   "deleted": false,
-  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d0a552fb18f506368e3400"
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_64c26ab59aa83b29b825dcae"
 }

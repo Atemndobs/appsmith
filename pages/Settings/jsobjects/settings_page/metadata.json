@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "settings_page",
-    "pageId": "settings",
+    "pageId": "Settings",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "settings_settings_page",
+  "id": "Settings_settings_page",
   "deleted": false,
   "gitSyncId": "644620a7ea2e4f6c16474ca3_64c24e769aa83b29b825dca7"
 }
