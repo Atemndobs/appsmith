@@ -1,7 +1,7 @@
 {
     "resetFormOnClick": false,
     "boxShadow": "none",
-    "onClick": "{{settings_page.asset_criteria()}}",
+    "onClick": "{{settings_page.set_criteria()}}",
     "widgetName": "apply_match_settings",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [{"key": "onClick"}],
