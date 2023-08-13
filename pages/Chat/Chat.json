@@ -1,6 +1,6 @@
 {
   "unpublishedPage": {
-    "name": "chat",
+    "name": "Chat",
     "slug": "chat",
     "layouts": [
       {
@@ -28,7 +28,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "chat_chat",
+              "id": "Chat_chat",
               "name": "chat",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -41,7 +41,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "chat",
+        "id": "Chat",
         "deleted": false,
         "policies": [],
         "userPermissions": []

@@ -1,2 +1,0 @@
-{"question": {{chat_input.text}}
-}
