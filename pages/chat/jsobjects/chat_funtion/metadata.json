@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "chat_funtion",
+    "pageId": "chat",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "chat_chat_funtion",
+  "deleted": false,
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d937e3fb18f506368e34fb"
+}

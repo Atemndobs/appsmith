@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Download",
+    "pageId": "chat",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -30,7 +30,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\"question\": {{chat_input.text}}\n}\n ",
+      "body": "{\"question\": {{chat_input.text}}\n}\n",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -61,7 +61,7 @@
     "userPermissions": [],
     "createdAt": "2023-08-13T07:52:31Z"
   },
-  "id": "Download_chat",
+  "id": "chat_chat",
   "deleted": false,
   "gitSyncId": "64c374ed9aa83b29b825dcf4_64d88bbffb18f506368e34ec"
 }

@@ -1,12 +1,11 @@
 {
   "unpublishedPage": {
-    "name": "Download",
-    "slug": "download",
+    "name": "chat",
+    "slug": "chat",
     "layouts": [
       {
         "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 820,
           "widgetName": "MainContainer",
           "backgroundColor": "none",
           "rightColumn": 1224,
@@ -14,25 +13,35 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 750,
+          "bottomRow": 430,
           "containerStyle": "none",
-          "snapRows": 80,
+          "snapRows": 105,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 83,
-          "minHeight": 820,
-          "mobileTopRow": 0,
-          "useAutoLayout": false,
+          "minHeight": 1070,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed"
+          "leftColumn": 0
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "chat_chat",
+              "name": "chat",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "chat_input.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Download",
+        "id": "chat",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -43,5 +52,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_64463fb9ea2e4f6c16474caf"
+  "gitSyncId": "64c374ed9aa83b29b825dcf4_64d93471fb18f506368e34f5"
 }

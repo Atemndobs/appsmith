@@ -39,6 +39,10 @@
     {
       "id": "wedding-video-5",
       "isDefault": false
+    },
+    {
+      "id": "chat",
+      "isDefault": false
     }
   ],
   "viewMode": false,
