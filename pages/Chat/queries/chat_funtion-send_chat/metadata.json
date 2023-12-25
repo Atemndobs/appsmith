@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "show_re",
-    "fullyQualifiedName": "play_page_functions.show_re",
+    "name": "send_chat",
+    "fullyQualifiedName": "chat_funtion.send_chat",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,15 +13,14 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Play",
-    "collectionId": "Play_play_page_functions",
+    "pageId": "Chat",
+    "collectionId": "Chat_chat_funtion",
     "actionConfiguration": {
       "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
-      "isAsync": false
+      "jsArguments": []
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -37,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Play_play_page_functions.show_re",
+  "id": "Chat_chat_funtion.send_chat",
   "deleted": false,
-  "gitSyncId": "64c374ed9aa83b29b825dcf4_64c67d029aa83b29b825de48"
+  "gitSyncId": "656ba90447fac214c65490db_656ba91347fac214c6549129"
 }

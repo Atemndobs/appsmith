@@ -32,7 +32,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Search_page_get_songs",
               "name": "get_songs",
               "confirmBeforeExecute": false,
               "pluginType": "API",

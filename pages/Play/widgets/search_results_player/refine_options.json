@@ -28,7 +28,8 @@
     "isFilterable": false,
     "dynamicPropertyPathList": [
         {"key": "onOptionChange"},
-        {"key": "onDropdownClose"}
+        {"key": "onDropdownClose"},
+        {"key": "sourceData"}
     ],
     "displayName": "MultiSelect",
     "searchTags": [

@@ -145,6 +145,7 @@
     "rightColumn": 63,
     "textSize": "0.875rem",
     "widgetId": "ed61h0hcms",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "[  {\n    \"song\": \"Artist\",\n    \"property\":  {{song_search_results.selectedItem.author}}\n\n  },\n  {\n    \"song\": \"Title\",\n    \"property\":  {{song_search_results.selectedItem.title}}\n  },\n  {\n    \"song\": \"BPM\",\n    \"property\":  {{song_search_results.selectedItem.bpm}}\n\t\t},\n\t\t{\n    \"song\": \"Key\",\n    \"property\":{{song_search_results.selectedItem.key + song_search_results.selectedItem.scale}} \n\t\t},\n\t\t\t\t  {\n    \"song\": \"Genre\",\n    \"property\":  {{play_page_functions.get_song_info(song_search_results.selectedItem).genre}}\n\t\t},\n\t\t\t\t  {\n    \"song\": \"Energy\",\n    \"property\": {{play_page_functions.get_song_info(song_search_results.selectedItem).energy}}\n\t\t},\n\t\t\t\t  {\n    \"song\": \"Danceability\",\n    \"property\": {{play_page_functions.get_song_info(song_search_results.selectedItem).danceability}} \n\t\t},\n\t\t\t\t  {\n    \"song\": \"Mood\",\n    \"property\":  {{play_page_functions.get_song_info(song_search_results.selectedItem).mood}}\n\t\t}]\n",
     "label": "Data",

@@ -30,7 +30,8 @@
     "dynamicPropertyPathList": [
         {"key": "onDropdownClose"},
         {"key": "onDropdownOpen"},
-        {"key": "onOptionChange"}
+        {"key": "onOptionChange"},
+        {"key": "sourceData"}
     ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
