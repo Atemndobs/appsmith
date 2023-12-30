@@ -7,7 +7,7 @@
     "pageSize": 3,
     "type": "LIST_WIDGET_V2",
     "itemSpacing": 8,
-    "topRowBeforeCollapse": 15,
+    "topRowBeforeCollapse": 17,
     "animateLoading": true,
     "dynamicBindingPathList": [
         {"key": "currentItemsView"},
@@ -59,14 +59,14 @@
     }],
     "itemBackgroundColor": "#FFFFFF",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "bottomRowBeforeCollapse": 40,
+    "bottomRowBeforeCollapse": 42,
     "isVisible": false,
     "totalRecordsCount": "{{song_search_api.data.hits.length}}",
     "hasMetaWidgets": true,
     "isLoading": false,
     "mainCanvasId": "rz6tvssjuu",
     "borderRadius": "0px",
-    "originalBottomRow": 40,
+    "originalBottomRow": 42,
     "additionalStaticProps": [
         "level",
         "levelData",
@@ -98,6 +98,6 @@
     "onItemClick": "{{play_page_functions.start_song_play(currentItem)}}",
     "parentId": "0",
     "renderMode": "CANVAS",
-    "originalTopRow": 15,
+    "originalTopRow": 17,
     "selectedItemView": "{{{}}}"
 }
