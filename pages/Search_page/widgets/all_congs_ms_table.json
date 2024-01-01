@@ -1058,6 +1058,7 @@
     "rightColumn": 63,
     "textSize": "0.875rem",
     "widgetId": "wxz79nrmun",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{get_songs.data.results}}",
     "label": "Data",
