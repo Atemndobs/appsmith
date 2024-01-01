@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Play",
+    "pageId": "Settings",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -39,7 +39,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"slug\" : {{appsmith.store.slug ?? ''}},\n\t\"id\" : {{appsmith.store.start_song ? appsmith.store.start_song.id : appsmith.store.song_id}},\n\t\"bpm\": {{appsmith.store.bpm = 'undefined'? 100 : appsmith.store.bpm.value }},\n\t\"bpmRange\": {{appsmith.store.set_bpm_range ?? 1}},\n\t\"happy\": {{appsmith.store.happy}},\n\t\"sad\": {{appsmith.store.sad}},\n\t\"mood\": {{appsmith.store.mood}},\n\t\"energy\": {{appsmith.store.energy}},\n\t\"key\": {{appsmith.store.current_song ? appsmith.store.current_song.key : ''}},\n\t\"scale\": {{appsmith.store.current_song ? appsmith.store.current_song.scale :''}},\n\t\"genre\":{{appsmith.store.genre}},\n\t\"danceability\" : 90,\n\t\"aggressiveness\" : 50\n}",
+      "body": "{\n\t\"slug\" : {{appsmith.store.slug ?? ''}},\n\t\"id\" : {{appsmith.store.start_song ? appsmith.store.start_song.id : appsmith.store.song_id}},\n\t\"bpm\": {{appsmith.store.bpm ? appsmith.store.bpm.value : 100}},\n\t\"bpmRange\": {{appsmith.store.set_bpm_range ?? 1}},\n\t\"happy\": {{appsmith.store.happy}},\n\t\"sad\": {{appsmith.store.sad}},\n\t\"mood\": {{appsmith.store.mood}},\n\t\"energy\": {{appsmith.store.energy}},\n\t\"key\": {{appsmith.store.current_song ? appsmith.store.current_song.key : ''}},\n\t\"scale\": {{appsmith.store.current_song ? appsmith.store.current_song.scale :''}},\n\t\"genre\":{{appsmith.store.genre}},\n\t\"danceability\" : 90,\n\t\"aggressiveness\" : 50\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -62,7 +62,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.bpm = 'undefined'? 100 : appsmith.store.bpm.value ",
+      "appsmith.store.bpm ? appsmith.store.bpm.value : 100",
       "appsmith.store.current_song ? appsmith.store.current_song.key : ''",
       "appsmith.store.current_song ? appsmith.store.current_song.scale :''",
       "appsmith.store.energy",
@@ -79,7 +79,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Play_set_match_criteria",
+  "id": "Settings_set_match_criteria",
   "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_6468ca73ea2e4f6c16474eb4"
+  "gitSyncId": "656ba90447fac214c65490db_6592ee3347fac214c6549201"
 }

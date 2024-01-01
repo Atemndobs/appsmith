@@ -44,11 +44,16 @@ export default {
 		}
 	},
 	set_option(){
-		appsmith.store.options = refine_options.selectedOptionValues
+		storeValue('options', refine_options.selectedOptionValues);
+		//storeValue('options', 'ATEM');
+		console.log({
+			'selected_OPTIONS STORE VALUE' : appsmith.store.options
+		})
+
 		this.selectd_song_play(appsmith.store.first_song)
 	},
 	set_option_switch(){
-		appsmith.store.options = options_switch_group.selectedValues
+		storeValue('options', options_switch_group.selectedValues);
 		console.log({
 			'selected_OPTIONS' : appsmith.store.options 
 		})
@@ -56,24 +61,32 @@ export default {
 	},
 
 	start_song_play(currentSong) {
-		appsmith.store.first_song = currentSong
+		storeValue('first_song', currentSong);
+		console.log({
+			'currentSong' : appsmith.store.options 
+		})
 		this.selectd_song_play(currentSong)
 	},
 
 	selectd_song_play (currentSong = {}) {
-		appsmith.store.song_id = currentSong.id
+
+		// appsmith.store.song_id = currentSong.id
+		storeValue('song_id', currentSong.id);
 		search.setVisibility(false)
 		search_button.setVisibility(false)
 		related_songs.setVisibility(true)
 
 		player_image.setImage(currentSong.image ?? "")
-		appsmith.store.start_song = currentSong;
-		appsmith.store.current_song = currentSong;
+		// appsmith.store.start_song = currentSong;
+		//appsmith.store.current_song = currentSong;
+		storeValue('start_song', currentSong);
+		storeValue('current_song', currentSong);
 		search_results_player.setVisibility(true);
 		song_search_results.setVisibility(false);
 
 		if(Object.keys(currentSong).length === 0 || currentSong.slug !== "undefined" ){
-			appsmith.store.slug = currentSong.slug
+			// appsmith.store.slug = currentSong.slug
+			storeValue('slug', currentSong.slug);
 		}
 
 
@@ -151,7 +164,8 @@ export default {
 	},
 
 	clear_search(){
-		appsmith.store.options = []
+		// appsmith.store.options = []
+		storeValue('options', []);
 		search.setVisibility(true);
 		search_button.setVisibility(true);
 		search.setValue("");
