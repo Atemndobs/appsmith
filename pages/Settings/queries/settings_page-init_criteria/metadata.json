@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2024-03-14T22:27:03Z"
   },
   "id": "Settings_settings_page.init_criteria",
   "deleted": false,

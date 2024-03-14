@@ -77,7 +77,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2024-03-14T22:27:03Z"
   },
   "id": "Play_set_match_criteria",
   "deleted": false,
