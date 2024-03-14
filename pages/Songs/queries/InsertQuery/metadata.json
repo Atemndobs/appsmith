@@ -46,7 +46,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2024-03-14T22:28:09Z"
   },
   "id": "Songs_InsertQuery",
   "deleted": false,
