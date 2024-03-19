@@ -50,19 +50,19 @@
   },
   "unpublishedCustomJSLibs": [
     {
+      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+    },
+    {
       "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
     },
     {
-      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+      "uidString": "supabase_https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.4.0/dist/umd/supabase.min.js"
     },
     {
       "uidString": "dcodeIO_https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"
     },
     {
       "uidString": "Appwrite_https://cdn.jsdelivr.net/npm/appwrite@10.2.0/dist/iife/sdk.min.js"
-    },
-    {
-      "uidString": "supabase_https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.4.0/dist/umd/supabase.min.js"
     }
   ],
   "publishedCustomJSLibs": [],
