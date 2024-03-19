@@ -4,10 +4,10 @@
   "unpublishedAction": {
     "name": "song_search_api",
     "datasource": {
-      "name": "http://search.curator.atemkeng.eu",
+      "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "http://search.curator.atemkeng.eu"
+        "url": "https://search.curator.atemkeng.eu"
       },
       "invalids": [],
       "messages": [],

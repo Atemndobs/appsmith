@@ -4,10 +4,10 @@
   "unpublishedAction": {
     "name": "download_sc",
     "datasource": {
-      "name": "http://core.curator.atemkeng.eu",
+      "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "http://core.curator.atemkeng.eu"
+        "url": "https://core.curator.atemkeng.eu"
       },
       "invalids": [],
       "messages": [],
