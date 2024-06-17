@@ -2,9 +2,9 @@ export default {
 	play_page_init_data : {
 		'show' : false,
 		'currentSong' : {},
-		'search_limit' : 3,
+		'search_limit' : 9,
 		'search_hits' : 0,
-		'match_limit' : 3,
+		'match_limit' : 9,
 		'related_songs' : ''
 	},
 

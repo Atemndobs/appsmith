@@ -11,8 +11,8 @@
         "parent",
         "group"
     ],
-    "topRow": 42,
-    "bottomRow": 166,
+    "topRow": 49,
+    "bottomRow": 176,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -30,7 +30,7 @@
         "widgetName": "Canvas3",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 1240,
+        "bottomRow": 1270,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -71,9 +71,9 @@
     "parentId": "0",
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 42,
+    "originalTopRow": 49,
     "borderRadius": "0px",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 166,
+    "originalBottomRow": 176,
     "minDynamicHeight": 10
 }
