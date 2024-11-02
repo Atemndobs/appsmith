@@ -1,71 +1,85 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.16c864f46228416bf937ce5e688bf1eb.svg",
-    "labelText": "",
-    "topRow": 79,
-    "labelWidth": 5,
-    "type": "MULTI_SELECT_WIDGET_V2",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "labelTextColor"}
-    ],
-    "placeholderText": "Select option(s)",
-    "isDisabled": true,
-    "isRequired": false,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": false,
-    "version": 1,
-    "isLoading": false,
-    "borderRadius": "0px",
-    "originalBottomRow": 83,
-    "mobileBottomRow": 90,
-    "widgetName": "refine_options",
-    "isFilterable": false,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "onDropdownClose"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "MultiSelect",
-    "searchTags": [
-        "dropdown",
-        "tags"
-    ],
-    "bottomRow": 83,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 21,
-    "shouldScrollContents": true,
-    "parentColumnSpace": 5.99658203125,
-    "dynamicTriggerPathList": [
-        {"key": "onDropdownClose"},
-        {"key": "onOptionChange"}
-    ],
-    "labelPosition": "Top",
-    "onDropdownClose": "",
-    "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-    "sourceData": "[\n  {\n    \"label\": \"Genre\",\n    \"value\": \"genre\"\n  },\n  {\n    \"label\": \"Key\",\n    \"value\": \"key\"\n  },\n  {\n    \"label\": \"Energy\",\n    \"value\": \"energy\"\n  },\n  {\n    \"label\": \"Dance\",\n    \"value\": \"danceability\"\n  },\n  {\n    \"label\": \"mood\",\n    \"value\": \"mood\"\n  }\n]",
-    "key": "d1pcj0en5u",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 62,
-    "widgetId": "yc1r5j76px",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "qu25d50ks2",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 83,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 79,
-    "mobileLeftColumn": 1,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{play_page_functions.set_option(appsmith.store.current_song)}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 83,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "MultiSelect",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownClose"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownClose"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.16c864f46228416bf937ce5e688bf1eb.svg",
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": false,
+  "key": "d1pcj0en5u",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "",
+  "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 90,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 83,
+  "onDropdownClose": "",
+  "onOptionChange": "{{play_page_functions.set_option(appsmith.store.current_song)}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 83,
+  "originalTopRow": 79,
+  "parentColumnSpace": 5.99658203125,
+  "parentId": "qu25d50ks2",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option(s)",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "searchTags": [
+    "dropdown",
+    "tags"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "[\n  {\n    \"label\": \"Genre\",\n    \"value\": \"genre\"\n  },\n  {\n    \"label\": \"Key\",\n    \"value\": \"key\"\n  },\n  {\n    \"label\": \"Energy\",\n    \"value\": \"energy\"\n  },\n  {\n    \"label\": \"Dance\",\n    \"value\": \"danceability\"\n  },\n  {\n    \"label\": \"mood\",\n    \"value\": \"mood\"\n  }\n]",
+  "topRow": 79,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "yc1r5j76px",
+  "widgetName": "refine_options"
 }

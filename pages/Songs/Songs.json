@@ -1,64 +1,36 @@
 {
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_6485fb7afb850e72fd5f77cc",
   "unpublishedPage": {
-    "name": "Songs",
-    "slug": "songs",
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 2655.9843750000005,
-          "widgetName": "MainContainer",
-          "topRow": 0,
-          "bottomRow": 1807.9999999999927,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "minHeight": 910,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
-          "dynamicTriggerPathList": [],
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed",
           "backgroundColor": "none",
+          "bottomRow": 1807.9999999999927,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 910,
+          "mobileBottomRow": 2655.9843750000005,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
           "rightColumn": 1174,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "containerStyle": "none",
           "snapRows": 125,
-          "version": 89,
-          "mobileTopRow": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Songs_SelectQuery",
-              "name": "SelectQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "data_table.sortOrder.column || 'id'",
-                "data_table.sortOrder.order || \"ASC\"",
-                "data_table.pageSize",
-                "data_table.searchText || \"\"",
-                "(data_table.pageNo - 1) * data_table.pageSize"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Songs",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": []
-  },
-  "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_6485fb7afb850e72fd5f77cc"
+    "name": "Songs",
+    "slug": "songs"
+  }
 }

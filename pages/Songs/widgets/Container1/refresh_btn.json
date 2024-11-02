@@ -1,29 +1,37 @@
 {
-    "labelTextSize": "0.875rem",
-    "boxShadow": "none",
-    "widgetName": "refresh_btn",
-    "onClick": "{{SelectQuery.run()}}",
-    "rightColumn": 25,
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "iconName": "refresh",
-    "widgetId": "2jj0197tff",
-    "topRow": 4.8,
-    "bottomRow": 8.7984375,
-    "parentRowSpace": 10,
-    "minWidth": 50,
-    "isVisible": "true",
-    "type": "ICON_BUTTON_WIDGET",
-    "version": 1,
-    "parentId": "59rw5mx0bq",
-    "isLoading": false,
-    "parentColumnSpace": 12.0703125,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 12,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "buttonColor"}
-    ],
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "buttonVariant": "PRIMARY",
-    "isDisabled": false
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8.7984375,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "refresh",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 12,
+  "minWidth": 50,
+  "onClick": "{{SelectQuery.run()}}",
+  "parentColumnSpace": 12.0703125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "rightColumn": 25,
+  "topRow": 4.8,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "2jj0197tff",
+  "widgetName": "refresh_btn"
 }

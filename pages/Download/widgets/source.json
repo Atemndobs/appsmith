@@ -1,66 +1,86 @@
 {
-    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "source",
-    "topRow": 6,
-    "labelWidth": "8",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `spotify`))(source.options, source.serverSideFiltering) }}",
-    "animateLoading": false,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "defaultOptionValue"}
-    ],
-    "labelStyle": "BOLD",
-    "placeholderText": "Select Source ",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "onDropdownOpen": "{{download_song.activate_download()}}",
-    "isLoading": false,
-    "borderRadius": "0px",
-    "originalBottomRow": 11.799999999999272,
-    "widgetName": "source",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onDropdownClose"},
-        {"key": "onDropdownOpen"},
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 13,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "parentColumnSpace": 6.84375,
-    "dynamicTriggerPathList": [
-        {"key": "onOptionChange"},
-        {"key": "onDropdownClose"},
-        {"key": "onDropdownOpen"}
-    ],
-    "labelPosition": "Top",
-    "onDropdownClose": "{{download_song.activate_download()}}",
-    "sourceData": "[\n  {\n    \"label\": \"spotify\",\n    \"value\": \"spotify\"\n  },\n  {\n    \"label\": \"soundcloud\",\n    \"value\": \"sc\"\n  }\n]",
-    "key": "mnbvtv99fj",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "siz6sp7wr3",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "0",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "originalTopRow": 4.8,
-    "maxDynamicHeight": 8,
-    "onOptionChange": "{{download_song.activate_download()}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "0px",
+  "bottomRow": 13,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `spotify`))(source.options, source.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onDropdownClose"
+    },
+    {
+      "key": "onDropdownOpen"
+    },
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownClose"
+    },
+    {
+      "key": "onDropdownOpen"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "mnbvtv99fj",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "source",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "8",
+  "leftColumn": 0,
+  "maxDynamicHeight": 8,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "onDropdownClose": "{{download_song.activate_download()}}",
+  "onDropdownOpen": "{{download_song.activate_download()}}",
+  "onOptionChange": "{{download_song.activate_download()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 11.799999999999272,
+  "originalTopRow": 4.8,
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Select Source ",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "[\n  {\n    \"label\": \"spotify\",\n    \"value\": \"spotify\"\n  },\n  {\n    \"label\": \"soundcloud\",\n    \"value\": \"sc\"\n  }\n]",
+  "topRow": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "siz6sp7wr3",
+  "widgetName": "source"
 }

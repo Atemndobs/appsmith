@@ -1,45 +1,59 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 5,
-    "widgetName": "got_to_download_page",
-    "onClick": "{{navigateTo('Download')}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Icon button",
-    "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 0,
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 60,
-    "animateLoading": true,
-    "parentColumnSpace": 6.84375,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 44,
-    "dynamicBindingPathList": [{"key": "buttonColor"}],
-    "isDisabled": false,
-    "key": "yh8joe3dxb",
-    "isDeprecated": false,
-    "rightColumn": 54,
-    "iconName": "download",
-    "widgetId": "3q1rnf627w",
-    "minWidth": 50,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 1,
-    "responsiveBehavior": "hug",
-    "originalTopRow": 86,
-    "borderRadius": "0px",
-    "mobileLeftColumn": 56,
-    "originalBottomRow": 90,
-    "buttonVariant": "TERTIARY"
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "download",
+  "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "yh8joe3dxb",
+  "leftColumn": 44,
+  "minWidth": 50,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 56,
+  "mobileRightColumn": 60,
+  "mobileTopRow": 1,
+  "onClick": "{{navigateTo('Download')}}",
+  "originalBottomRow": 90,
+  "originalTopRow": 86,
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 54,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "3q1rnf627w",
+  "widgetName": "got_to_download_page"
 }

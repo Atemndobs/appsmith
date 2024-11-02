@@ -1,47 +1,36 @@
 {
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_64861c7afb850e72fd5f77f0",
   "unpublishedPage": {
-    "name": "Search_page",
-    "slug": "search-page",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 760,
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 770,
-          "containerStyle": "none",
-          "snapRows": 74,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 760,
-          "mobileTopRow": 0,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Search_page",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 760,
+          "mobileBottomRow": 760,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 74,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_64861c7afb850e72fd5f77f0"
+    "name": "Search_page",
+    "slug": "search-page"
+  }
 }

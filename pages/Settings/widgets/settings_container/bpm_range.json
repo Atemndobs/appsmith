@@ -1,61 +1,75 @@
 {
-    "iconSVG": "/static/media/icon.8216245f04c391d4ae315397e9194dd4.svg",
-    "defaultStartValue": 10,
-    "tooltipAlwaysOn": true,
-    "labelText": "BPM range",
-    "topRow": 4,
-    "labelWidth": 8,
-    "type": "RANGE_SLIDER_WIDGET",
-    "topRowBeforeCollapse": 4.8,
-    "animateLoading": true,
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "isVisible"}
-    ],
-    "labelTooltip": "Search songs withion this range",
-    "isDisabled": false,
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "bottomRowBeforeCollapse": 12.8,
-    "isVisible": "{{show_bpm_range.isSwitchedOn}}",
-    "version": 1,
-    "isLoading": false,
-    "originalBottomRow": 12.799999999999272,
-    "minRange": 5,
-    "widgetName": "bpm_range",
-    "dynamicPropertyPathList": [
-        {"key": "onStartValueChange"},
-        {"key": "onEndValueChange"},
-        {"key": "isVisible"}
-    ],
-    "displayName": "Range Slider",
-    "bottomRow": 12,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "min": "0",
-    "parentColumnSpace": 6.84375,
-    "dynamicTriggerPathList": [
-        {"key": "onStartValueChange"},
-        {"key": "onEndValueChange"}
-    ],
-    "labelPosition": "Top",
-    "shouldTruncate": false,
-    "defaultEndValue": 100,
-    "key": "k8afvz8fuc",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "onEndValueChange": "{{appsmith.store.bpm_range_end = bpm_range.end}}",
-    "max": "180",
-    "widgetId": "2jp68ucv7u",
-    "onStartValueChange": "{{appsmith.store.bpm_range_start = bpm_range.start}}",
-    "marks": "[\n  {\n    \"value\": 0,\n    \"label\": \"0\"\n  },\n\n  {\n    \"value\": 180,\n    \"label\": \"180\"\n  }\n]",
-    "sliderSize": "m",
-    "shouldScroll": false,
-    "parentId": "pjvxmre18g",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "originalTopRow": 4.8,
-    "step": 1,
-    "showMarksLabel": true
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "bottomRow": 12,
+  "bottomRowBeforeCollapse": 12.8,
+  "defaultEndValue": 100,
+  "defaultStartValue": 10,
+  "displayName": "Range Slider",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onStartValueChange"
+    },
+    {
+      "key": "onEndValueChange"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onStartValueChange"
+    },
+    {
+      "key": "onEndValueChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.8216245f04c391d4ae315397e9194dd4.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{show_bpm_range.isSwitchedOn}}",
+  "key": "k8afvz8fuc",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "BPM range",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Search songs withion this range",
+  "labelWidth": 8,
+  "leftColumn": 1,
+  "marks": "[\n  {\n    \"value\": 0,\n    \"label\": \"0\"\n  },\n\n  {\n    \"value\": 180,\n    \"label\": \"180\"\n  }\n]",
+  "max": "180",
+  "min": "0",
+  "minRange": 5,
+  "onEndValueChange": "{{appsmith.store.bpm_range_end = bpm_range.end}}",
+  "onStartValueChange": "{{appsmith.store.bpm_range_start = bpm_range.start}}",
+  "originalBottomRow": 12.799999999999272,
+  "originalTopRow": 4.8,
+  "parentColumnSpace": 6.84375,
+  "parentId": "pjvxmre18g",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "shouldScroll": false,
+  "shouldTruncate": false,
+  "showMarksLabel": true,
+  "sliderSize": "m",
+  "step": 1,
+  "tooltipAlwaysOn": true,
+  "topRow": 4,
+  "topRowBeforeCollapse": 4.8,
+  "type": "RANGE_SLIDER_WIDGET",
+  "version": 1,
+  "widgetId": "2jp68ucv7u",
+  "widgetName": "bpm_range"
 }

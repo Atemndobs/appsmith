@@ -1,40 +1,54 @@
 {
-    "boxShadow": "none",
-    "widgetName": "show_bpm_range",
-    "dynamicPropertyPathList": [{"key": "onChange"}],
-    "displayName": "Switch",
-    "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
-    "searchTags": ["boolean"],
-    "topRow": 0,
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "type": "SWITCH_WIDGET",
-    "alignWidget": "LEFT",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 6.84375,
-    "dynamicTriggerPathList": [{"key": "onChange"}],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
-    "labelPosition": "Left",
-    "isDisabled": false,
-    "key": "v6p95pn4oh",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "onChange": "",
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "zilakd68jk",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "label": "BPM -  Exact vs Range",
-    "defaultSwitchState": false,
-    "version": 1,
-    "parentId": "pjvxmre18g",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 1,
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 6,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "displayName": "Switch",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "v6p95pn4oh",
+  "label": "BPM -  Exact vs Range",
+  "labelPosition": "Left",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onChange": "",
+  "originalBottomRow": 6,
+  "originalTopRow": 1,
+  "parentColumnSpace": 6.84375,
+  "parentId": "pjvxmre18g",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "boolean"
+  ],
+  "topRow": 0,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "zilakd68jk",
+  "widgetName": "show_bpm_range"
 }

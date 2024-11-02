@@ -1,58 +1,74 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "Select Genre",
-    "topRow": 31.000000000001457,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `Afrobeats`))(genre.options, genre.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
-    ],
-    "labelTooltip": "Select a Genre from the drop down list",
-    "placeholderText": "Afrobeats",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "isLoading": false,
-    "borderRadius": "0px",
-    "originalBottomRow": 38,
-    "widgetName": "genre",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onOptionChange"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 38.000000000000725,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "parentColumnSpace": 6.84375,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "sourceData": "{{get_song_genres.data}}",
-    "key": "lpcswqk6nr",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "an7w9ueht3",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "pjvxmre18g",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "optionLabel": "label",
-    "originalTopRow": 31,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{appsmith.store.genre = genre.selectedOptionValue}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 38.000000000000725,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `Afrobeats`))(genre.options, genre.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "lpcswqk6nr",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Select Genre",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Select a Genre from the drop down list",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "onOptionChange": "{{appsmith.store.genre = genre.selectedOptionValue}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 38,
+  "originalTopRow": 31,
+  "parentColumnSpace": 6.84375,
+  "parentId": "pjvxmre18g",
+  "parentRowSpace": 10,
+  "placeholderText": "Afrobeats",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{get_song_genres.data}}",
+  "topRow": 31.000000000001457,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "an7w9ueht3",
+  "widgetName": "genre"
 }

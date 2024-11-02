@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_6468c3bbea2e4f6c16474ea5",
+  "id": "Play_init_settings",
   "unpublishedCollection": {
     "name": "init_settings",
     "pageId": "Play",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "myVar1",
@@ -15,10 +15,6 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Play_init_settings",
-  "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_6468c3bbea2e4f6c16474ea5"
+    ]
+  }
 }

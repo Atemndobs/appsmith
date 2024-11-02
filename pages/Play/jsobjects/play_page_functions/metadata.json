@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "64467d69ea2e4f6c16474cba_64469a4eea2e4f6c16474cd9",
+  "id": "Play_play_page_functions",
   "unpublishedCollection": {
     "name": "play_page_functions",
     "pageId": "Play",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "play_page_init_data",
         "value": "{\n  'show': false,\n  'currentSong': {},\n  'search_limit': 9,\n  'search_hits': 0,\n  'match_limit': 9,\n  'related_songs': ''\n}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Play_play_page_functions",
-  "deleted": false,
-  "gitSyncId": "64467d69ea2e4f6c16474cba_64469a4eea2e4f6c16474cd9"
+    ]
+  }
 }

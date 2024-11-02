@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_6468c278ea2e4f6c16474e90",
+  "id": "Download_download_song",
   "unpublishedCollection": {
     "name": "download_song",
     "pageId": "Download",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Download_download_song",
-  "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_6468c278ea2e4f6c16474e90"
+    "variables": []
+  }
 }

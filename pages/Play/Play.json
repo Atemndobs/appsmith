@@ -1,48 +1,37 @@
 {
+  "gitSyncId": "644620a7ea2e4f6c16474ca3_644620a7ea2e4f6c16474ca5",
   "unpublishedPage": {
-    "name": "Play",
-    "slug": "play",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 1930,
-          "widgetName": "MainContainer",
-          "topRow": 0,
-          "bottomRow": 1760,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "minHeight": 1930,
-          "useAutoLayout": false,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed",
           "backgroundColor": "none",
+          "bottomRow": 1760,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1930,
+          "mobileBottomRow": 1930,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
           "rightColumn": 4896,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "containerStyle": "none",
           "snapRows": 124,
-          "version": 89,
-          "mobileTopRow": 0
-        },
-        "layoutOnLoadActions": [],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Play",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "644620a7ea2e4f6c16474ca3_644620a7ea2e4f6c16474ca5"
+    "name": "Play",
+    "slug": "play"
+  }
 }

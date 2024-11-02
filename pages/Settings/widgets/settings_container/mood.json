@@ -1,40 +1,54 @@
 {
-    "boxShadow": "none",
-    "widgetName": "mood",
-    "dynamicPropertyPathList": [{"key": "onChange"}],
-    "displayName": "Switch",
-    "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
-    "searchTags": ["boolean"],
-    "topRow": 38.00000000000145,
-    "bottomRow": 42.00000000000145,
-    "parentRowSpace": 10,
-    "type": "SWITCH_WIDGET",
-    "alignWidget": "LEFT",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 5.78271484375,
-    "dynamicTriggerPathList": [{"key": "onChange"}],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
-    "labelPosition": "Left",
-    "isDisabled": false,
-    "key": "z94sxsrs86",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "onChange": "{{mood.isSwitchedOn ?  appsmith.store.mood = 'happy' :  appsmith.store.mood = 'sad'}}",
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "ny9fkikvt9",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "label": "Mood  - Sad vs Happy",
-    "defaultSwitchState": true,
-    "version": 1,
-    "parentId": "pjvxmre18g",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 38.00000000000145,
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 42,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 42.00000000000145,
+  "boxShadow": "none",
+  "defaultSwitchState": true,
+  "displayName": "Switch",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "z94sxsrs86",
+  "label": "Mood  - Sad vs Happy",
+  "labelPosition": "Left",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onChange": "{{mood.isSwitchedOn ?  appsmith.store.mood = 'happy' :  appsmith.store.mood = 'sad'}}",
+  "originalBottomRow": 42,
+  "originalTopRow": 38.00000000000145,
+  "parentColumnSpace": 5.78271484375,
+  "parentId": "pjvxmre18g",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "boolean"
+  ],
+  "topRow": 38.00000000000145,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "ny9fkikvt9",
+  "widgetName": "mood"
 }
