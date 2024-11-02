@@ -99,7 +99,7 @@
   "mainContainerId": "pl9g5onw4q",
   "minWidth": 450,
   "onItemClick": "{{play_page_functions.selectd_song_play(related_songs.selectedItem)}}",
-  "originalBottomRow": 72,
+  "originalBottomRow": 74,
   "originalTopRow": 39,
   "pageSize": 3,
   "parentColumnSpace": 6.84375,

@@ -63,7 +63,7 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
-  "labelTextSize": "0.875rem",
+  "labelTextSize": "1rem",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,

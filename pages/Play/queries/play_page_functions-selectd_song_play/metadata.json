@@ -9,7 +9,8 @@
       "isAsync": true,
       "jsArguments": [
         {
-          "name": "currentSong"
+          "name": "currentSong",
+          "value": "{{{}}}"
         }
       ],
       "paginationType": "NONE",
